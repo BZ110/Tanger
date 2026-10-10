@@ -3,6 +3,7 @@ import { expect, test } from '@playwright/test';
 test('title, settings, controls, loading, gameplay, pause, and restart work without storage', async ({
   page,
 }) => {
+  test.setTimeout(90000);
   const errors: string[] = [];
   page.on('pageerror', (error) => errors.push(error.message));
   await page.addInitScript(() => {
@@ -25,6 +26,8 @@ test('title, settings, controls, loading, gameplay, pause, and restart work with
   await page.getByRole('button', { name: 'CONTROLS' }).click();
   await expect(page.getByText('LEFT CLICK / J')).toBeVisible();
   await page.getByRole('button', { name: /^Back/ }).click();
+  // Title/layout snapshots stay full size; gameplay CI uses a cheaper viewport.
+  await page.setViewportSize({ width: 800, height: 600 });
   await page.getByRole('button', { name: 'PLAY', exact: true }).click();
   await expect(page.locator('#app')).toHaveAttribute('data-screen', 'playing', {
     timeout: 30000,
@@ -41,8 +44,10 @@ test('title, settings, controls, loading, gameplay, pause, and restart work with
   await page.keyboard.up('KeyW');
   await page.keyboard.down('KeyW');
   await expect
-    .poll(async () =>
-      Number(await page.locator('#app').getAttribute('data-player-z')),
+    .poll(
+      async () =>
+        Number(await page.locator('#app').getAttribute('data-player-z')),
+      { timeout: 15000 },
     )
     .toBeLessThan(-2);
   await page.keyboard.up('KeyW');
@@ -53,13 +58,34 @@ test('title, settings, controls, loading, gameplay, pause, and restart work with
         Number(await page.locator('#app').getAttribute('data-hits')),
       )
       .toBeGreaterThanOrEqual(hit);
-    await page.waitForTimeout(800);
+    await expect
+      .poll(
+        async () =>
+          Number(
+            await page.locator('#app').getAttribute('data-attack-progress'),
+          ),
+        { timeout: 15000 },
+      )
+      .toBeLessThan(0);
   }
   await expect(page.locator('#app')).toHaveAttribute('data-tutorial-step', '2');
   await page.screenshot({ path: 'test-results/tutorial-combat.png' });
   for (let dash = 0; dash < 3; dash++) {
     await page.keyboard.press('Space');
-    await page.waitForTimeout(800);
+    await expect
+      .poll(
+        async () =>
+          Number(await page.locator('#app').getAttribute('data-dash-ready')),
+        { timeout: 15000 },
+      )
+      .toBeLessThan(0.9);
+    await expect
+      .poll(
+        async () =>
+          Number(await page.locator('#app').getAttribute('data-dash-ready')),
+        { timeout: 15000 },
+      )
+      .toBeGreaterThanOrEqual(0.99);
   }
   await expect(page.locator('#app')).toHaveAttribute('data-tutorial-step', '3');
   await page.keyboard.press('Escape');

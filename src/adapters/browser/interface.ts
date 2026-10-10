@@ -200,6 +200,8 @@ export class GameInterface {
     this.root.dataset.playerZ = String(snapshot.player.position.z);
     this.root.dataset.timeScale = String(snapshot.timeScale);
     this.root.dataset.hits = String(snapshot.target.hits);
+    this.root.dataset.attackProgress = String(snapshot.player.attackProgress);
+    this.root.dataset.dashReady = String(snapshot.dashReady);
   }
   private writeSettings(settings: GameSettings): void {
     element<HTMLSelectElement>(this.root, '[name="quality"]').value =

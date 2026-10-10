@@ -96,9 +96,10 @@ function box(
   const bevel = Math.min(radius, Math.min(...size) / 3);
   return mesh(
     parent,
-    cached(
-      `box:${size.join(',')}:${bevel}`,
-      () => new RoundedBoxGeometry(size[0]!, size[1]!, size[2]!, 2, bevel),
+    cached(`box:${size.join(',')}:${bevel}`, () =>
+      bevel <= 0.012
+        ? new T.BoxGeometry(size[0]!, size[1]!, size[2]!)
+        : new RoundedBoxGeometry(size[0]!, size[1]!, size[2]!, 2, bevel),
     ),
     material,
     position,
