@@ -32,7 +32,10 @@ test('title, settings, controls, loading, gameplay, pause, and restart work with
   await expect(page.locator('#app')).toHaveAttribute('data-screen', 'playing', {
     timeout: 30000,
   });
-  await expect(page.locator('canvas')).toHaveAttribute('data-ready', 'true');
+  // Software-rendered CI can finish loading before its first shader-heavy frame.
+  await expect(page.locator('canvas')).toHaveAttribute('data-ready', 'true', {
+    timeout: 30000,
+  });
   await expect(page.getByText('Movement', { exact: true })).toBeVisible();
   await page.screenshot({ path: 'test-results/tutorial-spawn.png' });
   await page.keyboard.down('KeyW');
