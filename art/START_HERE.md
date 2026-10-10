@@ -11,6 +11,7 @@ Run commands from the repository root. Node 22.12+ and Python 3.9+ are required.
 
 ```sh
 npm ci
+npx playwright install chromium
 npm run art:setup
 npm run art:doctor
 npm run art:smoke
