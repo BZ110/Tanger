@@ -1,63 +1,91 @@
-TANGER — INFRASTRUCTURE GUIDE
+TANGER — MODULAR TUTORIAL FOUNDATION
 
-Run with Node 22.12+:
   npm ci
   npm run dev
 
-The application opens an empty viewport with "No area loaded." There is no default
-map, floor, player, movement, gameplay HUD, persistence, or animation loop. It draws
-once and redraws on resize/context restoration. No game content is being designed.
+Use Node 22.12+. The app opens an original title screen. Play loads the authored
+tutorial area and its GLB models, then starts a local training session. Loading
+can be cancelled or retried. Escape pauses; settings work from title or pause.
+No settings, saves, or progress are persisted. All branding in-game is TANGER.
 
-MODULE OWNERSHIP
+OWNERSHIP AND DEPENDENCIES
 
-core/         Reusable platform-independent timing. Not active in the empty app.
-world/        Area interchange schema, inferred types, and pure parsing/validation.
-application/  Ports and a loading operation: source text -> validation result.
-adapters/     Concrete platform implementation. Currently the empty Three viewport.
-main.ts       Browser composition root; does not hardcode or load an area.
-scripts/      Local file validation and generated editor-schema tooling.
+core/         Pure math and fixed-step scheduling.
+content/      Tutorial drills, combat tuning, settings definitions/defaults.
+world/        Area schema, inferred types, validation.
+game/         Platform-independent movement/collision, combat, tutorial state.
+application/  Ports, source loading, real-time scheduling and session orchestration.
+adapters/     DOM/input/audio and Three.js asset/rendering implementations.
+main.ts       Composition root, screen transitions, loading cancellation/lifecycle.
+scripts/      Original model authoring/export and area validation/schema tools.
+public/       Editable authored areas and original art/model assets.
 
-Future content/ and game/ modules can hold authored definitions and gameplay rules
-when those features are requested. The old prototype implementations were removed.
+Core/game code cannot import Three.js, the DOM, or browser audio. Only the schema
+module imports Zod. Three dependencies/addons are limited to the renderer adapter.
+Architecture tests enforce inward imports and prevent cross-adapter dependencies.
 
-Dependencies point from adapters/application to world/core. Only the schema module
-imports Zod; only the Three adapter imports Three.js. Architectural tests reject
-browser globals in pure modules and cross-adapter imports. Loading is separate
-from activation: a validated area does not implicitly create GPU/physics resources.
+AREA AND MODEL LOADING
 
-AREA DATA
+public/areas/tutorial.area.json supplies static model instances, colliders, and
+named spawn/marker/target anchors. Asset paths are relative to the public content
+root. No map geometry is constructed in the game renderer. GLBs are fetched,
+parsed, cached, and cloned by AssetLibrary; the operator and unit are animated
+views of simulation state. Model asset IDs currently select the tutorial actors.
 
-src/world/area-schema.ts is the canonical versioned format. TypeScript types and
-public/schemas/area.schema.json derive from it. parse-area.ts checks structure,
-IDs, references, bounds, and rotations. Errors include field paths. There are no
-engine objects or embedded hardcoded meshes in an area document.
+Edit area data without rewriting simulation or renderer code. The controller
+currently supports grounded motion against axis-aligned box colliders. Other
+schema collider shapes are reserved for a future physics adapter and fail clearly
+in this controller. Sector streaming, traversal modes, and general rigid-body
+physics are future work; do not present the tutorial as a finished open world.
 
-  npm run area:validate -- path/to/document.area.json
+  npm run area:validate -- public/areas/tutorial.area.json
   npm run area:schema
+  npm run assets:build
 
-The format accepts model instances, independently authored collision shapes,
-sector bounds, anchor points, and graph connections. Sector geometry is not tied
-to a square terrain grid. See docs/area-format.txt for exact authoring conventions.
-No real area files or model assets are supplied. Tests use synthetic parser input.
+The editor JSON Schema and TypeScript types derive from area-schema.ts. CLI/runtime
+validation adds reference, bounds, and quaternion checks. These are loading and
+authoring diagnostics, not a centralized competitive data-integrity system.
 
-loadArea accepts an injected AreaSourcePort and optional cancellation signal. It
-returns a validated document or issues; the browser does not call it yet. Future
-filesystem/network/editor sources can implement the port independently of parsing.
-GLB decoding, actual asset existence checks, streaming, and activation remain to
-be implemented once real content is supplied. Neither a physics engine nor combat
-has been installed. See docs/research.txt for sourced technical research.
+TIME AND COMBAT
 
-CHECKS
+GameSession collects input edges across render frames until a fixed simulation
+step consumes them once. The simulation runs at 60 Hz with bounded catch-up.
+Combat has windup/contact/recovery, a three-hit sequence, limited input buffering,
+dash cancellation/cooldown, and a telegraphed training-unit attack. The tutorial
+contains five short drills and free practice after completion.
+
+Real time drives input, cooldowns, dash movement, impact timers, and screen controls.
+Impact freezes then slows the combat timeline; missed attacks do not slow time.
+Pause discards elapsed wall time and pending input edges. Hidden/unfocused windows
+pause rather than progressing unattended. Rendering interpolates player positions
+and owns procedural joint animation, bloom, camera feedback, and combat indicators.
+
+RESOURCE OWNERSHIP
+
+The renderer owns GPU resources, cached model instances, environment maps, effect
+passes, and resize/context listeners. Audio and input adapters own their listeners
+and audio context. Main cancels loading, animation frames, and adapter resources
+on hot reload. Completed cancelled GLB parsing releases its resources.
+
+COMMUNITY SERVERS
+
+The user's intended long-term architecture is self-hosted/community-hosted servers.
+No server runtime or transport exists yet. Keep simulation/state portable so a
+future server can own world rules. Do not silently introduce managed accounts,
+cloud persistence, global progression ownership, or anti-cheat infrastructure.
+
+CHECKS AND GUIDANCE
 
   npm run check
   npm run build
-  npx playwright install chromium   (first browser test setup)
+  npx playwright install chromium
   npm run test:e2e
 
-Checks cover rejected documents, valid references, parser diagnostics, source
-failures/cancellation, CLI exit behavior, schema drift, timing, and dependency
-boundaries. Browser checks verify zero scene objects and no storage access.
+Tests cover area parsing/CLI, module boundaries, timing, impact pacing, dash during
+hit stop, collision tunneling, full tutorial completion, and browser menu/loading/
+settings/pause/restart flows. Screenshots are generated under ignored test-results/.
+See AGENTS.md, docs/assets.txt, docs/area-format.txt, and docs/tutorial-research.txt.
+docs/research.txt records the earlier pre-tutorial research phase.
 
-There are no font/CDN/runtime content requests, storage reads/writes, or API keys.
-Markdown files are ignored and no README is included. Local Git author/committer
-identity is configured as BZ110 using the supplied GitHub noreply address.
+No README. Markdown stays ignored except the user-requested root AGENTS.md.
+Commit author and committer must use BZ110's supplied GitHub noreply identity.

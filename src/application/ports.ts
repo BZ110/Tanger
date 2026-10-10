@@ -1,6 +1,25 @@
-/** Rendering stays behind a port; there is currently no gameplay to simulate. */
+import type {
+  GameSnapshot,
+  PlayerCommand,
+  CombatEvent,
+} from '../game/simulation';
+import type { GameSettings } from '../content/settings';
+
+export interface InputPort {
+  sample(): PlayerCommand;
+  clear(): void;
+  setEnabled(enabled: boolean): void;
+  dispose(): void;
+}
 export interface ViewportPort {
-  render(): void;
+  render(snapshot: GameSnapshot, command: PlayerCommand, dt: number): void;
+  applySettings(settings: GameSettings): void;
+  effect(event: CombatEvent): void;
+  dispose(): void;
+}
+export interface AudioPort {
+  effect(event: CombatEvent): void;
+  setVolume(volume: number): void;
   dispose(): void;
 }
 

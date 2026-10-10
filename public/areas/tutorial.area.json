@@ -1,0 +1,143 @@
+{
+  "$schema": "../schemas/area.schema.json",
+  "format": "tanger.area",
+  "version": 1,
+  "id": "tutorial",
+  "coordinates": {
+    "units": "meters",
+    "up": "Y",
+    "handedness": "right"
+  },
+  "assets": [
+    {
+      "id": "operator",
+      "path": "assets/models/operator.glb",
+      "provenance": {
+        "kind": "original",
+        "creator": "TANGER project asset-generation script"
+      }
+    },
+    {
+      "id": "training-unit",
+      "path": "assets/models/training-unit.glb",
+      "provenance": {
+        "kind": "original",
+        "creator": "TANGER project asset-generation script"
+      }
+    },
+    {
+      "id": "training-room",
+      "path": "assets/models/training-room.glb",
+      "provenance": {
+        "kind": "original",
+        "creator": "TANGER project asset-generation script"
+      }
+    }
+  ],
+  "sectors": [
+    {
+      "id": "training-floor",
+      "bounds": {
+        "min": [-12, -2, -15],
+        "max": [12, 8, 15]
+      },
+      "instances": [
+        {
+          "id": "room",
+          "asset": "training-room",
+          "transform": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0, 1],
+            "scale": [1, 1, 1]
+          }
+        }
+      ],
+      "colliders": [
+        {
+          "id": "training-body",
+          "position": [0, 1, -4],
+          "rotation": [0, 0, 0, 1],
+          "shape": { "kind": "box", "halfExtents": [0.65, 1, 0.45] }
+        },
+        {
+          "id": "floor",
+          "position": [0, -0.2, 0],
+          "rotation": [0, 0, 0, 1],
+          "shape": {
+            "kind": "box",
+            "halfExtents": [11, 0.2, 14]
+          }
+        },
+        {
+          "id": "wall-left",
+          "position": [-11, 3.5, 0],
+          "rotation": [0, 0, 0, 1],
+          "shape": {
+            "kind": "box",
+            "halfExtents": [0.3, 3.5, 14]
+          }
+        },
+        {
+          "id": "wall-right",
+          "position": [11, 3.5, 0],
+          "rotation": [0, 0, 0, 1],
+          "shape": {
+            "kind": "box",
+            "halfExtents": [0.3, 3.5, 14]
+          }
+        },
+        {
+          "id": "wall-back",
+          "position": [0, 3.5, -14],
+          "rotation": [0, 0, 0, 1],
+          "shape": {
+            "kind": "box",
+            "halfExtents": [11, 3.5, 0.3]
+          }
+        },
+        {
+          "id": "wall-front",
+          "position": [0, 3.5, 14],
+          "rotation": [0, 0, 0, 1],
+          "shape": {
+            "kind": "box",
+            "halfExtents": [11, 3.5, 0.3]
+          }
+        },
+        {
+          "id": "crate-left",
+          "position": [-7, 0.8, 3],
+          "rotation": [0, 0, 0, 1],
+          "shape": {
+            "kind": "box",
+            "halfExtents": [1, 0.8, 1]
+          }
+        },
+        {
+          "id": "crate-right",
+          "position": [7, 0.8, -7],
+          "rotation": [0, 0, 0, 1],
+          "shape": {
+            "kind": "box",
+            "halfExtents": [1, 0.8, 1]
+          }
+        }
+      ],
+      "anchors": [
+        {
+          "id": "player-spawn",
+          "position": [0, 0, 6]
+        },
+        {
+          "id": "movement-marker",
+          "position": [0, 0, 1]
+        },
+        {
+          "id": "training-target",
+          "position": [0, 0, -4]
+        }
+      ]
+    }
+  ],
+  "connections": []
+}

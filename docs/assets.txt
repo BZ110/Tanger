@@ -1,0 +1,48 @@
+TANGER — ASSET PROVENANCE
+
+All supplied game content is original. No reference-game models, animation,
+textures, recordings, locations, or UI were extracted or downloaded.
+
+MODELS
+
+public/assets/models/training-room.glb
+public/assets/models/operator.glb
+public/assets/models/training-unit.glb
+
+Authored by scripts/build-assets.ts from smooth geometry, original material
+choices, and an articulated original operator hierarchy. Rebuild with:
+  npm run assets:build
+
+The authoring script exports GLBs using Three.js GLTFExporter. Repeated room
+parts share geometry and use GPU instancing. The script does not overwrite the
+editable area manifest. These are first-pass original art assets, not AAA models.
+Three.js and its addons are used under the dependency's MIT license.
+Reference documentation: https://threejs.org/docs/pages/GLTFExporter.html
+
+SURFACE FINISH AND AUDIO
+
+src/adapters/three/surface-finish.ts creates deterministic original surface grain
+and scratches. src/adapters/browser/audio.ts synthesizes original short sound
+effects. No downloaded textures, font files, music, or sound effects are used.
+
+TITLE ART
+
+Saved asset: public/assets/art/title-city.png
+Generated with the built-in imagegen tool (imagegen skill), without reference
+images. Used as title/loading screen artwork, not as a promised playable city.
+Final prompt, verbatim:
+
+Use case: stylized-concept. Asset type: widescreen title-screen background artwork
+for an original browser action RPG called TANGER, with typography added separately
+by the application. Primary request: a polished, cinematic original cyberpunk
+industrial district at blue hour after rain. Wide 16:9 composition: lower
+pedestrian service platform in the foreground, monumental layered concrete and
+metal towers receding into violet haze, a single strong warm red neon vertical
+panel on the right, subtle cyan strip lights, overhead utilities, wet reflective
+surfaces and highly detailed materials. The left third stays dark, calm and
+low-detail for menu text. Style: sophisticated anime-influenced cinematic
+environment painting with believable architecture and smooth detailed rendering,
+not flat polygonal or low-poly art. Charcoal and steel-blue base, restrained
+red-orange and cyan accents. No people, no readable words, no logos, no watermark.
+Do not reproduce any existing game location, franchise iconography, characters,
+or UI. This is original artwork drawing only on broad cyberpunk atmosphere.

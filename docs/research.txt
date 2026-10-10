@@ -1,5 +1,6 @@
 TANGER — EXPLORATION, ACTION, PHYSICS, AND MODELS
 Research date: October 10, 2026
+Historical pre-tutorial research phase. Current scope: docs/tutorial-research.txt.
 
 Scope: technical research for the user's stated references. No world layout,
 character concept, combat rules, balance values, or game content is designed here.

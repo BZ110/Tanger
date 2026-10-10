@@ -1,0 +1,56 @@
+TANGER — FIRST TUTORIAL RESEARCH AND SCOPE
+October 10, 2026
+
+The user requested an intentionally dry tutorial, not a finished game made from
+one prompt. Current scope: start/loading/settings screens, one authored training
+room, one original operator, one training unit, attacks, dashes, and impact pacing.
+
+REFERENCE RESEARCH
+
+The ZZZ developer interview discusses approachable controls, frame-sensitive
+dodge interruption, and the contribution of visual/audio feedback to responsive
+combat. The same interview describes reworking early content; it is a December
+2024 source, not a verified walkthrough of the current live tutorial. [1]
+
+The producer's launch overview describes character switching, assists, and
+chained attacks. Those are reference context, not features implemented here. [2]
+
+I searched for current introductory tutorial footage and found public prologue
+walkthroughs, but the video fetch was throttled. No claim is made that a current
+video was watched or that TANGER reproduces ZZZ's exact lesson sequence. The
+prototype's drill order is an original engineering interpretation: movement,
+basic contact, dash, timed evasion, then combined practice. [3]
+
+IMPLEMENTATION CHOICES
+
+- Keep instructions literal and short. Advance when the action is completed.
+  No dialogue, cinematic introduction, plot, missions, or rewards.
+- A successful strike briefly freezes combat motion, then slows recovery before
+  normal speed returns. Input, pause, and dash cooldown use real time.
+- A dash can cancel an attack. The training unit uses a visible windup before its
+  attack; dashing during contact avoids damage. Missed strikes do not cause hit stop.
+- The unit cannot be permanently killed. It records contacts and continues drills.
+  The player recovers at spawn on defeat; this is a practice room, not a death system.
+- Settings adjust quality, camera sensitivity, camera shake, effects volume, and
+  impact slowdown. Reduced-motion preferences default camera shake to off.
+- All gameplay/settings state is in memory. Community-hosted servers are the
+  intended future direction; no server browser, networking, accounts, cloud saves,
+  centralized progression authority, or anti-cheat is implemented in this build.
+
+LIMITS TO REVIEW NEXT
+
+The operator uses an original articulated mesh hierarchy with procedural joint
+animation. It is not a production motion-captured or fully skinned character.
+Movement is grounded and uses circle-versus-box collision on the authored floor;
+there is no jumping, climbing, gliding, general rigid-body physics, or navmesh.
+The camera stays within room bounds rather than using full geometry shape casts.
+Timing values and visual polish are provisional and meant for feedback.
+
+SOURCES
+
+[1] Original interview with ZZZ's producer and game designers, December 6, 2024:
+https://guided.news/en/interview/zenless-zone-zero-update-1-4-exclusive-interview/
+[2] Producer Zhenyu Li's launch overview, June 28, 2024:
+https://blog.playstation.com/?p=393593
+[3] Public prologue gameplay result located during research (not viewed):
+https://www.youtube.com/watch?v=X0pQjc4DMG0

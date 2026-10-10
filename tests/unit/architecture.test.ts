@@ -47,7 +47,8 @@ test('module dependencies point inward and pure code stays platform-independent'
         const specifier = node.moduleSpecifier.text;
         if (!specifier.startsWith('.')) {
           const isRenderLibrary =
-            file.startsWith('adapters/three/') && specifier === 'three';
+            file.startsWith('adapters/three/') &&
+            (specifier === 'three' || specifier.startsWith('three/addons/'));
           const isSchemaLibrary =
             file === 'world/area-schema.ts' && specifier === 'zod';
           if (!isRenderLibrary && !isSchemaLibrary)
