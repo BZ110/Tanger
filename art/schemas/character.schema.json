@@ -1,0 +1,286 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "id": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "character",
+        "technical-fixture"
+      ]
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "model",
+        "rigged",
+        "review"
+      ]
+    },
+    "brief": {
+      "$ref": "#/$defs/__schema1"
+    },
+    "source": {
+      "$ref": "#/$defs/__schema1"
+    },
+    "export": {
+      "$ref": "#/$defs/__schema1"
+    },
+    "exportCollection": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coordinates": {
+      "type": "string",
+      "const": "gltf-meters-y-up"
+    },
+    "heightMeters": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "shading": {
+      "type": "string",
+      "enum": [
+        "anime-toon",
+        "painted-pbr"
+      ]
+    },
+    "materialRoles": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rig": {
+      "type": "object",
+      "properties": {
+        "requiredJoints": {
+          "$ref": "#/$defs/__schema2"
+        },
+        "clips": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "minLength": 1
+          },
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "expressions": {
+          "$ref": "#/$defs/__schema2"
+        },
+        "rootMotion": {
+          "type": "string",
+          "const": "in-place"
+        }
+      },
+      "required": [
+        "requiredJoints",
+        "clips",
+        "expressions",
+        "rootMotion"
+      ],
+      "additionalProperties": false
+    },
+    "deliveryBudgets": {
+      "type": "object",
+      "properties": {
+        "triangles": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "materials": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "joints": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "textureEdge": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "fileMiB": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "triangles",
+        "materials",
+        "joints",
+        "textureEdge",
+        "fileMiB"
+      ],
+      "additionalProperties": false
+    },
+    "provenance": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema4"
+      }
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/__schema11"
+          }
+        },
+        "notes": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "verdict": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "revise",
+            "accepted"
+          ]
+        },
+        "reviewer": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "evidence",
+        "notes",
+        "verdict",
+        "reviewer"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "kind",
+    "stage",
+    "brief",
+    "source",
+    "export",
+    "exportCollection",
+    "coordinates",
+    "heightMeters",
+    "shading",
+    "materialRoles",
+    "rig",
+    "deliveryBudgets",
+    "provenance",
+    "review"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{1,63}$"
+    },
+    "__schema1": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema2": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema3"
+      }
+    },
+    "__schema3": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema4": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "kind": {
+          "$ref": "#/$defs/__schema5"
+        },
+        "description": {
+          "$ref": "#/$defs/__schema6"
+        },
+        "creator": {
+          "$ref": "#/$defs/__schema7"
+        },
+        "source": {
+          "$ref": "#/$defs/__schema8"
+        },
+        "license": {
+          "$ref": "#/$defs/__schema9"
+        },
+        "files": {
+          "$ref": "#/$defs/__schema10"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "description",
+        "creator",
+        "license",
+        "files"
+      ],
+      "additionalProperties": false
+    },
+    "__schema5": {
+      "type": "string",
+      "enum": [
+        "original",
+        "licensed"
+      ]
+    },
+    "__schema6": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema7": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema8": {
+      "type": "string",
+      "format": "uri"
+    },
+    "__schema9": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema10": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema1"
+      }
+    },
+    "__schema11": {
+      "$ref": "#/$defs/__schema1"
+    }
+  },
+  "title": "TANGER character manifest v1",
+  "description": "Structure only. art:validate checks exported GLB and review evidence."
+}

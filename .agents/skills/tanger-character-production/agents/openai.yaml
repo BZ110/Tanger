@@ -1,0 +1,6 @@
+interface:
+  display_name: 'TANGER Character Production'
+  short_description: 'Author original anime characters in Blender'
+  default_prompt: 'Use $tanger-character-production to create an original polished anime character with editable Blender source and inspected GLB delivery.'
+policy:
+  allow_implicit_invocation: true

@@ -3,6 +3,13 @@
     {
       "fileMatch": ["**/*.area.json"],
       "url": "./public/schemas/area.schema.json"
+    },
+    {
+      "fileMatch": [
+        "art/characters/**/character.json",
+        "tests/fixtures/art-character.json"
+      ],
+      "url": "./art/schemas/character.schema.json"
     }
   ]
 }

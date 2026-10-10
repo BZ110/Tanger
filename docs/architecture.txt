@@ -17,11 +17,14 @@ game/         Platform-independent movement/collision, combat, tutorial state.
 application/  Ports, source loading, real-time scheduling and session orchestration.
 adapters/     DOM/input/audio and Three.js asset/rendering implementations.
 main.ts       Composition root, screen transitions, loading cancellation/lifecycle.
-scripts/      Original model authoring/export and area validation/schema tools.
+scripts/      Original model authoring/export and area/character CLI tools.
 public/       Editable authored areas and original art/model assets.
+tools/art/    Isolated Blender pipeline, character validation, browser review lab.
+art/          Production instructions, schema, and future character source/reviews.
+.agents/      Repository character-production and character-review skills.
 
-Core/game code cannot import Three.js, the DOM, or browser audio. Only the schema
-module imports Zod. Three dependencies/addons are limited to the renderer adapter.
+Core/game code cannot import Three.js, the DOM, or browser audio. Within src/, only
+the schema module imports Zod; Three dependencies stay in the renderer adapter.
 Architecture tests enforce inward imports and prevent cross-adapter dependencies.
 
 AREA AND MODEL LOADING
@@ -87,5 +90,39 @@ settings/pause/restart flows. Screenshots are generated under ignored test-resul
 See AGENTS.md, docs/assets.txt, docs/area-format.txt, and docs/tutorial-research.txt.
 docs/research.txt records the earlier pre-tutorial research phase.
 
-No README. Markdown stays ignored except the user-requested root AGENTS.md.
+CHARACTER PRODUCTION WORKSPACE
+
+Read art/START_HERE.md, art/AGENTS.md and the repository character skills.
+The owner requests polished original anime characters and has ample workstation
+resources. Keep high-quality Blender source distinct from browser delivery budgets.
+The existing operator is a legacy procedural placeholder, not the quality target.
+
+  npm run art:setup
+  npm run art:doctor
+  npm run art:smoke
+  npm run art:lab
+
+Setup verifies an official pinned Blender 4.5.14 LTS archive in ignored .tools/.
+The pipeline handles an EXPORT collection, weighted skins, NLA clips, morphs,
+GLB validation, source inspection, and source/browser evidence captures. Its
+versioned character manifest has a generated JSON Schema, provenance, material
+roles, rig bindings, editable delivery budgets, stages, and review evidence.
+
+The browser lab is served separately on port 5180 at /tools/art/lab/. It loads
+self-contained GLBs with animation/expression controls, camera presets, lighting,
+material audition, wireframe/skeleton inspection and PNG captures. No new character
+is designed by the workspace setup; the bent-strip fixture is technical test data.
+Authoring code lives outside src/ and does not change game module boundaries.
+
+The game operator view still uses procedural rigid joint rotations. Production
+skinned runtime integration, custom anime face shaders, and secondary dynamics
+are future authorized tasks. Toon audition is not a production anime renderer.
+See art/RUNTIME.md for these boundaries. Do not regenerate the legacy operator
+with assets:build during production character work.
+
+CI also builds the isolated lab and exercises import, skin/morph/clip controls,
+capture, reload, and malformed-file recovery. Blender smoke testing is local;
+the small committed fixture was exported by tools/art/blender/fixture.py.
+
+No README. Markdown is allowed for AGENTS, art/ documentation and .agents/skills/.
 Commit author and committer must use BZ110's supplied GitHub noreply identity.

@@ -30,13 +30,28 @@
   or centralized data-integrity infrastructure merely because gameplay has state.
 - Do not delegate to additional agents unless the user explicitly requests it.
 
+## Character authoring
+
+- For anime character work, read art/AGENTS.md and art/START_HERE.md. Use the
+  production/review skills in .agents/skills/ for their respective tasks.
+- The workstation has ample resources. Do not lower authoring quality based on
+  assumed compute/RAM limits. Browser delivery budgets remain separately editable.
+- Keep Blender source, textures, rig, manifest, provenance, and visible review
+  evidence. Technical validation is not an artistic approval.
+- The current procedural operator is a legacy placeholder. Work in the separate
+  character lab until game integration is authorized; do not overwrite it with
+  scripts/build-assets.ts during production character work.
+
 ## Verification
 
 - Run npm run check, npm run build, npm run test:e2e, and validate changed area files.
 - Use behavior tests for combat timing, dash/collision, tutorial progression, and menu flows.
 - Inspect screenshots of the start screen and playable tutorial before delivery.
 - Update docs/architecture.txt and asset provenance notes as implementation changes.
-- No README. Markdown files stay ignored except this explicitly requested AGENTS.md.
+- No README. Markdown is allowed for AGENTS.md, art/ instructions/briefs/reviews,
+  and repository skills in .agents/skills/. Other Markdown remains ignored.
+- For authoring tool changes, also build the lab, test capture/import behavior,
+  and run art:smoke after changes to the Blender pipeline.
 
 ## Git and privacy
 

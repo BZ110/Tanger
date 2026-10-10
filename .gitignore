@@ -10,3 +10,12 @@ test-results/
 *.log
 *.[mM][dD]
 !AGENTS.md
+!art/**/*.md
+!.agents/skills/**/*.md
+.tools/
+art/.build/
+art/**/renders/
+art/**/exports/
+*.blend1
+*.blend2
+__pycache__/

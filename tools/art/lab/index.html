@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TANGER / Character Lab</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        TANGER<span>CHARACTER LAB <small>01</small></span>
+      </div>
+      <div class="header-actions">
+        <span class="local"><i></i> LOCAL WORKSPACE</span
+        ><button id="open-file" class="primary">Open GLB <span>↗</span></button
+        ><input id="file" type="file" accept=".glb" hidden />
+      </div>
+    </header>
+    <main>
+      <aside class="left-panel">
+        <div class="eyebrow">01 / ASSET</div>
+        <h1 id="asset-name">No model loaded</h1>
+        <p class="subtle">
+          Original characters.<br />Editable source. Visible evidence.
+        </p>
+        <dl id="stats">
+          <div>
+            <dt>Triangles</dt>
+            <dd>—</dd>
+          </div>
+          <div>
+            <dt>Materials</dt>
+            <dd>—</dd>
+          </div>
+          <div>
+            <dt>Skin joints</dt>
+            <dd>—</dd>
+          </div>
+          <div>
+            <dt>Animations</dt>
+            <dd>—</dd>
+          </div>
+        </dl>
+        <section>
+          <div class="eyebrow">02 / SURFACE</div>
+          <label for="shading">Preview material</label
+          ><select id="shading">
+            <option value="original">Authored materials</option>
+            <option value="toon">Toon audition</option>
+            <option value="clay">Clay / silhouette</option>
+          </select>
+          <p class="hint">
+            Toon audition uses stepped lighting. Production face shading needs a
+            separate authored profile.
+          </p>
+          <label class="check"
+            ><input id="wireframe" type="checkbox" /> Wireframe</label
+          ><label class="check"
+            ><input id="skeleton" type="checkbox" /> Skeleton</label
+          >
+        </section>
+        <section>
+          <div class="eyebrow">03 / LIGHT</div>
+          <label for="lighting">Lighting preset</label
+          ><select id="lighting">
+            <option value="neutral">Neutral studio</option>
+            <option value="daylight">Daylight</option>
+            <option value="night">Neon night</option></select
+          ><label for="light-angle"
+            >Key light rotation <output id="light-value">45°</output></label
+          ><input id="light-angle" type="range" min="0" max="360" value="45" />
+        </section>
+        <div class="panel-note">
+          TECHNICAL PASS ≠ ART APPROVAL<br /><span
+            >Review the face, silhouette, and motion.</span
+          >
+        </div>
+      </aside>
+      <div id="viewport">
+        <div class="stage-label">
+          <span>LIVE / 3D</span><span id="stage-mode">NEUTRAL STUDIO</span>
+        </div>
+        <div id="empty">
+          <div class="empty-symbol">◇</div>
+          <span class="eyebrow">MODEL INSPECTION</span>
+          <h2>Bring the character<br />into the light.</h2>
+          <p>
+            Drop a self-contained GLB here.<br />Inspect its shape, expressions,
+            and movement.
+          </p>
+          <button id="empty-open">Choose a model ↗</button>
+        </div>
+        <div id="status" role="status" aria-live="polite">
+          Waiting for an asset
+        </div>
+        <nav class="views" aria-label="Camera views">
+          <button data-view="front" class="selected">Front</button
+          ><button data-view="quarter">¾</button
+          ><button data-view="profile">Profile</button
+          ><button data-view="back">Back</button
+          ><button data-view="face">Face</button>
+        </nav>
+      </div>
+      <aside class="right-panel">
+        <div class="eyebrow">04 / MOTION</div>
+        <h2>Deformation review</h2>
+        <label for="clip">Animation clip</label
+        ><select id="clip">
+          <option value="">Bind pose</option>
+        </select>
+        <div class="playback">
+          <button id="play" aria-label="Play animation">▶ Play</button
+          ><label for="speed">Speed</label
+          ><select id="speed">
+            <option value="0.25">0.25×</option>
+            <option value="0.5">0.5×</option>
+            <option value="1" selected>1×</option>
+            <option value="2">2×</option>
+          </select>
+        </div>
+        <label for="time"
+          >Scrub clip <output id="time-value">0.00 s</output></label
+        ><input id="time" type="range" min="0" max="1" value="0" step="0.001" />
+        <section>
+          <div class="eyebrow">05 / EXPRESSION</div>
+          <div id="morphs">
+            <p class="hint">Morph targets appear when a model is loaded.</p>
+          </div>
+          <button id="reset-morphs" class="quiet">Reset expressions</button>
+        </section>
+        <section>
+          <div class="eyebrow">06 / EVIDENCE</div>
+          <button id="capture">Capture PNG ↗</button>
+          <p class="hint">
+            Capture the browser result as well as the Blender source. Compare
+            both before accepting an export.
+          </p>
+        </section>
+        <p id="material-list" class="hint"></p>
+      </aside>
+    </main>
+    <footer>
+      <span><b>DRAG</b> Orbit <b>SCROLL</b> Zoom <b>RIGHT DRAG</b> Pan</span
+      ><span>ASSET WORKSPACE / TANGER</span>
+    </footer>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

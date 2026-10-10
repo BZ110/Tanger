@@ -46,3 +46,19 @@ not flat polygonal or low-poly art. Charcoal and steel-blue base, restrained
 red-orange and cyan accents. No people, no readable words, no logos, no watermark.
 Do not reproduce any existing game location, franchise iconography, characters,
 or UI. This is original artwork drawing only on broad cyberpunk atmosphere.
+
+CHARACTER PIPELINE TEST DATA
+
+tests/fixtures/art-pipeline.glb is a technical bent-strip fixture generated with
+tools/art/blender/fixture.py in official Blender 4.5.14 LTS. It contains original
+test geometry, a two-joint rig, two short NLA clips, one test morph and an original
+64px checker texture. It is not
+a character model, a replacement operator, or an example of the desired anime
+art quality. tests/fixtures/art-character.json records its test contract.
+Ignored art/.build/ holds regenerable .blend/GLB/renders/reports for this fixture.
+
+No third-party art was added for this workspace. Blender is GPL software, installed
+locally from its official checksum-verified distribution, not committed. Its
+exporter generates glTF data; tooling uses the Khronos glTF Validator under
+Apache-2.0. Reference documentation is linked in art/RUNTIME.md. Future characters
+must carry their own editable source, input provenance, and honest visual review.

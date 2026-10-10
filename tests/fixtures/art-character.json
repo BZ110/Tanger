@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "pipeline-fixture",
+  "kind": "technical-fixture",
+  "stage": "rigged",
+  "brief": "art/.build/fixture/brief.md",
+  "source": "art/.build/fixture/fixture.blend",
+  "export": "art/.build/fixture/fixture.glb",
+  "exportCollection": "EXPORT",
+  "coordinates": "gltf-meters-y-up",
+  "heightMeters": 1.8,
+  "shading": "anime-toon",
+  "materialRoles": {
+    "test": "Fixture"
+  },
+  "rig": {
+    "requiredJoints": ["root", "bend"],
+    "clips": {
+      "idle": "idle",
+      "test": "test-bend"
+    },
+    "expressions": ["test-squash"],
+    "rootMotion": "in-place"
+  },
+  "deliveryBudgets": {
+    "triangles": 1000,
+    "materials": 4,
+    "joints": 8,
+    "textureEdge": 4096,
+    "fileMiB": 5
+  },
+  "provenance": [
+    {
+      "id": "test-geometry",
+      "kind": "original",
+      "description": "Skin and morph export fixture, not a character reference.",
+      "creator": "TANGER",
+      "license": "Project test code",
+      "files": ["tools/art/blender/fixture.py"]
+    }
+  ],
+  "review": {
+    "evidence": [],
+    "notes": "art/.build/fixture/review.md",
+    "verdict": "pending",
+    "reviewer": ""
+  }
+}

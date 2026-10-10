@@ -5,3 +5,6 @@ package-lock.json
 playwright-report
 test-results
 public/schemas/area.schema.json
+.tools
+art/.build
+art/schemas/character.schema.json
