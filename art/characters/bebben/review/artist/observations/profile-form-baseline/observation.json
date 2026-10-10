@@ -1,0 +1,25 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/profile-form-baseline/view.png",
+  "sha256": "0f573620ec7ff508475ab4b218c1bcbf1afab0d49d7189a6cf7186b2f5f1a9a8",
+  "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "profile",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 1.5707963267948966,
+    "pitch": 0,
+    "mode": "FACE_SCULPT",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "matcap",
+  "sourceSha256": "1934c5dfe05b14c6d01056551b831e6eed7c0601773ef0a4ae687e70dca1c773"
+}

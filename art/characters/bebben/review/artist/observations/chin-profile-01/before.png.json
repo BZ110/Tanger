@@ -1,0 +1,24 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/chin-profile-01/before.png",
+  "sha256": "696dcbae998b56e0e745cbdc3b23848c18e00f9120e3294c7c19348ebaaac1d8",
+  "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "profile",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 1.5707963267948966,
+    "pitch": 0,
+    "mode": "FACE_SCULPT",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "matcap"
+}

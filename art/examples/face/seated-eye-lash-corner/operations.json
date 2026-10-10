@@ -1,0 +1,45 @@
+[
+  {
+    "tool": "sculpt.grab",
+    "region": "eyes.upper_lid.L",
+    "args": {
+      "center": [
+        0.07,
+        -0.068,
+        1.658
+      ],
+      "radius": 0.034,
+      "displacement": [
+        0,
+        -0.01,
+        0
+      ],
+      "space": "world"
+    }
+  },
+  {
+    "tool": "sculpt.grab",
+    "region": "eyes.upper_lid.R",
+    "args": {
+      "center": [
+        -0.07,
+        -0.068,
+        1.658
+      ],
+      "radius": 0.034,
+      "displacement": [
+        0,
+        -0.01,
+        0
+      ],
+      "space": "world"
+    }
+  },
+  {
+    "tool": "eye.lid_thickness",
+    "args": {
+      "side": "L",
+      "thickness": 0.00035
+    }
+  }
+]

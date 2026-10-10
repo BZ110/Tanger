@@ -1,0 +1,929 @@
+{
+  "face.cranium": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0,
+      0.04,
+      1.75
+    ],
+    "radius": 0.11,
+    "density": "high"
+  },
+  "face.forehead": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0,
+      -0.055,
+      1.73
+    ],
+    "radius": 0.085,
+    "density": "high"
+  },
+  "face.nose_bridge": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0,
+      -0.09,
+      1.65
+    ],
+    "radius": 0.031,
+    "density": "high"
+  },
+  "face.nose_tip": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0,
+      -0.095,
+      1.616
+    ],
+    "radius": 0.023,
+    "density": "high"
+  },
+  "face.nose_alar": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0,
+      -0.09,
+      1.61
+    ],
+    "radius": 0.027,
+    "density": "high"
+  },
+  "face.nose_base": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0,
+      -0.09,
+      1.607
+    ],
+    "radius": 0.018,
+    "density": "high"
+  },
+  "face.upper_lip": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0,
+      -0.073,
+      1.583
+    ],
+    "radius": 0.023,
+    "density": "high"
+  },
+  "face.lower_lip": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0,
+      -0.073,
+      1.579
+    ],
+    "radius": 0.023,
+    "density": "high"
+  },
+  "face.chin": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0,
+      -0.056,
+      1.543
+    ],
+    "radius": 0.035,
+    "density": "high"
+  },
+  "face.brow.L": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Soft eyebrow.L"
+    ],
+    "center": [
+      0.052,
+      -0.075,
+      1.68
+    ],
+    "radius": 0.035,
+    "density": "high"
+  },
+  "face.eye_socket.L": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Sclera.L",
+      "Brown iris.L",
+      "Upper lash.L",
+      "Lower lash.L",
+      "Eye catchlight 0.L",
+      "Eye catchlight 1.L"
+    ],
+    "center": [
+      0.045,
+      -0.075,
+      1.652
+    ],
+    "radius": 0.04,
+    "density": "high"
+  },
+  "face.upper_lid.L": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Upper lash.L"
+    ],
+    "center": [
+      0.045,
+      -0.075,
+      1.661
+    ],
+    "radius": 0.031,
+    "density": "high"
+  },
+  "face.lower_lid.L": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Lower lash.L"
+    ],
+    "center": [
+      0.045,
+      -0.075,
+      1.646
+    ],
+    "radius": 0.028,
+    "density": "high"
+  },
+  "face.inner_canthus.L": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Sclera.L",
+      "Brown iris.L",
+      "Upper lash.L",
+      "Lower lash.L",
+      "Eye catchlight 0.L",
+      "Eye catchlight 1.L"
+    ],
+    "center": [
+      0.016,
+      -0.075,
+      1.652
+    ],
+    "radius": 0.018,
+    "density": "high"
+  },
+  "face.outer_canthus.L": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Sclera.L",
+      "Brown iris.L",
+      "Upper lash.L",
+      "Lower lash.L",
+      "Eye catchlight 0.L",
+      "Eye catchlight 1.L"
+    ],
+    "center": [
+      0.074,
+      -0.07,
+      1.654
+    ],
+    "radius": 0.019,
+    "density": "high"
+  },
+  "face.cheek.L": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0.061,
+      -0.055,
+      1.613
+    ],
+    "radius": 0.041,
+    "density": "high"
+  },
+  "face.mouth_corner.L": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0.025,
+      -0.073,
+      1.582
+    ],
+    "radius": 0.018,
+    "density": "high"
+  },
+  "face.jaw.L": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      0.067,
+      -0.023,
+      1.568
+    ],
+    "radius": 0.044,
+    "density": "high"
+  },
+  "ear.L": {
+    "objects": [
+      "Sculpted ear.L",
+      "Ear inner fold.L"
+    ],
+    "density": "high"
+  },
+  "eyes.L": {
+    "objects": [
+      "Sclera.L",
+      "Brown iris.L",
+      "Upper lash.L",
+      "Lower lash.L",
+      "Eye catchlight 0.L",
+      "Eye catchlight 1.L"
+    ],
+    "density": "high"
+  },
+  "face.brow.R": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Soft eyebrow.R"
+    ],
+    "center": [
+      -0.052,
+      -0.075,
+      1.68
+    ],
+    "radius": 0.035,
+    "density": "high"
+  },
+  "face.eye_socket.R": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Sclera.R",
+      "Brown iris.R",
+      "Upper lash.R",
+      "Lower lash.R",
+      "Eye catchlight 0.R",
+      "Eye catchlight 1.R"
+    ],
+    "center": [
+      -0.045,
+      -0.075,
+      1.652
+    ],
+    "radius": 0.04,
+    "density": "high"
+  },
+  "face.upper_lid.R": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Upper lash.R"
+    ],
+    "center": [
+      -0.045,
+      -0.075,
+      1.661
+    ],
+    "radius": 0.031,
+    "density": "high"
+  },
+  "face.lower_lid.R": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Lower lash.R"
+    ],
+    "center": [
+      -0.045,
+      -0.075,
+      1.646
+    ],
+    "radius": 0.028,
+    "density": "high"
+  },
+  "face.inner_canthus.R": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Sclera.R",
+      "Brown iris.R",
+      "Upper lash.R",
+      "Lower lash.R",
+      "Eye catchlight 0.R",
+      "Eye catchlight 1.R"
+    ],
+    "center": [
+      -0.016,
+      -0.075,
+      1.652
+    ],
+    "radius": 0.018,
+    "density": "high"
+  },
+  "face.outer_canthus.R": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw",
+      "Sclera.R",
+      "Brown iris.R",
+      "Upper lash.R",
+      "Lower lash.R",
+      "Eye catchlight 0.R",
+      "Eye catchlight 1.R"
+    ],
+    "center": [
+      -0.074,
+      -0.07,
+      1.654
+    ],
+    "radius": 0.019,
+    "density": "high"
+  },
+  "face.cheek.R": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      -0.061,
+      -0.055,
+      1.613
+    ],
+    "radius": 0.041,
+    "density": "high"
+  },
+  "face.mouth_corner.R": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      -0.025,
+      -0.073,
+      1.582
+    ],
+    "radius": 0.018,
+    "density": "high"
+  },
+  "face.jaw.R": {
+    "objects": [
+      "Face — orbital loops / sculpted nose and jaw"
+    ],
+    "center": [
+      -0.067,
+      -0.023,
+      1.568
+    ],
+    "radius": 0.044,
+    "density": "high"
+  },
+  "ear.R": {
+    "objects": [
+      "Sculpted ear.R",
+      "Ear inner fold.R"
+    ],
+    "density": "high"
+  },
+  "eyes.R": {
+    "objects": [
+      "Sclera.R",
+      "Brown iris.R",
+      "Upper lash.R",
+      "Lower lash.R",
+      "Eye catchlight 0.R",
+      "Eye catchlight 1.R"
+    ],
+    "density": "high"
+  },
+  "face.jaw": {
+    "union": [
+      "face.jaw.L",
+      "face.jaw.R"
+    ],
+    "density": "high"
+  },
+  "body.neck": {
+    "objects": [
+      "Neck"
+    ],
+    "density": "medium"
+  },
+  "body.ribcage": {
+    "objects": [
+      "Utility jacket / continuous body"
+    ],
+    "density": "medium"
+  },
+  "body.waist": {
+    "objects": [
+      "Utility jacket / continuous body"
+    ],
+    "density": "medium"
+  },
+  "body.pelvis": {
+    "objects": [],
+    "density": "medium"
+  },
+  "jacket.collar": {
+    "objects": [
+      "Standing collar",
+      "Collar binding"
+    ],
+    "density": "medium"
+  },
+  "jacket.torso": {
+    "objects": [
+      "Utility jacket / continuous body",
+      "Ribbed jacket hem",
+      "Jacket sleeve.R",
+      "Jacket sleeve.L"
+    ],
+    "density": "medium"
+  },
+  "jacket.sleeves": {
+    "objects": [
+      "Jacket sleeve.R",
+      "Sleeve seam.R",
+      "Jacket sleeve.L",
+      "Sleeve seam.L",
+      "Orange sleeve pull tab"
+    ],
+    "density": "medium"
+  },
+  "hair.mass": {
+    "objects": [
+      "Hair underlayer",
+      "Fringe / layer 1",
+      "Fringe / layer 2",
+      "Fringe / layer 3",
+      "Fringe / layer 4",
+      "Fringe / layer 5",
+      "Fringe / layer 6",
+      "Fringe / layer 7",
+      "Crown sweep 1",
+      "Crown sweep 2",
+      "Crown sweep 3",
+      "Crown sweep 4",
+      "Crown sweep 5",
+      "Crown sweep 6",
+      "Crown sweep 7",
+      "Crown sweep 8",
+      "Crown sweep 9",
+      "Temple / R0",
+      "Temple / R1",
+      "Temple / R2",
+      "Temple / R3",
+      "Nape / R0",
+      "Nape / R1",
+      "Nape / R2",
+      "Nape / R3",
+      "Temple / L0",
+      "Temple / L1",
+      "Temple / L2",
+      "Temple / L3",
+      "Nape / L0",
+      "Nape / L1",
+      "Nape / L2",
+      "Nape / L3",
+      "Crown wisp A",
+      "Crown wisp B"
+    ],
+    "density": "medium"
+  },
+  "body.clavicle.L": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.shoulder.L": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.upper_arm.L": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.forearm.L": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.hand.L": {
+    "objects": [
+      "Palm.L",
+      "Finger 1.L",
+      "Finger 2.L",
+      "Finger 3.L",
+      "Finger 4.L",
+      "Thumb.L"
+    ],
+    "density": "high",
+    "covered": false
+  },
+  "body.thigh.L": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.knee.L": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.calf.L": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.foot.L": {
+    "objects": [
+      "Boot upper.L",
+      "Rubber outsole.L",
+      "Boot welt.L",
+      "Boot collar.L"
+    ],
+    "density": "medium",
+    "covered": false
+  },
+  "jacket.sleeve.L": {
+    "objects": [
+      "Jacket sleeve.L"
+    ],
+    "density": "medium"
+  },
+  "trousers.L": {
+    "objects": [
+      "Cargo trousers — continuous crotch and waist topology"
+    ],
+    "center": [
+      0.085,
+      0,
+      0.7
+    ],
+    "radius": 0.45,
+    "density": "medium"
+  },
+  "eyes.upper_lid.L": {
+    "objects": [
+      "Upper lash.L"
+    ],
+    "density": "high"
+  },
+  "eyes.lower_lid.L": {
+    "objects": [
+      "Lower lash.L"
+    ],
+    "density": "high"
+  },
+  "body.clavicle.R": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.shoulder.R": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.upper_arm.R": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.forearm.R": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.hand.R": {
+    "objects": [
+      "Palm.R",
+      "Finger 1.R",
+      "Finger 2.R",
+      "Finger 3.R",
+      "Finger 4.R",
+      "Thumb.R"
+    ],
+    "density": "high",
+    "covered": false
+  },
+  "body.thigh.R": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.knee.R": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.calf.R": {
+    "objects": [],
+    "density": "medium",
+    "covered": true
+  },
+  "body.foot.R": {
+    "objects": [
+      "Boot upper.R",
+      "Rubber outsole.R",
+      "Boot welt.R",
+      "Boot collar.R"
+    ],
+    "density": "medium",
+    "covered": false
+  },
+  "jacket.sleeve.R": {
+    "objects": [
+      "Jacket sleeve.R"
+    ],
+    "density": "medium"
+  },
+  "trousers.R": {
+    "objects": [
+      "Cargo trousers — continuous crotch and waist topology"
+    ],
+    "center": [
+      -0.085,
+      0,
+      0.7
+    ],
+    "radius": 0.45,
+    "density": "medium"
+  },
+  "eyes.upper_lid.R": {
+    "objects": [
+      "Upper lash.R"
+    ],
+    "density": "high"
+  },
+  "eyes.lower_lid.R": {
+    "objects": [
+      "Lower lash.R"
+    ],
+    "density": "high"
+  },
+  "hair.fringe.01": {
+    "objects": [
+      "Fringe / layer 1"
+    ],
+    "density": "high",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.fringe.02": {
+    "objects": [
+      "Fringe / layer 2"
+    ],
+    "density": "high",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.fringe.03": {
+    "objects": [
+      "Fringe / layer 3"
+    ],
+    "density": "high",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.fringe.04": {
+    "objects": [
+      "Fringe / layer 4"
+    ],
+    "density": "high",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.fringe.05": {
+    "objects": [
+      "Fringe / layer 5"
+    ],
+    "density": "high",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.fringe.06": {
+    "objects": [
+      "Fringe / layer 6"
+    ],
+    "density": "high",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.fringe.07": {
+    "objects": [
+      "Fringe / layer 7"
+    ],
+    "density": "high",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.crown.01": {
+    "objects": [
+      "Crown sweep 1"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.crown.02": {
+    "objects": [
+      "Crown sweep 2"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.crown.03": {
+    "objects": [
+      "Crown sweep 3"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.crown.04": {
+    "objects": [
+      "Crown sweep 4"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.crown.05": {
+    "objects": [
+      "Crown sweep 5"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.crown.06": {
+    "objects": [
+      "Crown sweep 6"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.crown.07": {
+    "objects": [
+      "Crown sweep 7"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.crown.08": {
+    "objects": [
+      "Crown sweep 8"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.crown.09": {
+    "objects": [
+      "Crown sweep 9"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.temple.L.01": {
+    "objects": [
+      "Temple / L0"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.temple.L.02": {
+    "objects": [
+      "Temple / L1"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.temple.L.03": {
+    "objects": [
+      "Temple / L2"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.temple.L.04": {
+    "objects": [
+      "Temple / L3"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.temple.R.01": {
+    "objects": [
+      "Temple / R0"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.temple.R.02": {
+    "objects": [
+      "Temple / R1"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.temple.R.03": {
+    "objects": [
+      "Temple / R2"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.temple.R.04": {
+    "objects": [
+      "Temple / R3"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.nape.L.01": {
+    "objects": [
+      "Nape / L0"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.nape.L.02": {
+    "objects": [
+      "Nape / L1"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.nape.L.03": {
+    "objects": [
+      "Nape / L2"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.nape.L.04": {
+    "objects": [
+      "Nape / L3"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.nape.R.01": {
+    "objects": [
+      "Nape / R0"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.nape.R.02": {
+    "objects": [
+      "Nape / R1"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.nape.R.03": {
+    "objects": [
+      "Nape / R2"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  },
+  "hair.nape.R.04": {
+    "objects": [
+      "Nape / R3"
+    ],
+    "density": "medium",
+    "importance": "secondary",
+    "layer": "unassigned"
+  }
+}

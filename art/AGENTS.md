@@ -15,8 +15,12 @@ Use `.agents/skills/tanger-character-production/SKILL.md` for creation and
   textures, authoring scripts when used, a manifest, a brief, and honest review notes.
 - Model actual surfaces and deformation topology. Primitives may be temporary
   blockouts; adding subdivision, neon, grain, or bloom does not finish them.
-- Work through silhouette, face, hair, clothing, textures, rig, expressions,
-  animation, export, and browser review. Inspect pictures after meaningful changes.
+- Use ARTIST_MODE.md for existing-source refinement: semantic local operations,
+  1–3 edits, automatic preview, separate critic/artist/reviewer records, accept or
+  restore. Open the actual pictures. No cap on iteration count; no full-character
+  regeneration for a local correction. Do not spawn additional agents.
+- Current scope is static source refinement, not animation, export, optimization
+  or runtime packaging. Later authorized production stages retain their gates.
 - Do not invent artistic approval. `stage: review` records a completed documented
   review; it does not imply the owner approved the character design.
 - Keep test files and all caches under ignored `art/.build/` and `.tools/`.

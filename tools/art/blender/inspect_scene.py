@@ -9,7 +9,7 @@ from common import ROOT, export_objects, load_character
 
 manifest = load_character()
 report = {"id": manifest["id"], "blender": bpy.app.version_string, "objects": []}
-for obj in export_objects(manifest):
+for obj in export_objects(manifest, "source"):
     entry = {"name": obj.name, "type": obj.type, "scale": list(obj.scale)}
     if obj.type == "MESH":
         mesh = obj.data

@@ -1,0 +1,606 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "engine": {
+      "type": "string",
+      "const": "BLENDER_EEVEE_NEXT"
+    },
+    "skin": {
+      "type": "object",
+      "properties": {
+        "baseColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "shadowColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "shadowRamp": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "shadowThreshold": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "shadowSoftness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "specularStrength": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "roughness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "rimStrength": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "rimWidth": {
+          "$ref": "#/$defs/__schema4"
+        },
+        "normalInfluence": {
+          "$ref": "#/$defs/__schema5"
+        },
+        "roughnessMask": {
+          "$ref": "#/$defs/__schema6"
+        },
+        "specularMask": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/__schema7"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "faceShadowMask": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/__schema7"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "subsurface": {
+          "$ref": "#/$defs/__schema3"
+        }
+      },
+      "required": [
+        "baseColor",
+        "shadowColor",
+        "shadowRamp",
+        "shadowThreshold",
+        "shadowSoftness",
+        "specularStrength",
+        "roughness",
+        "rimStrength",
+        "rimWidth",
+        "normalInfluence",
+        "roughnessMask",
+        "specularMask",
+        "faceShadowMask",
+        "subsurface"
+      ],
+      "additionalProperties": false
+    },
+    "face": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "const": "directional-sdf"
+        },
+        "basisObject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "headBone": {
+          "type": "string"
+        },
+        "maskChannels": {
+          "type": "string",
+          "const": "R-left-G-right"
+        },
+        "thresholdBias": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1
+        },
+        "softness": {
+          "$ref": "#/$defs/__schema3"
+        }
+      },
+      "required": [
+        "mode",
+        "basisObject",
+        "headBone",
+        "maskChannels",
+        "thresholdBias",
+        "softness"
+      ],
+      "additionalProperties": false
+    },
+    "hair": {
+      "type": "object",
+      "properties": {
+        "baseColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "shadowColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "shadowRamp": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "shadowThreshold": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "shadowSoftness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "specularStrength": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "roughness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "rimStrength": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "rimWidth": {
+          "$ref": "#/$defs/__schema4"
+        },
+        "normalInfluence": {
+          "$ref": "#/$defs/__schema5"
+        },
+        "roughnessMask": {
+          "$ref": "#/$defs/__schema6"
+        },
+        "specularMask": {
+          "$ref": "#/$defs/__schema8"
+        },
+        "highlightColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "highlightMask": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/__schema7"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "highlightDirection": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            },
+            {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            },
+            {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            }
+          ],
+          "items": false,
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "anisotropy": {
+          "$ref": "#/$defs/__schema3"
+        }
+      },
+      "required": [
+        "baseColor",
+        "shadowColor",
+        "shadowRamp",
+        "shadowThreshold",
+        "shadowSoftness",
+        "specularStrength",
+        "roughness",
+        "rimStrength",
+        "rimWidth",
+        "normalInfluence",
+        "roughnessMask",
+        "specularMask",
+        "highlightColor",
+        "highlightMask",
+        "highlightDirection",
+        "anisotropy"
+      ],
+      "additionalProperties": false
+    },
+    "eyes": {
+      "type": "object",
+      "properties": {
+        "scleraColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "irisBase": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "irisGradient": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "pupilColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "limbalColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "catchlightColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "corneaRoughness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "corneaIOR": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 2
+        },
+        "irisDepth": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.05
+        },
+        "parallax": {
+          "$ref": "#/$defs/__schema3"
+        }
+      },
+      "required": [
+        "scleraColor",
+        "irisBase",
+        "irisGradient",
+        "pupilColor",
+        "limbalColor",
+        "catchlightColor",
+        "corneaRoughness",
+        "corneaIOR",
+        "irisDepth",
+        "parallax"
+      ],
+      "additionalProperties": false
+    },
+    "clothing": {
+      "type": "object",
+      "properties": {
+        "baseColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "shadowColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "shadowRamp": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "shadowThreshold": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "shadowSoftness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "specularStrength": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "roughness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "rimStrength": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "rimWidth": {
+          "$ref": "#/$defs/__schema4"
+        },
+        "normalInfluence": {
+          "$ref": "#/$defs/__schema5"
+        },
+        "roughnessMask": {
+          "$ref": "#/$defs/__schema6"
+        },
+        "specularMask": {
+          "$ref": "#/$defs/__schema8"
+        },
+        "fabricResponse": {
+          "$ref": "#/$defs/__schema3"
+        }
+      },
+      "required": [
+        "baseColor",
+        "shadowColor",
+        "shadowRamp",
+        "shadowThreshold",
+        "shadowSoftness",
+        "specularStrength",
+        "roughness",
+        "rimStrength",
+        "rimWidth",
+        "normalInfluence",
+        "roughnessMask",
+        "specularMask",
+        "fabricResponse"
+      ],
+      "additionalProperties": false
+    },
+    "leather": {
+      "type": "object",
+      "properties": {
+        "baseColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "shadowColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "shadowRamp": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "shadowThreshold": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "shadowSoftness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "specularStrength": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "roughness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "rimStrength": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "rimWidth": {
+          "$ref": "#/$defs/__schema4"
+        },
+        "normalInfluence": {
+          "$ref": "#/$defs/__schema5"
+        },
+        "roughnessMask": {
+          "$ref": "#/$defs/__schema6"
+        },
+        "specularMask": {
+          "$ref": "#/$defs/__schema8"
+        }
+      },
+      "required": [
+        "baseColor",
+        "shadowColor",
+        "shadowRamp",
+        "shadowThreshold",
+        "shadowSoftness",
+        "specularStrength",
+        "roughness",
+        "rimStrength",
+        "rimWidth",
+        "normalInfluence",
+        "roughnessMask",
+        "specularMask"
+      ],
+      "additionalProperties": false
+    },
+    "metal": {
+      "type": "object",
+      "properties": {
+        "baseColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "shadowColor": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "shadowRamp": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "shadowThreshold": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "shadowSoftness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "specularStrength": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "roughness": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "rimStrength": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "rimWidth": {
+          "$ref": "#/$defs/__schema4"
+        },
+        "normalInfluence": {
+          "$ref": "#/$defs/__schema5"
+        },
+        "roughnessMask": {
+          "$ref": "#/$defs/__schema6"
+        },
+        "specularMask": {
+          "$ref": "#/$defs/__schema8"
+        },
+        "metallic": {
+          "$ref": "#/$defs/__schema3"
+        }
+      },
+      "required": [
+        "baseColor",
+        "shadowColor",
+        "shadowRamp",
+        "shadowThreshold",
+        "shadowSoftness",
+        "specularStrength",
+        "roughness",
+        "rimStrength",
+        "rimWidth",
+        "normalInfluence",
+        "roughnessMask",
+        "specularMask",
+        "metallic"
+      ],
+      "additionalProperties": false
+    },
+    "outline": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "width": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.02
+        },
+        "color": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "depthSensitivity": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "normalSensitivity": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "objectExclusions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "materialExclusions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "enabled",
+        "width",
+        "color",
+        "depthSensitivity",
+        "normalSensitivity",
+        "objectExclusions",
+        "materialExclusions"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "engine",
+    "skin",
+    "face",
+    "hair",
+    "eyes",
+    "clothing",
+    "leather",
+    "metal",
+    "outline"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      ],
+      "items": false,
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "__schema1": {
+      "minItems": 2,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema2"
+      }
+    },
+    "__schema2": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "$ref": "#/$defs/__schema3"
+        },
+        {
+          "$ref": "#/$defs/__schema3"
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "__schema3": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "__schema4": {
+      "default": 4,
+      "type": "number",
+      "minimum": 0.1,
+      "maximum": 16
+    },
+    "__schema5": {
+      "default": 1,
+      "$ref": "#/$defs/__schema3"
+    },
+    "__schema6": {
+      "default": null,
+      "anyOf": [
+        {
+          "$ref": "#/$defs/__schema7"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "__schema7": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema8": {
+      "default": null,
+      "anyOf": [
+        {
+          "$ref": "#/$defs/__schema7"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "title": "TANGER anime-shader-profile v1"
+}

@@ -1,0 +1,24 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/face-normal-check/view.png",
+  "sha256": "c154e06dc2a100d69ab63c4415aad8052cbbde43b44a7dd23b8441e1cb25921c",
+  "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "portrait_3q",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 0.7853981633974483,
+    "pitch": 0,
+    "mode": "FACE_SCULPT",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "normals"
+}

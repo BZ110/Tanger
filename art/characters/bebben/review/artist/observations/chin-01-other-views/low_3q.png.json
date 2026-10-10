@@ -1,0 +1,24 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/chin-01-other-views/low_3q.png",
+  "sha256": "d80c81b66ed72e49350c76d9289e261d6f28b935752b44e418738b68563e3fad",
+  "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "low_3q",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 0.7853981633974483,
+    "pitch": -0.2,
+    "mode": "FACE_SCULPT",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "matcap"
+}

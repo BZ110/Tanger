@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "b0a71c8b63494e3bb92b94f56a901dfba63757b13a7cafe54af8edc5f0e5093d",
+  "evidence": [
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/full-front.png",
+      "view": "full-front",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        0.91
+      ],
+      "span": 1.9474000000000002,
+      "azimuth": 0,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "cb964c42fee14e31fb132d4896fdef9da9bd6b73dc7ce660c6a96d6325b8d472"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/full-quarter-left.png",
+      "view": "full-quarter-left",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        0.91
+      ],
+      "span": 1.9474000000000002,
+      "azimuth": -0.7853981633974483,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "249057774aeeee0948cb7d67451971d5d9b20733dfb77e387536d263c6bad834"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/full-quarter-right.png",
+      "view": "full-quarter-right",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        0.91
+      ],
+      "span": 1.9474000000000002,
+      "azimuth": 0.7853981633974483,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "5a5d520e3b199127f003a6d13098484242f47a5a1af4572acce8a63321974d08"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/full-side.png",
+      "view": "full-side",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        0.91
+      ],
+      "span": 1.9474000000000002,
+      "azimuth": 1.5707963267948966,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "8fda9eff696485cfcdc013c05350e2eb0e7d9008bafa5af67c03f75db49d7b80"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/full-back.png",
+      "view": "full-back",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        0.91
+      ],
+      "span": 1.9474000000000002,
+      "azimuth": 3.141592653589793,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "6852d7ffdc4aa7148de0fc463514760bd23f237775dec76318a011ceb9cc3cb1"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/portrait-front.png",
+      "view": "portrait-front",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "97cec6b509fb91c6cd4d87ecbc520b25eaa6c10488f8fcc1ffd5964d1cee4eb1"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/portrait-quarter-left.png",
+      "view": "portrait-quarter-left",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": -0.7853981633974483,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "b23a7100421fe924ad808b5dc1c61d470b30fa8a8125db352753ab0276346279"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/portrait-quarter-right.png",
+      "view": "portrait-quarter-right",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.7853981633974483,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "e0a1244f318423d03a31b1490a942f0afc55ee7e5ab995f1806cb08d8b08f22f"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/portrait-side.png",
+      "view": "portrait-side",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 1.5707963267948966,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "2f14bae64590f783a16d5d1314909d18bb321dee2fb768ed695952293bae09f8"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/portrait-above.png",
+      "view": "portrait-above",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0,
+      "elevation": 0.14,
+      "exposure": 0,
+      "sha256": "00322ff48a54d50a2032f3c5bcbfd3b3d3ffbb36c37b0401ff0ba034ba657ff1"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/portrait-below.png",
+      "view": "portrait-below",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0,
+      "elevation": -0.12,
+      "exposure": 0,
+      "sha256": "83f85d7bd15a84a8e650c2981d7d5070281488481d63ca4535aff42fb4205dca"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/detail-eyes.png",
+      "view": "detail-eyes",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        -0.09,
+        1.5561
+      ],
+      "span": 0.2,
+      "azimuth": 0.3490658503988659,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "7bee846bb4795026211846e1c9e7f70a83e6a5d27d0ea104b3474959c8635a03"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/detail-hair.png",
+      "view": "detail-hair",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.7289999999999999
+      ],
+      "span": 0.36,
+      "azimuth": 0.3490658503988659,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "3318edd02901b33c2966af96b721120e64afb7ca1624b81e157c94c9d26a518e"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/detail-hands.png",
+      "view": "detail-hands",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0.41,
+        -0.01,
+        0.88
+      ],
+      "span": 0.22,
+      "azimuth": 0.3490658503988659,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "f6f87254f6e60e4acc1dd35d249c419768bbdb7dda38840e3c4694566e2b0bf0"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/detail-footwear.png",
+      "view": "detail-footwear",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        -0.04,
+        0.12
+      ],
+      "span": 0.4,
+      "azimuth": 0.3490658503988659,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "6a9726be6da782a8f5798b7d3e566202f27d978a70042e32a03dcb98a023bd1a"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/detail-clothing.png",
+      "view": "detail-clothing",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        -0.04,
+        1.17
+      ],
+      "span": 0.65,
+      "azimuth": 0.3490658503988659,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "5f5bd38b9bf0fca8a29eb2c0a2e97a99fb22797288fabaa5f3c3a0163e805d4a"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/light-front.png",
+      "view": "light-front",
+      "lighting": "front",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "04047fde9dd2125690c598e152c4503cdf559cf84e767f378c394d1f70d019de"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/light-quarter.png",
+      "view": "light-quarter",
+      "lighting": "quarter",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "7a953238c6c3cbeb98aa33123ac6ef53cf282be3b17b36722d48a3857aad48fd"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/light-side.png",
+      "view": "light-side",
+      "lighting": "side",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "f397960283f13215a70ae054d8924a009b6abb3fe882545b60107c03b7858a06"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/light-opposite.png",
+      "view": "light-opposite",
+      "lighting": "opposite",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "86883bebc8ff25ea3f65f0c5d392ebad382edadf9308469802607b55cbaf1c59"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/light-neutral.png",
+      "view": "light-neutral",
+      "lighting": "neutral",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "ef37050ce81607ede90a98128013abde349280e0219f75846c08751e95943fff"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/audit-source/light-dramatic.png",
+      "view": "light-dramatic",
+      "lighting": "dramatic",
+      "lensMm": 85,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0,
+      "sha256": "1877fc5102ef0a44b48cfe6fc348ebd2a4f9cb4f806a1e57c390dba3b76786c5"
+    }
+  ],
+  "stage": "silhouette"
+}

@@ -1,0 +1,1059 @@
+{
+  "schemaVersion": 1,
+  "character": "bebben",
+  "cycles": [
+    {
+      "id": "chin-profile-01",
+      "critique": {
+        "role": "critic",
+        "sourceSha256": "1934c5dfe05b14c6d01056551b831e6eed7c0601773ef0a4ae687e70dca1c773",
+        "evidence": {
+          "path": "art/characters/bebben/review/artist/observations/profile-cage-baseline/view.png",
+          "sha256": "fe2f0aad3d311b40f264a88a7dd691192928eb48cd3e93ff37bffe06a3741ee5",
+          "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+          "size": 768,
+          "view": {
+            "name": "profile",
+            "center": [
+              0,
+              0,
+              1.6198000000000001
+            ],
+            "span": 0.49140000000000006,
+            "yaw": 1.5707963267948966,
+            "pitch": 0,
+            "mode": "FACE_SCULPT",
+            "lighting": "neutral",
+            "keyYaw": null,
+            "keyElevation": 35,
+            "fill": null,
+            "rim": null
+          },
+          "pass": "matcap",
+          "sourceSha256": "1934c5dfe05b14c6d01056551b831e6eed7c0601773ef0a4ae687e70dca1c773"
+        },
+        "problems": [
+          {
+            "region": "face.chin",
+            "severity": "HIGH",
+            "scale": "secondary",
+            "problem": "The chin falls behind the lower lip and rounds straight into the neck in profile.",
+            "consequence": "The lower face reads as a soft undifferentiated oval with a weak chin-to-jaw transition.",
+            "correction": "Give only the chin a small forward projection in the profile camera; preserve the mouth and jaw width."
+          }
+        ]
+      },
+      "operations": [
+        {
+          "tool": "camera.screen_grab",
+          "region": "face.chin",
+          "args": {
+            "point": [
+              298,
+              480
+            ],
+            "delta": [
+              -16,
+              0
+            ],
+            "radius": 48,
+            "depthBehavior": "visible",
+            "frontFaceOnly": false
+          }
+        }
+      ],
+      "results": [
+        {
+          "tool": "camera.screen_grab",
+          "region": "face.chin",
+          "affectedVertices": 292
+        }
+      ],
+      "view": {
+        "name": "profile",
+        "center": [
+          0,
+          0,
+          1.6198000000000001
+        ],
+        "span": 0.49140000000000006,
+        "yaw": 1.5707963267948966,
+        "pitch": 0,
+        "mode": "FACE_SCULPT",
+        "lighting": "neutral",
+        "keyYaw": null,
+        "keyElevation": 35,
+        "fill": null,
+        "rim": null
+      },
+      "before": {
+        "path": "art/characters/bebben/review/artist/observations/chin-profile-01/before.png",
+        "sha256": "696dcbae998b56e0e745cbdc3b23848c18e00f9120e3294c7c19348ebaaac1d8",
+        "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "profile",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 1.5707963267948966,
+          "pitch": 0,
+          "mode": "FACE_SCULPT",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "matcap"
+      },
+      "after": {
+        "path": "art/characters/bebben/review/artist/observations/chin-profile-01/after.png",
+        "sha256": "f5a0559cdec176f7327864a9ef7d9b68041463f51b4e6d12f467ec18fb3d036d",
+        "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "profile",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 1.5707963267948966,
+          "pitch": 0,
+          "mode": "FACE_SCULPT",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "matcap"
+      },
+      "comparison": {
+        "before": "art/characters/bebben/review/artist/observations/chin-profile-01/before.png",
+        "after": "art/characters/bebben/review/artist/observations/chin-profile-01/after.png",
+        "images": {
+          "side-by-side": "art/characters/bebben/review/artist/observations/chin-profile-01/compare/side-by-side.png",
+          "overlay": "art/characters/bebben/review/artist/observations/chin-profile-01/compare/overlay.png",
+          "difference": "art/characters/bebben/review/artist/observations/chin-profile-01/compare/difference.png",
+          "silhouette-difference": "art/characters/bebben/review/artist/observations/chin-profile-01/compare/silhouette-difference.png"
+        },
+        "silhouetteLegend": "red: removed, blue: added; uses rendered alpha, not brightness",
+        "targetPaintover": false
+      },
+      "beforeCheckpoint": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-before/checkpoint.json",
+      "afterCheckpoint": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-after/checkpoint.json",
+      "sourceSha256": "858f9c854eda89b34c3f54d546bc2918f48ae467156f48890a53f2367d95d688",
+      "outcome": "rejected",
+      "review": {
+        "role": "reviewer",
+        "verdict": "WORSE",
+        "decision": "rejected",
+        "reason": "The screen-space stroke adds a pointed chin bump below the lower lip rather than a continuous jaw transition. The low three-quarter view makes the abrupt patch especially visible. Restore the checkpoint and use a broader, smaller displacement."
+      }
+    },
+    {
+      "id": "chin-profile-02",
+      "critique": {
+        "role": "critic",
+        "sourceSha256": "1934c5dfe05b14c6d01056551b831e6eed7c0601773ef0a4ae687e70dca1c773",
+        "evidence": {
+          "path": "art/characters/bebben/review/artist/observations/chin-restored-baseline/view.png",
+          "sha256": "b2c5f76fc39efc5dc7f39899b09870438e3ec2bedbc77e64e4267882a257dbab",
+          "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+          "size": 768,
+          "view": {
+            "name": "profile",
+            "center": [
+              0,
+              0,
+              1.6198000000000001
+            ],
+            "span": 0.49140000000000006,
+            "yaw": 1.5707963267948966,
+            "pitch": 0,
+            "mode": "FACE_SCULPT",
+            "lighting": "neutral",
+            "keyYaw": null,
+            "keyElevation": 35,
+            "fill": null,
+            "rim": null
+          },
+          "pass": "matcap",
+          "sourceSha256": "1934c5dfe05b14c6d01056551b831e6eed7c0601773ef0a4ae687e70dca1c773"
+        },
+        "problems": [
+          {
+            "region": "face.chin",
+            "severity": "HIGH",
+            "scale": "secondary",
+            "problem": "The chin-to-jaw transition is recessed; the previous visible-surface stroke caused an abrupt asymmetric bump.",
+            "consequence": "A pointed patch is worse than the original soft profile.",
+            "correction": "Move the bilateral chin region forward by a smaller amount and relax the transition, preserving the lips."
+          }
+        ]
+      },
+      "operations": [
+        {
+          "tool": "sculpt.grab",
+          "region": "face.chin",
+          "args": {
+            "displacement": [
+              0,
+              -0.004,
+              0
+            ],
+            "space": "world",
+            "strength": 1
+          }
+        },
+        {
+          "tool": "sculpt.relax",
+          "region": "face.chin",
+          "args": {
+            "iterations": 3,
+            "strength": 0.2
+          }
+        }
+      ],
+      "results": [
+        {
+          "tool": "sculpt.grab",
+          "region": "face.chin",
+          "affectedVertices": 565
+        },
+        {
+          "tool": "sculpt.relax",
+          "region": "face.chin",
+          "affectedVertices": 565
+        }
+      ],
+      "view": {
+        "name": "profile",
+        "center": [
+          0,
+          0,
+          1.6198000000000001
+        ],
+        "span": 0.49140000000000006,
+        "yaw": 1.5707963267948966,
+        "pitch": 0,
+        "mode": "FACE_SCULPT",
+        "lighting": "neutral",
+        "keyYaw": null,
+        "keyElevation": 35,
+        "fill": null,
+        "rim": null
+      },
+      "before": {
+        "path": "art/characters/bebben/review/artist/observations/chin-profile-02/before.png",
+        "sha256": "4345003ed5faafb1123224380e1b1fc7b0244710a3b1605fa7d964cf59b5910a",
+        "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "profile",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 1.5707963267948966,
+          "pitch": 0,
+          "mode": "FACE_SCULPT",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "matcap"
+      },
+      "after": {
+        "path": "art/characters/bebben/review/artist/observations/chin-profile-02/after.png",
+        "sha256": "dee4885a180fdf0e03c627314e2a3a278349258b9742c81a470dcd6eaa4de39f",
+        "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "profile",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 1.5707963267948966,
+          "pitch": 0,
+          "mode": "FACE_SCULPT",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "matcap"
+      },
+      "comparison": {
+        "before": "art/characters/bebben/review/artist/observations/chin-profile-02/before.png",
+        "after": "art/characters/bebben/review/artist/observations/chin-profile-02/after.png",
+        "images": {
+          "side-by-side": "art/characters/bebben/review/artist/observations/chin-profile-02/compare/side-by-side.png",
+          "overlay": "art/characters/bebben/review/artist/observations/chin-profile-02/compare/overlay.png",
+          "difference": "art/characters/bebben/review/artist/observations/chin-profile-02/compare/difference.png",
+          "silhouette-difference": "art/characters/bebben/review/artist/observations/chin-profile-02/compare/silhouette-difference.png"
+        },
+        "silhouetteLegend": "red: removed, blue: added; uses rendered alpha, not brightness",
+        "targetPaintover": false
+      },
+      "beforeCheckpoint": "art/characters/bebben/source/checkpoints/artist/chin-profile-02-before/checkpoint.json",
+      "afterCheckpoint": "art/characters/bebben/source/checkpoints/artist/chin-profile-02-after/checkpoint.json",
+      "sourceSha256": "df9048caabbf821ea8aa092d66679ba7a90d33a48ac170285ac5b532ee83ebca",
+      "outcome": "accepted",
+      "review": {
+        "role": "reviewer",
+        "verdict": "BETTER",
+        "decision": "accepted",
+        "reason": "The smaller bilateral stroke adds a restrained forward chin plane and relaxation keeps the lower contour continuous. Front width remains unchanged, and the low three-quarter view no longer has the pointed asymmetric bump. This is a modest local improvement; the mouth shelf, cheek volume and overall facial quality still block the face stage."
+      }
+    },
+    {
+      "id": "eye-corner-depth-01",
+      "critique": {
+        "role": "critic",
+        "sourceSha256": "df9048caabbf821ea8aa092d66679ba7a90d33a48ac170285ac5b532ee83ebca",
+        "evidence": {
+          "path": "art/characters/bebben/review/artist/observations/eye-corner-baseline/view.png",
+          "sha256": "353686ceed6107d3b661432e51197e7334d96b3b56ceac45aabc3568822ad642",
+          "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+          "size": 768,
+          "view": {
+            "name": "portrait_3q",
+            "center": [
+              0,
+              0,
+              1.6198000000000001
+            ],
+            "span": 0.49140000000000006,
+            "yaw": 0.7853981633974483,
+            "pitch": 0,
+            "mode": "FACE_FINAL",
+            "lighting": "neutral",
+            "keyYaw": null,
+            "keyElevation": 35,
+            "fill": null,
+            "rim": null
+          },
+          "pass": "beauty",
+          "sourceSha256": "df9048caabbf821ea8aa092d66679ba7a90d33a48ac170285ac5b532ee83ebca"
+        },
+        "problems": [
+          {
+            "region": "eyes.R",
+            "severity": "BLOCKING",
+            "scale": "secondary",
+            "problem": "The outer corner of the far eye sits in front of the curved temple and protrudes as a white wedge in three-quarter view.",
+            "consequence": "The eye reads as a flat sticker attached to the head.",
+            "correction": "Seat the outer eye patches and lash corners farther back into the socket with a local depth stroke; leave the iris center and facial mesh intact."
+          }
+        ]
+      },
+      "operations": [
+        {
+          "tool": "sculpt.grab",
+          "region": "eyes.R",
+          "args": {
+            "center": [
+              -0.074,
+              -0.075,
+              1.654
+            ],
+            "radius": 0.034,
+            "displacement": [
+              0,
+              0.017,
+              0
+            ],
+            "space": "world"
+          }
+        },
+        {
+          "tool": "sculpt.grab",
+          "region": "eyes.L",
+          "args": {
+            "center": [
+              0.074,
+              -0.075,
+              1.654
+            ],
+            "radius": 0.034,
+            "displacement": [
+              0,
+              0.017,
+              0
+            ],
+            "space": "world"
+          }
+        }
+      ],
+      "results": [
+        {
+          "tool": "sculpt.grab",
+          "region": "eyes.R",
+          "affectedVertices": 1284
+        },
+        {
+          "tool": "sculpt.grab",
+          "region": "eyes.L",
+          "affectedVertices": 1286
+        }
+      ],
+      "view": {
+        "name": "portrait_3q",
+        "center": [
+          0,
+          0,
+          1.6198000000000001
+        ],
+        "span": 0.49140000000000006,
+        "yaw": 0.7853981633974483,
+        "pitch": 0,
+        "mode": "FACE_FINAL",
+        "lighting": "neutral",
+        "keyYaw": null,
+        "keyElevation": 35,
+        "fill": null,
+        "rim": null
+      },
+      "before": {
+        "path": "art/characters/bebben/review/artist/observations/eye-corner-depth-01/before.png",
+        "sha256": "e00434c99120ce6dcbfb88330ede386cf91373b024e2b1b02fae153c483ff47f",
+        "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "portrait_3q",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 0.7853981633974483,
+          "pitch": 0,
+          "mode": "FACE_FINAL",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "beauty"
+      },
+      "after": {
+        "path": "art/characters/bebben/review/artist/observations/eye-corner-depth-01/after.png",
+        "sha256": "1b109ab54763bb25550b114d782c3f5a12ec43a09ec346f8cd16029c33c2598c",
+        "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "portrait_3q",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 0.7853981633974483,
+          "pitch": 0,
+          "mode": "FACE_FINAL",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "beauty"
+      },
+      "comparison": {
+        "before": "art/characters/bebben/review/artist/observations/eye-corner-depth-01/before.png",
+        "after": "art/characters/bebben/review/artist/observations/eye-corner-depth-01/after.png",
+        "images": {
+          "side-by-side": "art/characters/bebben/review/artist/observations/eye-corner-depth-01/compare/side-by-side.png",
+          "overlay": "art/characters/bebben/review/artist/observations/eye-corner-depth-01/compare/overlay.png",
+          "difference": "art/characters/bebben/review/artist/observations/eye-corner-depth-01/compare/difference.png",
+          "silhouette-difference": "art/characters/bebben/review/artist/observations/eye-corner-depth-01/compare/silhouette-difference.png"
+        },
+        "silhouetteLegend": "red: removed, blue: added; uses rendered alpha, not brightness",
+        "targetPaintover": false
+      },
+      "beforeCheckpoint": "art/characters/bebben/source/checkpoints/artist/eye-corner-depth-01-before/checkpoint.json",
+      "afterCheckpoint": "art/characters/bebben/source/checkpoints/artist/eye-corner-depth-01-after/checkpoint.json",
+      "sourceSha256": "5e221ca19fa5dbcd3de576e2b65ab3c61b053909a916ccc8e643442a9f131846",
+      "outcome": "partially accepted",
+      "review": {
+        "role": "reviewer",
+        "verdict": "MIXED",
+        "decision": "partially accepted",
+        "reason": "The far sclera no longer projects past the temple, which is a clear depth improvement. The near outer lash now sinks behind the skin, leaving a pale corner without a continuous upper lid line. Retain the seated eye patches as a working correction and repair the lash corners next; eyelid thickness and facial volume remain blocking."
+      }
+    },
+    {
+      "id": "lash-seating-01",
+      "critique": {
+        "role": "critic",
+        "sourceSha256": "5e221ca19fa5dbcd3de576e2b65ab3c61b053909a916ccc8e643442a9f131846",
+        "evidence": {
+          "path": "art/characters/bebben/review/artist/observations/lash-seating-baseline/view.png",
+          "sha256": "00f9d678c6e7e107958cc4108e044d8dcef45154630396a0c8090812e8a8db42",
+          "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+          "size": 768,
+          "view": {
+            "name": "portrait_3q",
+            "center": [
+              0,
+              0,
+              1.6198000000000001
+            ],
+            "span": 0.49140000000000006,
+            "yaw": 0.7853981633974483,
+            "pitch": 0,
+            "mode": "FACE_FINAL",
+            "lighting": "neutral",
+            "keyYaw": null,
+            "keyElevation": 35,
+            "fill": null,
+            "rim": null
+          },
+          "pass": "beauty",
+          "sourceSha256": "5e221ca19fa5dbcd3de576e2b65ab3c61b053909a916ccc8e643442a9f131846"
+        },
+        "problems": [
+          {
+            "region": "eyes.upper_lid.L",
+            "severity": "HIGH",
+            "scale": "secondary",
+            "problem": "Seating the outer eye patches hid the outer upper lash behind facial skin.",
+            "consequence": "The eye corner lacks a continuous dark rim and looks unfinished.",
+            "correction": "Bring only the existing outer lash ribbons slightly forward and add a restrained physical thickness; preserve sclera depth."
+          }
+        ]
+      },
+      "operations": [
+        {
+          "tool": "sculpt.grab",
+          "region": "eyes.upper_lid.L",
+          "args": {
+            "center": [
+              0.07,
+              -0.068,
+              1.658
+            ],
+            "radius": 0.034,
+            "displacement": [
+              0,
+              -0.01,
+              0
+            ],
+            "space": "world"
+          }
+        },
+        {
+          "tool": "sculpt.grab",
+          "region": "eyes.upper_lid.R",
+          "args": {
+            "center": [
+              -0.07,
+              -0.068,
+              1.658
+            ],
+            "radius": 0.034,
+            "displacement": [
+              0,
+              -0.01,
+              0
+            ],
+            "space": "world"
+          }
+        },
+        {
+          "tool": "eye.lid_thickness",
+          "args": {
+            "side": "L",
+            "thickness": 0.00035
+          }
+        }
+      ],
+      "results": [
+        {
+          "tool": "sculpt.grab",
+          "region": "eyes.upper_lid.L",
+          "affectedVertices": 62
+        },
+        {
+          "tool": "sculpt.grab",
+          "region": "eyes.upper_lid.R",
+          "affectedVertices": 62
+        },
+        {
+          "tool": "eye.lid_thickness",
+          "region": "eyes.upper_lid.R",
+          "affectedVertices": 196
+        }
+      ],
+      "view": {
+        "name": "portrait_3q",
+        "center": [
+          0,
+          0,
+          1.6198000000000001
+        ],
+        "span": 0.49140000000000006,
+        "yaw": 0.7853981633974483,
+        "pitch": 0,
+        "mode": "FACE_FINAL",
+        "lighting": "neutral",
+        "keyYaw": null,
+        "keyElevation": 35,
+        "fill": null,
+        "rim": null
+      },
+      "before": {
+        "path": "art/characters/bebben/review/artist/observations/lash-seating-01/before.png",
+        "sha256": "190e5bfdcf8f415b50f4d6fa5db0bc37a8056845c272a1a79b986ede0fa73201",
+        "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "portrait_3q",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 0.7853981633974483,
+          "pitch": 0,
+          "mode": "FACE_FINAL",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "beauty"
+      },
+      "after": {
+        "path": "art/characters/bebben/review/artist/observations/lash-seating-01/after.png",
+        "sha256": "0b7250441727dce63d4fef4275ad6b01fb5896c38b59914adea7f6741319ccd5",
+        "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "portrait_3q",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 0.7853981633974483,
+          "pitch": 0,
+          "mode": "FACE_FINAL",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "beauty"
+      },
+      "comparison": {
+        "before": "art/characters/bebben/review/artist/observations/lash-seating-01/before.png",
+        "after": "art/characters/bebben/review/artist/observations/lash-seating-01/after.png",
+        "images": {
+          "side-by-side": "art/characters/bebben/review/artist/observations/lash-seating-01/compare/side-by-side.png",
+          "overlay": "art/characters/bebben/review/artist/observations/lash-seating-01/compare/overlay.png",
+          "difference": "art/characters/bebben/review/artist/observations/lash-seating-01/compare/difference.png",
+          "silhouette-difference": "art/characters/bebben/review/artist/observations/lash-seating-01/compare/silhouette-difference.png"
+        },
+        "silhouetteLegend": "red: removed, blue: added; uses rendered alpha, not brightness",
+        "targetPaintover": false
+      },
+      "beforeCheckpoint": "art/characters/bebben/source/checkpoints/artist/lash-seating-01-before/checkpoint.json",
+      "afterCheckpoint": "art/characters/bebben/source/checkpoints/artist/lash-seating-01-after/checkpoint.json",
+      "sourceSha256": "5e4a517731d4cb5c522e43642d65865379dd133aaaa7fd8f205a7d8c48ef0b87",
+      "outcome": "accepted",
+      "review": {
+        "role": "reviewer",
+        "verdict": "BETTER",
+        "decision": "accepted",
+        "reason": "The upper lash now reaches the near outer corner again while the far sclera stays within the facial silhouette. Front and opposite three-quarter views retain the eye opening; the low-angle view still needs a real skin lid rim. This accepts only the local seating correction, not the face or eyelid anatomy stage."
+      }
+    },
+    {
+      "id": "cheek-volume-01",
+      "critique": {
+        "role": "critic",
+        "sourceSha256": "5e4a517731d4cb5c522e43642d65865379dd133aaaa7fd8f205a7d8c48ef0b87",
+        "evidence": {
+          "path": "art/characters/bebben/review/artist/observations/cheek-volume-baseline/view.png",
+          "sha256": "59e1a4a0ee200be27d5c1ccc22d851f5daf995d8e86b12b99044384320121c7c",
+          "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+          "size": 768,
+          "view": {
+            "name": "portrait_3q",
+            "center": [
+              0,
+              0,
+              1.6198000000000001
+            ],
+            "span": 0.49140000000000006,
+            "yaw": 0.7853981633974483,
+            "pitch": 0,
+            "mode": "FACE_SCULPT",
+            "lighting": "neutral",
+            "keyYaw": null,
+            "keyElevation": 35,
+            "fill": null,
+            "rim": null
+          },
+          "pass": "clay",
+          "sourceSha256": "5e4a517731d4cb5c522e43642d65865379dd133aaaa7fd8f205a7d8c48ef0b87"
+        },
+        "problems": [
+          {
+            "region": "face.cheek.L",
+            "severity": "HIGH",
+            "scale": "secondary",
+            "problem": "The cheek below the outer eye transitions into the jaw as one broad smooth surface with little forward cheek volume.",
+            "consequence": "The three-quarter face lacks a readable cheek plane and secondary form hierarchy.",
+            "correction": "Give each cheek a small forward and lateral projection, leaving the eyelids and mouth untouched."
+          }
+        ]
+      },
+      "operations": [
+        {
+          "tool": "sculpt.grab",
+          "region": "face.cheek.L",
+          "args": {
+            "displacement": [
+              0.003,
+              -0.006,
+              0.001
+            ],
+            "space": "world"
+          }
+        },
+        {
+          "tool": "sculpt.grab",
+          "region": "face.cheek.R",
+          "args": {
+            "displacement": [
+              -0.003,
+              -0.006,
+              0.001
+            ],
+            "space": "world"
+          }
+        }
+      ],
+      "results": [
+        {
+          "tool": "sculpt.grab",
+          "region": "face.cheek.L",
+          "affectedVertices": 436
+        },
+        {
+          "tool": "sculpt.grab",
+          "region": "face.cheek.R",
+          "affectedVertices": 436
+        }
+      ],
+      "view": {
+        "name": "portrait_3q",
+        "center": [
+          0,
+          0,
+          1.6198000000000001
+        ],
+        "span": 0.49140000000000006,
+        "yaw": 0.7853981633974483,
+        "pitch": 0,
+        "mode": "FACE_SCULPT",
+        "lighting": "neutral",
+        "keyYaw": null,
+        "keyElevation": 35,
+        "fill": null,
+        "rim": null
+      },
+      "before": {
+        "path": "art/characters/bebben/review/artist/observations/cheek-volume-01/before.png",
+        "sha256": "58ffc87601fd322002912bdef27b405a683373bcebce519a74178ac8425addc1",
+        "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "portrait_3q",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 0.7853981633974483,
+          "pitch": 0,
+          "mode": "FACE_SCULPT",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "matcap"
+      },
+      "after": {
+        "path": "art/characters/bebben/review/artist/observations/cheek-volume-01/after.png",
+        "sha256": "ada2544842f32cc180251c86aaeacfa2427c17749655ab5e03227135a5742aa6",
+        "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "portrait_3q",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 0.7853981633974483,
+          "pitch": 0,
+          "mode": "FACE_SCULPT",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "matcap"
+      },
+      "comparison": {
+        "before": "art/characters/bebben/review/artist/observations/cheek-volume-01/before.png",
+        "after": "art/characters/bebben/review/artist/observations/cheek-volume-01/after.png",
+        "images": {
+          "side-by-side": "art/characters/bebben/review/artist/observations/cheek-volume-01/compare/side-by-side.png",
+          "overlay": "art/characters/bebben/review/artist/observations/cheek-volume-01/compare/overlay.png",
+          "difference": "art/characters/bebben/review/artist/observations/cheek-volume-01/compare/difference.png",
+          "silhouette-difference": "art/characters/bebben/review/artist/observations/cheek-volume-01/compare/silhouette-difference.png"
+        },
+        "silhouetteLegend": "red: removed, blue: added; uses rendered alpha, not brightness",
+        "targetPaintover": false
+      },
+      "beforeCheckpoint": "art/characters/bebben/source/checkpoints/artist/cheek-volume-01-before/checkpoint.json",
+      "afterCheckpoint": "art/characters/bebben/source/checkpoints/artist/cheek-volume-01-after/checkpoint.json",
+      "sourceSha256": "e235ffae3b9aed8600cb72859781cbdc9dd9567dc7444b1fde1bd0bba71a43b6",
+      "outcome": "partially accepted",
+      "review": {
+        "role": "reviewer",
+        "verdict": "MIXED",
+        "decision": "partially accepted",
+        "reason": "The cheek displacement is restrained and does not distort front width or the eye corner, but the existing matcap has poor contrast on the facial planes and the improvement is too subtle to certify. Retain this as a working volume adjustment, improve the diagnostic lighting, and reassess cheek-to-jaw continuity before accepting the face stage."
+      }
+    },
+    {
+      "id": "source-lookdev-01",
+      "critique": {
+        "role": "critic",
+        "sourceSha256": "e235ffae3b9aed8600cb72859781cbdc9dd9567dc7444b1fde1bd0bba71a43b6",
+        "appearanceSha256": "e9321a18a07cfdaf8144a707a95ee16e0a55c26640697134ade0f4d6aaa2f37f",
+        "evidence": {
+          "path": "art/characters/bebben/review/artist/observations/source-lookdev-baseline/view.png",
+          "sha256": "9ae9586f437cd203b5a586e6ae56e257a0cb0a045104d861e4cb594b7f4a3496",
+          "cameraVersion": "tanger-artist-v2-85mm-vertical36",
+          "size": 768,
+          "view": {
+            "name": "portrait_3q",
+            "center": [
+              0,
+              0,
+              1.6198000000000001
+            ],
+            "span": 0.49140000000000006,
+            "yaw": 0.7853981633974483,
+            "pitch": 0,
+            "mode": "FACE_FINAL",
+            "lighting": "neutral",
+            "keyYaw": null,
+            "keyElevation": 35,
+            "fill": null,
+            "rim": null
+          },
+          "pass": "beauty",
+          "exposure": 0,
+          "sourceSha256": "e235ffae3b9aed8600cb72859781cbdc9dd9567dc7444b1fde1bd0bba71a43b6",
+          "appearanceSha256": "e9321a18a07cfdaf8144a707a95ee16e0a55c26640697134ade0f4d6aaa2f37f"
+        },
+        "problems": [
+          {
+            "region": "face.cheek.L",
+            "severity": "HIGH",
+            "scale": "secondary",
+            "problem": "The beauty view reads much flatter than the matcap, and the original shared skin shader applies the face mask to ears and hands.",
+            "consequence": "Material behavior hides the modeled cheek plane and misrepresents nonfacial skin.",
+            "correction": "Apply the dedicated face material and controlled material responses; preserve all geometry and inspect the result under a lighting sweep."
+          }
+        ]
+      },
+      "operations": [
+        {
+          "tool": "material.apply",
+          "region": "face.cheek.L"
+        }
+      ],
+      "results": [
+        {
+          "tool": "material.apply",
+          "region": "face.cheek.L",
+          "affectedVertices": 0,
+          "parameter": "profile",
+          "value": null
+        }
+      ],
+      "view": {
+        "name": "portrait_3q",
+        "center": [
+          0,
+          0,
+          1.6198000000000001
+        ],
+        "span": 0.49140000000000006,
+        "yaw": 0.7853981633974483,
+        "pitch": 0,
+        "mode": "FACE_FINAL",
+        "lighting": "neutral",
+        "keyYaw": null,
+        "keyElevation": 35,
+        "fill": null,
+        "rim": null
+      },
+      "before": {
+        "path": "art/characters/bebben/review/artist/observations/source-lookdev-01/before.png",
+        "sha256": "226fc8e9e04e7aa2bc94669442510c8f981da56251f6129de95107c536c06181",
+        "cameraVersion": "tanger-artist-v2-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "portrait_3q",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 0.7853981633974483,
+          "pitch": 0,
+          "mode": "FACE_FINAL",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "beauty",
+        "exposure": 0
+      },
+      "after": {
+        "path": "art/characters/bebben/review/artist/observations/source-lookdev-01/after.png",
+        "sha256": "415748d0d58758f6feefe16b9f4f1922a241c4064e1c70b8e35cd33deb15e50b",
+        "cameraVersion": "tanger-artist-v2-85mm-vertical36",
+        "size": 768,
+        "view": {
+          "name": "portrait_3q",
+          "center": [
+            0,
+            0,
+            1.6198000000000001
+          ],
+          "span": 0.49140000000000006,
+          "yaw": 0.7853981633974483,
+          "pitch": 0,
+          "mode": "FACE_FINAL",
+          "lighting": "neutral",
+          "keyYaw": null,
+          "keyElevation": 35,
+          "fill": null,
+          "rim": null
+        },
+        "pass": "beauty",
+        "exposure": 0
+      },
+      "comparison": {
+        "before": "art/characters/bebben/review/artist/observations/source-lookdev-01/before.png",
+        "after": "art/characters/bebben/review/artist/observations/source-lookdev-01/after.png",
+        "images": {
+          "side-by-side": "art/characters/bebben/review/artist/observations/source-lookdev-01/compare/side-by-side.png",
+          "overlay": "art/characters/bebben/review/artist/observations/source-lookdev-01/compare/overlay.png",
+          "difference": "art/characters/bebben/review/artist/observations/source-lookdev-01/compare/difference.png",
+          "silhouette-difference": "art/characters/bebben/review/artist/observations/source-lookdev-01/compare/silhouette-difference.png"
+        },
+        "silhouetteLegend": "red: removed, blue: added; uses rendered alpha, not brightness",
+        "targetPaintover": false
+      },
+      "beforeCheckpoint": "art/characters/bebben/source/checkpoints/artist/source-lookdev-01-before/checkpoint.json",
+      "afterCheckpoint": "art/characters/bebben/source/checkpoints/artist/source-lookdev-01-after/checkpoint.json",
+      "sourceSha256": "d4984f487f4471acafd527b36b1e044ae249b22e1f2445bb92a738ffdf257bde",
+      "appearanceSha256": "e9321a18a07cfdaf8144a707a95ee16e0a55c26640697134ade0f4d6aaa2f37f",
+      "outcome": "partially accepted",
+      "review": {
+        "role": "reviewer",
+        "verdict": "MIXED",
+        "decision": "partially accepted",
+        "reason": "Separating the facial mask from ears, neck and hands fixes the shared-material error, and the 13-angle sweep shows a stable directional face-shadow transition. The neutral face remains very flat, ear geometry still reads as a loop, and the hair highlight pattern is too uniform. Retain this shader foundation for mask painting; material and face quality gates remain blocked."
+      }
+    }
+  ],
+  "undo": [
+    {
+      "before": "art/characters/bebben/source/checkpoints/artist/chin-profile-02-before/checkpoint.json",
+      "after": "art/characters/bebben/source/checkpoints/artist/chin-profile-02-after/checkpoint.json",
+      "cycle": "chin-profile-02"
+    },
+    {
+      "before": "art/characters/bebben/source/checkpoints/artist/eye-corner-depth-01-before/checkpoint.json",
+      "after": "art/characters/bebben/source/checkpoints/artist/eye-corner-depth-01-after/checkpoint.json",
+      "cycle": "eye-corner-depth-01"
+    },
+    {
+      "before": "art/characters/bebben/source/checkpoints/artist/lash-seating-01-before/checkpoint.json",
+      "after": "art/characters/bebben/source/checkpoints/artist/lash-seating-01-after/checkpoint.json",
+      "cycle": "lash-seating-01"
+    },
+    {
+      "before": "art/characters/bebben/source/checkpoints/artist/cheek-volume-01-before/checkpoint.json",
+      "after": "art/characters/bebben/source/checkpoints/artist/cheek-volume-01-after/checkpoint.json",
+      "cycle": "cheek-volume-01"
+    },
+    {
+      "before": "art/characters/bebben/source/checkpoints/artist/source-lookdev-01-before/checkpoint.json",
+      "after": "art/characters/bebben/source/checkpoints/artist/source-lookdev-01-after/checkpoint.json",
+      "cycle": "source-lookdev-01"
+    }
+  ],
+  "redo": [],
+  "pending": null,
+  "critique": null,
+  "viewport": {
+    "name": "profile",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 1.5707963267948966,
+    "pitch": 0,
+    "mode": "SILHOUETTE",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  }
+}

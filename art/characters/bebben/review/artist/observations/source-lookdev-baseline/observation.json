@@ -1,0 +1,27 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/source-lookdev-baseline/view.png",
+  "sha256": "9ae9586f437cd203b5a586e6ae56e257a0cb0a045104d861e4cb594b7f4a3496",
+  "cameraVersion": "tanger-artist-v2-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "portrait_3q",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 0.7853981633974483,
+    "pitch": 0,
+    "mode": "FACE_FINAL",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "beauty",
+  "exposure": 0,
+  "sourceSha256": "e235ffae3b9aed8600cb72859781cbdc9dd9567dc7444b1fde1bd0bba71a43b6",
+  "appearanceSha256": "e9321a18a07cfdaf8144a707a95ee16e0a55c26640697134ade0f4d6aaa2f37f"
+}

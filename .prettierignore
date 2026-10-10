@@ -8,3 +8,8 @@ public/schemas/area.schema.json
 .tools
 art/.build
 art/schemas/character.schema.json
+art/schemas/source-workflow.schema.json
+art/schemas/visual-assessment.schema.json
+art/schemas/anime-shader-profile.schema.json
+art/characters/**/*.json
+art/examples/**/*.json

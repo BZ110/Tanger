@@ -1,0 +1,30 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/artist-final-silhouette/view.png",
+  "sha256": "145789c96dd7344fedcd9858161274e5bb359bf0a7f7084b9896d8c0b1a3a326",
+  "cameraVersion": "tanger-artist-v2-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "profile",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 1.5707963267948966,
+    "pitch": 0,
+    "mode": "SILHOUETTE",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "silhouette",
+  "exposure": 0,
+  "pose": {
+    "frame": 1,
+    "morphs": {},
+    "bones": {}
+  }
+}

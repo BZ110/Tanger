@@ -6,6 +6,7 @@ import { z } from 'zod';
 import { characterSchema, createManifest } from '../tools/art/character-schema';
 import { inspectGlb } from '../tools/art/inspect-glb';
 import { existingProjectPath, projectPath } from '../tools/art/paths';
+import { requireFinalExport } from '../tools/art/quality-export';
 
 const root = resolve('.');
 const [command, argument, option] = process.argv.slice(2);
@@ -120,6 +121,25 @@ async function main() {
     if (command === 'validate') await validate(argument);
     else {
       await existingProjectPath(root, manifest.source);
+      if (command === 'export') await requireFinalExport(root, manifest);
+      if (command === 'render' && manifest.sourceWorkflow) {
+        const result = spawnSync(
+          process.execPath,
+          [
+            '--import',
+            'tsx',
+            'scripts/art-source.ts',
+            'render',
+            manifest.sourceWorkflow,
+            option ?? `review-${Date.now()}`,
+            'standard',
+          ],
+          { stdio: 'inherit' },
+        );
+        if (result.status !== 0)
+          throw new Error('Source review render failed.');
+        return;
+      }
       runBlender(
         command === 'export'
           ? 'export_character'
@@ -155,6 +175,7 @@ async function validate(file: string) {
     manifest,
   );
   if (manifest.stage === 'review') {
+    await requireFinalExport(root, manifest);
     if (manifest.kind !== 'character')
       result.errors.push(
         'Technical fixtures cannot be character review deliveries.',

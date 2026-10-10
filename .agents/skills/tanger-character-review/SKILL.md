@@ -1,38 +1,44 @@
 ---
 name: tanger-character-review
-description: Review, diagnose, and repair an existing TANGER stylized 3D character delivery using Blender source, GLB validation, close-up views, expressions, and deformation evidence. Use for visual QA or export/rig defects. Do not use to invent a new character brief, build maps or UI, or certify art quality using file statistics alone.
+description: Inspect, diagnose and repair existing TANGER anime character sources using fixed Blender views and guarded artist-tool before/after reviews. Use for visual QA, face/profile/lid/hair/shader defects, or later authorized rig/export defects. Exclude new character invention, maps/UI and quality certification from file statistics.
 ---
 
 # TANGER character review
 
-Read root `AGENTS.md`, `art/AGENTS.md`, `art/QUALITY.md`, and `art/RUNTIME.md`.
-Locate the character's brief, manifest, source, and previous review before editing.
+Read root `AGENTS.md`, `art/AGENTS.md`, `art/QUALITY.md`, `art/ARTIST_MODE.md`,
+the character brief, handoff and artistic history. Current work is static source
+refinement; GLB/animation review follows a later authorized production milestone.
 
-## Inspect the actual result
+## Critic
 
-- Run `art:validate` and `art:inspect`; examine the reports under `art/.build/reports/`.
-  Record validator warnings, not just errors. Do not waive a broken export because
-  the Blender screenshot looks good.
-- Render the source with `art:render`; load the GLB in `art:lab` and capture browser
-  views with `art:capture` or the PNG button. Compare front/3/4/profile/back and face.
-- Inspect the full clips at slow and normal speed, expression values 0/0.5/1 and
-  combinations, joint extremes, key-light rotation, neutral light and contrasting light.
-- Check silhouette and readability at gameplay distance, portrait appearance,
-  and topology/weights up close. Follow the concrete criteria in `art/QUALITY.md`.
+Use `view.set`, `render.view`, `render.contact_sheet`, diagnostics and light sweeps.
+**Open the returned images.** Inspect front, profile, both three-quarters, high/low
+angles; compare matcap/clay without hair against the source shader. Select only
+1–3 high-impact defects with semantic area, concrete visible problem, consequence,
+severity, scale and correction. Record `critic.record`; never infer quality from
+mesh density, a schema, a render filename or a successful export.
 
-## Diagnose and repair
+## Reviewer
 
-Write each defect with an image or clip timestamp, its visible consequence, and
-the source change needed. Prioritize face/profile, silhouette, deformation, and
-material stability before tiny surface detail. Preserve a source checkpoint,
-repair in Blender, re-export, and regenerate relevant evidence. Do not retouch
-screenshots to hide problems in the model.
+After `artist.edit`, open before/after, side-by-side, overlay/difference and other
+views. The artist role cannot approve. Record `reviewer.decide` with BETTER/WORSE/
+MIXED, accepted/rejected/partially accepted and visual reasons. WORSE must restore.
+Partial acceptance retains the whole batch as working source, so reject and
+resubmit smaller batches if only some operations should survive. No blind follow-up
+edits while a review is pending. Logical roles may share a model; do not spawn
+additional agents under this repository's instructions.
 
-## Record the verdict
+Check facial profile volume, noncircular eye shape, actual skin lid thickness,
+canthi, cheeks, nose/mouth/chin balance, ear structure, hair overlap and outfit
+masses before tertiary detail. Use mask/specular/shadow diagnostics and full light
+sweeps for materials. Record remaining defects even when a local change is better.
 
-Keep curated evidence in `art/characters/<id>/review/` and observations in the
-manifest's review notes. Set `pending`, `revise`, or `accepted` honestly and name
-the actual reviewer. `review` stage needs at least six real evidence files, but
-six images alone do not prove a complete rig or good animation. Keep owner design
-approval separate from agent review. List shader, animation, dynamics, and runtime
-limitations explicitly, then leave a continuation record using `art/HANDOFF.md`.
+## Global assessment and handoff
+
+Source renders create NOT_REVIEWED templates; replace them with honest image-backed
+assessments. Ordered global stages, required views and source/appearance signatures
+must pass before advance. A local accepted correction never approves a whole face,
+character or owner design. Keep meaningful checkpoints/history and solved examples.
+Leave exact source, reviewed images, accepted/rejected cycles and next action in
+the handoff. Later authorized export work also needs real glTF validation, browser
+captures, deformation/expressions and whole-clip evidence; see `art/RUNTIME.md`.

@@ -1,0 +1,24 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/cheek-volume-01-views/front.png",
+  "sha256": "654f7292194b04b4688d72dc9af0673517598ca3e39690c24590bc641a0f907f",
+  "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "front",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 0,
+    "pitch": 0,
+    "mode": "FACE_SCULPT",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "matcap"
+}

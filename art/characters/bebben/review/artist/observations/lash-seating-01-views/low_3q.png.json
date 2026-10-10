@@ -1,0 +1,24 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/lash-seating-01-views/low_3q.png",
+  "sha256": "5fdf8e3b828abec7aaff0f7521b977cfb37b7a08f20fb7618c672b7b5afd95e3",
+  "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "low_3q",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 0.7853981633974483,
+    "pitch": -0.2,
+    "mode": "FACE_FINAL",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "beauty"
+}

@@ -91,3 +91,20 @@ provenance. Export folders remain ignored until that deliberate integration.
 
 The workflow and review criteria above are TANGER production decisions, not
 claims about the internals or budgets of reference games.
+
+## Source representation introduced by Artist Mode
+
+Production sources now use `SOURCE`, a separate source-workflow contract and a
+Blender EEVEE anime shader profile. The nodes support editable toon thresholds,
+palettes, directional R/G face masks in a head-relative basis, hair highlight
+masks, painted source albedo, roughness/specular masks, rims, material response
+and transient inverted-hull outlines. Their actual quality is judged in images;
+these are original TANGER techniques, not claims about reference-game internals.
+
+A production export must use a separate `deliverySource` and RUNTIME collection,
+with current reviewed source evidence and a derivation receipt. Final export is
+blocked until every global stage passes. Automatic source-to-runtime retopology,
+rig remapping, morph correspondence and material baking are deferred; the derive
+command refuses to create an incomplete substitute. The technical fixture alone
+bypasses artistic gates because it is explicitly test data. The game, lab and
+legacy runtime shader remain unchanged by this milestone.

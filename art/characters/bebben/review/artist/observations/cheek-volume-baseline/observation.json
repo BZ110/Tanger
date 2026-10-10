@@ -1,0 +1,25 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/cheek-volume-baseline/view.png",
+  "sha256": "59e1a4a0ee200be27d5c1ccc22d851f5daf995d8e86b12b99044384320121c7c",
+  "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "portrait_3q",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 0.7853981633974483,
+    "pitch": 0,
+    "mode": "FACE_SCULPT",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "clay",
+  "sourceSha256": "5e4a517731d4cb5c522e43642d65865379dd133aaaa7fd8f205a7d8c48ef0b87"
+}

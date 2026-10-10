@@ -1,87 +1,101 @@
 # TANGER character workspace
 
-This is an authoring environment for original stylized 3D anime characters, with
-high-resolution Blender sources and a browser review lab. It contains no newly
-designed character. The next agent should make one character well, in small
-inspectable passes.
+The current milestone is the **Blender Artist Tool Layer**. Refine existing source
+through observation, semantic selections, local actions, comparison and review.
+Bebben is the working test character, with visible unresolved quality defects.
+The procedural game operator and bent-strip fixture are not quality references.
 
-## Start
+## Setup
 
-Run commands from the repository root. Node 22.12+ and Python 3.9+ are required.
+Run from the repository root with Node 22.12+ and Python 3.9+:
 
 ```sh
 npm ci
-npx playwright install chromium
 npm run art:setup
 npm run art:doctor
-npm run art:smoke
-npm run art:lab
+npm run art:artist:smoke
+npm run art:artist:serve -- art/characters/bebben/source-workflow.json --ui
 ```
 
-Portable setup pins official **Blender 4.5.14 LTS**, verifies its SHA-256, and installs
-inside ignored `.tools/`. It supports macOS arm64 and Linux x64. On other platforms,
-install Blender 4.5 LTS and set `TANGER_BLENDER` to the executable. No global Blender,
-Python, or Git configuration is changed. Setup requires `curl`; macOS also uses
-`hdiutil` and `ditto`. The installed build and downloads stay local.
+Portable setup pins official Blender **4.5.14 LTS**, verifies its SHA-256 and
+installs inside ignored `.tools/`. macOS arm64 and Linux x64 are supported. Other
+platforms can set `TANGER_BLENDER` to a Blender 4.5 executable. No global Blender,
+Python or Git settings are changed. The workstation supports demanding authoring;
+do not compromise source quality based on assumed compute or RAM limits.
 
-Open <http://127.0.0.1:5180/tools/art/lab/>. Load a local self-contained GLB with the
-file picker or drag and drop. The pipeline fixture is available after smoke testing:
+Read [ARTIST_MODE.md](ARTIST_MODE.md) for the callable API, examples and constraints.
+Read [Bebben's handoff](characters/bebben/handoff.md) before editing its source.
+Use the production skill for modeling and the review skill for visual diagnosis.
 
-<http://127.0.0.1:5180/tools/art/lab/?asset=/art/.build/fixture/fixture.glb>
+## Source and review
 
-The fixture is a bent strip that exercises a two-joint skin, two NLA animations,
-and a morph target, with an original embedded checker texture. It is deliberately
-**not a character or quality reference**.
-Smoke testing also renders source views into `art/.build/renders/pipeline-fixture/`.
-
-## Start a character
+Each character keeps `source/*.blend`, editable textures, semantic regions,
+`source-workflow.json`, an anime shader profile, checkpoints, a brief, provenance,
+visual evidence and artistic history. SOURCE is the artistic representation.
+Runtime preparation is a separate later task; authoring has no browser budgets.
 
 ```sh
-npm run art:new -- first-character
-npm run art:validate -- art/characters/first-character/character.json
+npm run art:new -- original-character
+npm run art:source:migrate -- art/characters/original-character/character.json
+npm run art:source:prepare -- art/characters/original-character/source-workflow.json
 ```
 
-This creates a brief, review notes, source directory, and draft manifest. No mesh
-is generated and no design decisions are approved. Edit the brief and manifest
-before modeling. Use [PIPELINE.md](PIPELINE.md) for the production sequence,
-[QUALITY.md](QUALITY.md) for visual gates, and [RUNTIME.md](RUNTIME.md) for export
-and engine boundaries. [HANDOFF.md](HANDOFF.md) contains a ready-to-use next-agent task.
+`art:new` scaffolds a brief/manifest, not a mesh. Create the initial Blender source
+before migration preparation. Preparation is a one-time conversion of a legacy
+EXPORT collection into SOURCE; it archives a legacy rig and clears its expressions.
+It preserves a pre-migration checkpoint and refuses to overwrite that checkpoint.
+Do not run preparation again on a production source. Other characters must author
+their own semantic bindings; Bebben's landmark defaults are specific to Bebben.
 
-## Commands
+Use persistent Artist Mode for refinement. The older `art:source:edit` subsystem
+entry point is retired; it does not replace the guarded visual iteration loop.
 
-| Command                                    | Result                                                                            |
-| ------------------------------------------ | --------------------------------------------------------------------------------- |
-| `art:setup`                                | Download/check/install the pinned official Blender locally                        |
-| `art:doctor`                               | Check Node, Three.js, and Blender availability                                    |
-| `art:new -- <id>`                          | Create a draft directory; refuses to overwrite existing work                      |
-| `art:inspect -- <manifest>`                | Report Blender topology, UVs, weights, morphs, and NLA tracks                     |
-| `art:export -- <manifest>`                 | Export the `EXPORT` collection to embedded GLB and validate                       |
-| `art:validate -- <manifest>`               | Check manifest, provenance files, GLB, rig contract, budgets, and review evidence |
-| `art:render -- <manifest> [cycles\|eevee]` | Render source views, expressions, and midpoint animation poses                    |
-| `art:capture -- <manifest>`                | Capture the exported model in the browser (start the lab first)                   |
-| `art:lab`                                  | Serve the character lab separately from the game                                  |
-| `art:lab:build` / `art:test:e2e`           | Build and test the isolated browser lab                                           |
-| `art:smoke`                                | Generate/export/validate/render the technical fixture                             |
-| `art:schema` / `art:schema:check`          | Generate/check the editor JSON Schema                                             |
+```sh
+npm run art:source:render -- art/characters/bebben/source-workflow.json face-study-001 standard
+npm run art:source:assess -- art/characters/bebben/source-workflow.json art/characters/bebben/review/iterations/face-study-001/assessment.json
+npm run art:source:advance -- art/characters/bebben/source-workflow.json
+npm run art:source:validate -- art/characters/bebben/source-workflow.json
+```
 
-Examples use `npm run` before each command. The renderer defaults to 1536px and
-48 Cycles samples, preferring an available GPU. Raise `TANGER_RENDER_SIZE` and
-`TANGER_RENDER_SAMPLES` for final evidence; `TANGER_RENDER_DEVICE=CPU` selects CPU.
-There is no imposed limit on Blender source mesh density, texture size, or file size.
+Rendering creates immutable evidence and a NOT_REVIEWED assessment template.
+**Open the images and replace the template with actual judgments before assessing.**
+Stages cannot be skipped. A failed face gate should stay failed. Geometry, shader
+or paint changes invalidate current evidence. Accepted stage receipts/checkpoints
+remain historical evidence, not a claim that later changes retained their quality.
+Source validation never applies a triangle/material/texture delivery budget.
+`art:source:gate -- <workflow> <action>` explains blockers. `art:source:schema` and
+`art:source:check-schema` generate/check editor contracts. Review packs include
+full, portrait, details, lookdev and deformation; static characters cannot produce
+fake deformation evidence. Standard source review defaults to 1536px; set
+`TANGER_REVIEW_SIZE` for a different observation resolution.
 
-## What's ready, and what follows
+## Existing browser lab and technical pipeline
 
-Blender Python (`bpy`) is the modeling interface. A strict JSON manifest is the
-asset contract, not a new modeling language. Blender can retain sculpting,
-modifiers, materials, drivers, and control rigs; export contains portable data.
+```sh
+npm run art:smoke
+npm run art:lab
+npx playwright install chromium
+npm run art:lab:build
+npm run art:test:e2e
+```
 
-The lab loads skins, clips, morphs, and GLB materials; offers neutral/daylight/neon
-lighting, camera presets, scrubbing, and PNG evidence. Toon audition is a basic
-stepped-light preview. A production anime face shader, custom outlines, cloth
-simulation, spring bones, and game `AnimationMixer` integration remain separate
-work. See [RUNTIME.md](RUNTIME.md) before changing renderer behavior.
+Open <http://127.0.0.1:5180/tools/art/lab/>. It imports a self-contained GLB by file
+picker or drag/drop, with clip/morph controls, lighting, camera presets, wireframe,
+skeleton and PNG capture. The technical fixture is available after smoke testing:
+<http://127.0.0.1:5180/tools/art/lab/?asset=/art/.build/fixture/fixture.glb>.
+It tests a two-joint skin, two NLA clips and a morph target; it is not a character.
 
-The lab is a local authoring tool. No accounts, asset uploads, saved preferences,
-or hosted services are required. Public delivery is limited to intentionally
-staged source and evidence. Exports/renders/caches are ignored by default; reviewed
-runtime GLBs go to `public/assets/models/` only during an authorized integration.
+`art:inspect -- <character.json>` inspects source topology, UVs and rig data.
+`art:validate -- <character.json>` checks the delivery contract at its declared
+stage. Draft manifests require no export. `art:render -- <character.json>` routes
+migrated characters to source review; the older fixture renderer remains available.
+`art:capture -- <manifest>` captures an existing exported asset in the browser.
+`art:export` is blocked for production characters until all source visual gates
+and an explicit derived delivery receipt exist. Automatic source-to-runtime
+retopology/rig/morph/material transfer is deferred; `art:source:derive` refuses it.
+
+The current milestone does not add animation, export Bebben, optimize its source
+or integrate it into gameplay. Read [PIPELINE.md](PIPELINE.md), [QUALITY.md](QUALITY.md)
+and [RUNTIME.md](RUNTIME.md) for the distinction between source work and later
+production. [HANDOFF.md](HANDOFF.md) describes the next-agent workflow.
+No accounts, uploads, gameplay saves or hosted services are required.

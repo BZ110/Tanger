@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "components": [
+    {
+      "id": "bebben-working-head",
+      "category": "head",
+      "source": "art/characters/bebben/source/bebben.blend",
+      "object": "Face — orbital loops / sculpted nose and jaw",
+      "quality": "working",
+      "provenance": "Original TANGER authored source. Agent-created Bebben cage and localized artist-tool revisions. No reference-game assets.",
+      "limitations": "Face stage blocked: simplified profile, skin eyelid rims, cheek transitions and mouth. This is not a production base head."
+    },
+    {
+      "id": "bebben-working-hair-lock",
+      "category": "hair-clump",
+      "source": "art/characters/bebben/source/bebben.blend",
+      "object": "Fringe / layer 2",
+      "quality": "working",
+      "provenance": "Original TANGER source clump, independently editable cage.",
+      "limitations": "Procedural-looking source lock. Intended for tool exercises and further sculpting, not a premium template."
+    }
+  ],
+  "supportedCategories": [
+    "head",
+    "ear",
+    "eyeball-cornea",
+    "eyelid",
+    "mouth-cavity",
+    "teeth",
+    "tongue",
+    "hand",
+    "foot",
+    "body",
+    "hair-clump",
+    "shader",
+    "face-sdf",
+    "outline",
+    "rig"
+  ]
+}

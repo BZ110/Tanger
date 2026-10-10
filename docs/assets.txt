@@ -62,3 +62,21 @@ locally from its official checksum-verified distribution, not committed. Its
 exporter generates glTF data; tooling uses the Khronos glTF Validator under
 Apache-2.0. Reference documentation is linked in art/RUNTIME.md. Future characters
 must carry their own editable source, input provenance, and honest visual review.
+
+BLENDER ARTIST TOOL LAYER / BEBBEN SOURCE
+
+Original source resides in art/characters/bebben/source/bebben.blend, with editable
+master textures, directional face masks, a shader profile, checkpoints and semantic
+regions. The previous all-character initializer is archived and refuses execution.
+Bebben remains working art, globally blocked at the face stage; no premium-quality,
+production rig, runtime export or owner design approval is claimed.
+
+Original localized chin, cheek and eyelid/eye seating corrections were made through
+tools/art/blender/artist/, with actual before/after and accepted/rejected/partial
+reviews under review/artist/. The tool renders transient diagnostic materials and
+outlines, never extracted game content. A solved local lash example is stored in
+art/examples/face/seated-eye-lash-corner; art/library/index.json labels reusable
+Bebben pieces as working, not reviewed production bases. All geometry/textures in
+this delivery are original TANGER work; no game models, texture dumps, unlicensed
+base meshes or proprietary implementations were used. Public references are
+educational/viewing references recorded in art/RUNTIME.md.

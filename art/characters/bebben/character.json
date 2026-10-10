@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "bebben",
+  "kind": "character",
+  "stage": "draft",
+  "brief": "art/characters/bebben/brief.md",
+  "source": "art/characters/bebben/source/bebben.blend",
+  "export": "art/characters/bebben/exports/bebben.glb",
+  "exportCollection": "RUNTIME",
+  "coordinates": "gltf-meters-y-up",
+  "heightMeters": 1.82,
+  "shading": "anime-toon",
+  "materialRoles": {
+    "skin": "Skin",
+    "eyes": "Eyes",
+    "iris": "Iris",
+    "hair": "Hair",
+    "clothing": "Clothing",
+    "trousers": "Trousers",
+    "accent": "Orange",
+    "hardware": "Hardware",
+    "boots": "Leather"
+  },
+  "rig": {
+    "requiredJoints": [
+      "root",
+      "pelvis",
+      "spine",
+      "chest",
+      "neck",
+      "head",
+      "upper_arm.L",
+      "forearm.L",
+      "hand.L",
+      "upper_arm.R",
+      "forearm.R",
+      "hand.R",
+      "thigh.L",
+      "shin.L",
+      "foot.L",
+      "thigh.R",
+      "shin.R",
+      "foot.R"
+    ],
+    "clips": {
+      "idle": "idle"
+    },
+    "expressions": [
+      "blink.L",
+      "blink.R",
+      "smile"
+    ],
+    "rootMotion": "in-place"
+  },
+  "deliveryBudgets": {
+    "triangles": 120000,
+    "materials": 16,
+    "joints": 160,
+    "textureEdge": 4096,
+    "fileMiB": 80
+  },
+  "provenance": [
+    {
+      "id": "authored-character",
+      "kind": "original",
+      "description": "Original Bebben face/orbital topology, layered hair, sewn clothing, UV texture artwork, deform rig, expressions and breathing idle authored with Blender Python. No third-party assets or reference-game extraction.",
+      "creator": "BZ110 / TANGER",
+      "license": "Project-owned original work; distribution terms to be set by the owner.",
+      "files": [
+        "art/characters/bebben/source/bebben.blend",
+        "art/characters/bebben/source/author_bebben.py",
+        "art/characters/bebben/source/textures/skin-painted.png",
+        "art/characters/bebben/source/textures/hair-flow.png",
+        "art/characters/bebben/source/textures/jacket-weave.png",
+        "art/characters/bebben/source/textures/cargo-weave.png",
+        "art/characters/bebben/source/textures/iris-brown.png"
+      ]
+    }
+  ],
+  "review": {
+    "evidence": [],
+    "notes": "art/characters/bebben/review.md",
+    "verdict": "pending",
+    "reviewer": ""
+  },
+  "sourceWorkflow": "art/characters/bebben/source-workflow.json",
+  "deliverySource": "art/characters/bebben/delivery/bebben-runtime.blend"
+}

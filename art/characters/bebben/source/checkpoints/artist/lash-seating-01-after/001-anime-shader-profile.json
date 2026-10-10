@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "id": "bebben-source",
+  "engine": "BLENDER_EEVEE_NEXT",
+  "skin": {
+    "baseColor": [
+      0.82,
+      0.61,
+      0.48
+    ],
+    "shadowColor": [
+      0.51,
+      0.32,
+      0.31
+    ],
+    "shadowRamp": [
+      [
+        0,
+        0
+      ],
+      [
+        0.45,
+        0.15
+      ],
+      [
+        0.55,
+        0.9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "shadowThreshold": 0.45,
+    "shadowSoftness": 0.06,
+    "specularStrength": 0.025,
+    "roughness": 0.78,
+    "rimStrength": 0.025,
+    "faceShadowMask": "art/characters/bebben/source/textures/face-shadow.png",
+    "specularMask": null,
+    "subsurface": 0.03
+  },
+  "face": {
+    "mode": "directional-sdf",
+    "basisObject": "FaceBasis",
+    "headBone": "head",
+    "maskChannels": "R-left-G-right",
+    "thresholdBias": 0,
+    "softness": 0.04
+  },
+  "hair": {
+    "baseColor": [
+      0.028,
+      0.039,
+      0.062
+    ],
+    "shadowColor": [
+      0.008,
+      0.013,
+      0.027
+    ],
+    "shadowRamp": [
+      [
+        0,
+        0
+      ],
+      [
+        0.45,
+        0.15
+      ],
+      [
+        0.55,
+        0.9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "shadowThreshold": 0.45,
+    "shadowSoftness": 0.06,
+    "specularStrength": 0.18,
+    "roughness": 0.65,
+    "rimStrength": 0.035,
+    "highlightColor": [
+      0.11,
+      0.15,
+      0.23
+    ],
+    "highlightMask": null,
+    "highlightDirection": [
+      0.1,
+      0.9,
+      0.1
+    ],
+    "anisotropy": 0.65
+  },
+  "eyes": {
+    "scleraColor": [
+      0.92,
+      0.89,
+      0.84
+    ],
+    "irisBase": [
+      0.28,
+      0.12,
+      0.035
+    ],
+    "irisGradient": [
+      0.66,
+      0.37,
+      0.11
+    ],
+    "pupilColor": [
+      0.018,
+      0.012,
+      0.022
+    ],
+    "limbalColor": [
+      0.07,
+      0.04,
+      0.055
+    ],
+    "catchlightColor": [
+      1,
+      0.98,
+      0.93
+    ],
+    "corneaRoughness": 0.07,
+    "corneaIOR": 1.38,
+    "irisDepth": 0.002,
+    "parallax": 0.15
+  },
+  "clothing": {
+    "baseColor": [
+      0.11,
+      0.15,
+      0.2
+    ],
+    "shadowColor": [
+      0.035,
+      0.055,
+      0.1
+    ],
+    "shadowRamp": [
+      [
+        0,
+        0
+      ],
+      [
+        0.45,
+        0.15
+      ],
+      [
+        0.55,
+        0.9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "shadowThreshold": 0.45,
+    "shadowSoftness": 0.06,
+    "specularStrength": 0.04,
+    "roughness": 0.88,
+    "rimStrength": 0.02,
+    "fabricResponse": 0.12
+  },
+  "leather": {
+    "baseColor": [
+      0.04,
+      0.055,
+      0.085
+    ],
+    "shadowColor": [
+      0.017,
+      0.023,
+      0.045
+    ],
+    "shadowRamp": [
+      [
+        0,
+        0
+      ],
+      [
+        0.45,
+        0.15
+      ],
+      [
+        0.55,
+        0.9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "shadowThreshold": 0.45,
+    "shadowSoftness": 0.06,
+    "specularStrength": 0.16,
+    "roughness": 0.48,
+    "rimStrength": 0.04
+  },
+  "metal": {
+    "baseColor": [
+      0.32,
+      0.4,
+      0.48
+    ],
+    "shadowColor": [
+      0.08,
+      0.11,
+      0.18
+    ],
+    "shadowRamp": [
+      [
+        0,
+        0
+      ],
+      [
+        0.45,
+        0.15
+      ],
+      [
+        0.55,
+        0.9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "shadowThreshold": 0.45,
+    "shadowSoftness": 0.06,
+    "specularStrength": 0.65,
+    "roughness": 0.28,
+    "rimStrength": 0.1,
+    "metallic": 0.85
+  },
+  "outline": {
+    "enabled": true,
+    "width": 0.00055,
+    "color": [
+      0.014,
+      0.021,
+      0.034
+    ],
+    "depthSensitivity": 0.15,
+    "normalSensitivity": 0.25,
+    "objectExclusions": [
+      "Sclera",
+      "iris",
+      "catchlight",
+      "lid",
+      "lash",
+      "brow",
+      "Mouth",
+      "vermilion",
+      "Nostril",
+      "seam",
+      "stitch",
+      "Lace"
+    ],
+    "materialExclusions": [
+      "Eyes",
+      "Iris",
+      "Eye-light",
+      "Ink",
+      "Lip"
+    ]
+  }
+}

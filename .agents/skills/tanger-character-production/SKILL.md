@@ -1,44 +1,50 @@
 ---
 name: tanger-character-production
-description: Author or improve original polished stylized 3D anime character models for TANGER. Use for character briefs, facial topology, hair, clothing, painted textures, Blender rigs, expressions, animation, and GLB character export. Do not use for environment maps, UI, generic Blender help, or merely inspecting an existing character delivery.
+description: Author or refine original TANGER stylized 3D anime character sources through the persistent Blender Artist Tool Layer. Use for semantic face, eyelid, hair, clothing, mesh/sculpt, paint and shader work; also later authorized rig/animation/export. Exclude maps, UI, generic Blender help and inspection-only reviews.
 ---
 
-# TANGER character production
+# TANGER character artist
 
-Read root `AGENTS.md`, `art/AGENTS.md`, and `art/START_HERE.md`. Run all commands
-from the repository root. Read `art/PIPELINE.md` and `art/QUALITY.md` before modeling;
-read `art/RUNTIME.md` before rig/export/shader work.
+Read root `AGENTS.md`, `art/AGENTS.md`, `art/START_HERE.md`, `art/ARTIST_MODE.md`,
+`art/PIPELINE.md` and `art/QUALITY.md`. Read the character's brief and handoff.
+Preserve existing source. Run `art:doctor`; use `art:setup` if needed.
 
-## Establish the work
+## Artist mode
 
-Inspect the existing character directory before changing it. Run `art:doctor`;
-use `art:setup` if Blender is missing. For a new character, run
-`npm run art:new -- <id>` and turn its draft brief into concrete original decisions.
-Use Blender Python (`bpy`) or the Blender UI when available. Do not substitute a
-pile of primitives or a rendered image for an editable character mesh.
+Start `art:artist:serve -- <source-workflow.json>` (add `--ui` for native Blender).
+Use `art:artist -- <session> <JSON request/file>`. Inspect `session.info` for
+semantic regions and available tools. Other characters must author their own
+bindings; the default facial landmarks are specific to Bebben.
 
-The workstation supports demanding authoring. Keep source quality high and treat
-manifest delivery budgets as editable browser targets. Do not use the procedural
-operator or pipeline fixture as visual references.
+Work through observation → critic diagnosis → artist edit → visual review:
 
-## Iterate by evidence
+1. Render the relevant fixed views and **open the actual PNGs**.
+2. As critic, record 1–3 concrete high-impact problems and consequences.
+3. As artist, select semantic regions and perform 1–3 local operations.
+4. Open automatic before/after and other-angle evidence.
+5. As reviewer, explain BETTER/WORSE/MIXED; accept, partially accept or reject.
+6. Reject worse work; the tool restores geometry, shader and external textures.
+7. Repeat without an iteration cap. Preserve meaningful history and examples.
 
-1. Establish silhouette and face in front/profile/3/4; render and inspect them.
-2. Develop eyelids/eyes, hair forms, clothing construction, UVs and painted materials.
-3. Retopologize deformation areas; rig, weight, add expressions, and test extremes.
-4. Author in-place clips with named NLA tracks; bind exported names in the manifest.
-5. Inspect source, export, validate, and compare Blender against the browser lab.
+Do not write new custom `bpy` for each cheek/lid change. Prefer direct brushes,
+camera/screen grab, curves, individual hair cages, UV paint and typed shader tools.
+Scripts are appropriate for cameras, sheets, sweeps, fixture/validation work and
+future deliberate delivery preparation. Never secretly regenerate a whole face or
+character behind a local correction. The archived Bebben initializer must stay
+retired. These roles do not authorize additional agents.
 
-Use `art:inspect`, `art:export`, `art:render`, and `art:capture` as documented in
-`art/START_HERE.md`. Keep checkpoints before destructive changes and retain source
-textures/scripts. Research only public primary references and record provenance
-for any licensed input; never extract another game's assets.
+## Quality order
 
-## Deliver
+Resolve primary silhouette/proportion, then secondary facial/body/garment forms,
+then tertiary detail. Check profile as strictly as front. Inspect actual eyelid
+rims, corners, socket depth, cheek planes, mouth integration, jaw/chin and ears.
+Use clay/matcap without hair, silhouette, wireframe and diagnostic shader passes.
+Art-direct hair overlap and outfit construction; noise is not detail hierarchy.
+The workstation has ample resources. Source density is independent of later
+browser budgets. Keep control cage, subdivision/sculpt, textures and provenance.
 
-Use the `tanger-character-review` skill for the review pass. Fix visible defects
-before advancing stages. Keep honest review/evidence and a continuation record
-following `art/HANDOFF.md`. Do not claim that validator success establishes art
-quality or owner approval. Do not integrate into gameplay unless that task is
-authorized. Report concrete limitations when the available modeling tools cannot
-reach the requested quality; leave usable source rather than disguising a blockout.
+Current scope is static Bebben refinement and artist tools. Do not prioritize rig,
+animation, export, optimization or runtime integration unless subsequently asked.
+Use the review skill before delivery, retain unresolved global stage blockers and
+leave a concrete handoff. Technical tests and local accepted edits are not owner
+approval or evidence that premium art quality has been reached.

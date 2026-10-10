@@ -1,6 +1,6 @@
 interface:
   display_name: 'TANGER Character Review'
-  short_description: 'Inspect anime character art, rigs, and exports'
-  default_prompt: 'Use $tanger-character-review to inspect this TANGER character in Blender and the browser, repair defects, and record evidence.'
+  short_description: 'Review character forms and before/after changes'
+  default_prompt: 'Use $tanger-character-review to inspect fixed Blender views, diagnose a few visible defects and review before/after artist-tool changes with honest accept or restore decisions.'
 policy:
   allow_implicit_invocation: true

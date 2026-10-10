@@ -1,0 +1,24 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/eye-corner-depth-01/after.png",
+  "sha256": "1b109ab54763bb25550b114d782c3f5a12ec43a09ec346f8cd16029c33c2598c",
+  "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "portrait_3q",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 0.7853981633974483,
+    "pitch": 0,
+    "mode": "FACE_FINAL",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "beauty"
+}

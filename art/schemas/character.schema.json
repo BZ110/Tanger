@@ -31,6 +31,12 @@
     "source": {
       "$ref": "#/$defs/__schema1"
     },
+    "sourceWorkflow": {
+      "$ref": "#/$defs/__schema1"
+    },
+    "deliverySource": {
+      "$ref": "#/$defs/__schema1"
+    },
     "export": {
       "$ref": "#/$defs/__schema1"
     },

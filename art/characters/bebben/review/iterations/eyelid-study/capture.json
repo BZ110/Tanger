@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "cameraVersion": "tanger-review-v2-85mm-vertical36",
+  "pack": "standard",
+  "engine": "EEVEE",
+  "images": [
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/full-front.png",
+      "view": "full-front",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        0.91
+      ],
+      "span": 1.9474000000000002,
+      "azimuth": 0,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/full-quarter-left.png",
+      "view": "full-quarter-left",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        0.91
+      ],
+      "span": 1.9474000000000002,
+      "azimuth": -0.7853981633974483,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/full-quarter-right.png",
+      "view": "full-quarter-right",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        0.91
+      ],
+      "span": 1.9474000000000002,
+      "azimuth": 0.7853981633974483,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/full-side.png",
+      "view": "full-side",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        0.91
+      ],
+      "span": 1.9474000000000002,
+      "azimuth": 1.5707963267948966,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/full-back.png",
+      "view": "full-back",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        0.91
+      ],
+      "span": 1.9474000000000002,
+      "azimuth": 3.141592653589793,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/portrait-front.png",
+      "view": "portrait-front",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/portrait-quarter-left.png",
+      "view": "portrait-quarter-left",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": -0.7853981633974483,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/portrait-quarter-right.png",
+      "view": "portrait-quarter-right",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.7853981633974483,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/portrait-side.png",
+      "view": "portrait-side",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 1.5707963267948966,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/portrait-above.png",
+      "view": "portrait-above",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0,
+      "elevation": 0.14,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/portrait-below.png",
+      "view": "portrait-below",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0,
+      "elevation": -0.12,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/detail-eyes.png",
+      "view": "detail-eyes",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        -0.09,
+        1.5561
+      ],
+      "span": 0.2,
+      "azimuth": 0.3490658503988659,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/detail-hair.png",
+      "view": "detail-hair",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.7289999999999999
+      ],
+      "span": 0.36,
+      "azimuth": 0.3490658503988659,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/detail-hands.png",
+      "view": "detail-hands",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0.41,
+        -0.01,
+        0.88
+      ],
+      "span": 0.22,
+      "azimuth": 0.3490658503988659,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/detail-footwear.png",
+      "view": "detail-footwear",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        -0.04,
+        0.12
+      ],
+      "span": 0.4,
+      "azimuth": 0.3490658503988659,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/detail-clothing.png",
+      "view": "detail-clothing",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        -0.04,
+        1.17
+      ],
+      "span": 0.65,
+      "azimuth": 0.3490658503988659,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/light-front.png",
+      "view": "light-front",
+      "lighting": "front",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/light-quarter.png",
+      "view": "light-quarter",
+      "lighting": "quarter",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/light-side.png",
+      "view": "light-side",
+      "lighting": "side",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/light-opposite.png",
+      "view": "light-opposite",
+      "lighting": "opposite",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/light-neutral.png",
+      "view": "light-neutral",
+      "lighting": "neutral",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/eyelid-study/light-dramatic.png",
+      "view": "light-dramatic",
+      "lighting": "dramatic",
+      "lensMm": 85.0,
+      "center": [
+        0,
+        0,
+        1.6198000000000001
+      ],
+      "span": 0.49140000000000006,
+      "azimuth": 0.5235987755982988,
+      "elevation": 0,
+      "exposure": 0
+    }
+  ]
+}

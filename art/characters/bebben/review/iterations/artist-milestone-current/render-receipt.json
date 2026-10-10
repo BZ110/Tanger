@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "d4984f487f4471acafd527b36b1e044ae249b22e1f2445bb92a738ffdf257bde",
+  "appearanceSha256": "e9321a18a07cfdaf8144a707a95ee16e0a55c26640697134ade0f4d6aaa2f37f",
+  "evidence": [
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/full-front.png",
+      "view": "full-front",
+      "sha256": "619f36b46e0d9fb1854c7b15afe83deb28879c3ae66705f7617a0bad5054c298"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/full-quarter-left.png",
+      "view": "full-quarter-left",
+      "sha256": "4a8eae9fc6bcddf1608e5bca5e8fef9e2cd4c29ec5b542453d82bb9dcd63d00f"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/full-quarter-right.png",
+      "view": "full-quarter-right",
+      "sha256": "149bde473babe84f2b7ca0a9ce373df68322871e6b14d3759ddc96712f55be5b"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/full-side.png",
+      "view": "full-side",
+      "sha256": "2f12cdb7f8d5ec2069b5cfb07a145b85128d5259cc4faa391c09d7a5e985551b"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/full-back.png",
+      "view": "full-back",
+      "sha256": "dd830cf19275565be0be5314c16117ddd3de65850d692bc1686d9649d91ed79d"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/portrait-front.png",
+      "view": "portrait-front",
+      "sha256": "82e4ee26e1fda397716117ef4e2cc56780ac57dde8ac79954d32b1f6fc8ee0f9"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/portrait-quarter-left.png",
+      "view": "portrait-quarter-left",
+      "sha256": "2d921a76ffe151c6067cad81190b95659188f4dbd992604462a608f1250105ac"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/portrait-quarter-right.png",
+      "view": "portrait-quarter-right",
+      "sha256": "615e42acf74cfbf96ac7e3397511715c4525e07bc47fb5bc22c53bcbcced6ed5"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/portrait-side.png",
+      "view": "portrait-side",
+      "sha256": "71069571f8fb2d36784e9fa6a811f02ee80165c9d8aefdaba3779d2c9a33a9bf"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/portrait-above.png",
+      "view": "portrait-above",
+      "sha256": "114d52a2559a5d4afb3b15d0f27c2f87dc1dc3a192b6828bb76b71b5dee0b4ec"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/portrait-below.png",
+      "view": "portrait-below",
+      "sha256": "6018afa2ad4a5d3140e36cc785b88db1e8d975c64c708422f8edfb9f7d2ebecc"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/detail-eyes.png",
+      "view": "detail-eyes",
+      "sha256": "5a8dded20a3c011ac1fe4abad6a8ee3741be15e49e5415c09e9c291e2f06c69a"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/detail-hair.png",
+      "view": "detail-hair",
+      "sha256": "fce886ea593ad0a96efc6c7c6abd256307913a960be10e3250a5d57433112b59"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/detail-hands.png",
+      "view": "detail-hands",
+      "sha256": "0977ff3ba60ff24f9c6053e330914a53028cd18e04701afde99d919fca2dd0f8"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/detail-footwear.png",
+      "view": "detail-footwear",
+      "sha256": "e7f8246ed8266ce91f3493f823bd7fdf9d62ca936d811b86d659c0d01e628c49"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/detail-clothing.png",
+      "view": "detail-clothing",
+      "sha256": "785631e046232168d675cdd21953b500e4d486de89748b9a4c43ad9ae2b97bb3"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/light-front.png",
+      "view": "light-front",
+      "sha256": "f69a030c77b3edbfbbb3bc25cd806f950a97b3727b8bf31a3702eb8f8964728f"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/light-quarter.png",
+      "view": "light-quarter",
+      "sha256": "d728b2add9f328f11ec811f99271958b40e881df3a5cdd9e0c19253e67b49c6e"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/light-side.png",
+      "view": "light-side",
+      "sha256": "848d540de2af7739838e2991b66ee5bdedc9e2452b7f0af0b570953dda2ddccd"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/light-opposite.png",
+      "view": "light-opposite",
+      "sha256": "4b7038911a829a5b8b08ae8da8476611e3d0c4d5dd78a6da6051f153fe58b58b"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/light-neutral.png",
+      "view": "light-neutral",
+      "sha256": "5f7ec242e73caffe63677c26d1c17d1740aeb0320027128fa9ae28f97886a80e"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-current/light-dramatic.png",
+      "view": "light-dramatic",
+      "sha256": "4d5ee5784dfe6b54da0be6538c276d53eeb8e86f1abefee259dcceb17af727a1"
+    }
+  ],
+  "stage": "face"
+}

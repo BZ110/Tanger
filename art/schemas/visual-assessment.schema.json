@@ -1,0 +1,323 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "character": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "silhouette",
+        "face",
+        "hair",
+        "body",
+        "clothing",
+        "hands-footwear",
+        "lookdev",
+        "topology-textures",
+        "deformation",
+        "expressions",
+        "animation",
+        "delivery"
+      ]
+    },
+    "iteration": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceSha256": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "appearanceSha256": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "faceChecks": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "enum": [
+          "profileVolume",
+          "eyeShape",
+          "eyelidThickness",
+          "earStructure",
+          "cheekPlanes",
+          "jawTransition",
+          "chinBalance",
+          "mouthIntegration",
+          "noseStyle"
+        ]
+      },
+      "additionalProperties": {
+        "type": "string",
+        "enum": [
+          "PASS",
+          "BLOCKING",
+          "NOT_REVIEWED"
+        ]
+      },
+      "required": [
+        "profileVolume",
+        "eyeShape",
+        "eyelidThickness",
+        "earStructure",
+        "cheekPlanes",
+        "jawTransition",
+        "chinBalance",
+        "mouthIntegration",
+        "noseStyle"
+      ]
+    },
+    "evidence": {
+      "minItems": 3,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema1"
+      }
+    },
+    "categories": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "enum": [
+          "overall",
+          "silhouette",
+          "face",
+          "eyes",
+          "profile",
+          "hair",
+          "anatomy",
+          "clothing",
+          "hands",
+          "materials",
+          "shader",
+          "deformation"
+        ]
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "score": {
+            "$ref": "#/$defs/__schema2"
+          },
+          "severity": {
+            "$ref": "#/$defs/__schema3"
+          },
+          "location": {
+            "$ref": "#/$defs/__schema4"
+          },
+          "observedProblem": {
+            "$ref": "#/$defs/__schema5"
+          },
+          "visualConsequence": {
+            "$ref": "#/$defs/__schema6"
+          },
+          "recommendedAction": {
+            "$ref": "#/$defs/__schema7"
+          },
+          "blocksNextStage": {
+            "$ref": "#/$defs/__schema8"
+          }
+        },
+        "required": [
+          "score",
+          "severity",
+          "location",
+          "observedProblem",
+          "visualConsequence",
+          "recommendedAction",
+          "blocksNextStage"
+        ],
+        "additionalProperties": false
+      },
+      "required": [
+        "overall",
+        "silhouette",
+        "face",
+        "eyes",
+        "profile",
+        "hair",
+        "anatomy",
+        "clothing",
+        "hands",
+        "materials",
+        "shader",
+        "deformation"
+      ]
+    },
+    "topThree": {
+      "minItems": 3,
+      "maxItems": 3,
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema9"
+      }
+    },
+    "comparison": {
+      "type": "object",
+      "properties": {
+        "previousIteration": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "improved": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "mixed",
+            "baseline"
+          ]
+        },
+        "observations": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "previousIteration",
+        "improved",
+        "observations"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "character",
+    "stage",
+    "iteration",
+    "reviewer",
+    "sourceSha256",
+    "evidence",
+    "categories",
+    "topThree",
+    "comparison"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "__schema1": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "view": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "view"
+      ],
+      "additionalProperties": false
+    },
+    "__schema2": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "__schema3": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "NEEDS_WORK",
+        "BLOCKING",
+        "NOT_REVIEWED"
+      ]
+    },
+    "__schema4": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema5": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema6": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema7": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema8": {
+      "type": "boolean"
+    },
+    "__schema9": {
+      "type": "object",
+      "properties": {
+        "rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "overall",
+            "silhouette",
+            "face",
+            "eyes",
+            "profile",
+            "hair",
+            "anatomy",
+            "clothing",
+            "hands",
+            "materials",
+            "shader",
+            "deformation"
+          ]
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "problem": {
+          "type": "string",
+          "minLength": 1
+        },
+        "consequence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "correction": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "rank",
+        "category",
+        "location",
+        "problem",
+        "consequence",
+        "correction"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "title": "TANGER visual-assessment v1"
+}

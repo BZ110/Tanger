@@ -1,0 +1,25 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/lash-seating-baseline/view.png",
+  "sha256": "00f9d678c6e7e107958cc4108e044d8dcef45154630396a0c8090812e8a8db42",
+  "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "portrait_3q",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 0.7853981633974483,
+    "pitch": 0,
+    "mode": "FACE_FINAL",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "beauty",
+  "sourceSha256": "5e221ca19fa5dbcd3de576e2b65ab3c61b053909a916ccc8e643442a9f131846"
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "primary-edit",
+  "iteration": "03-eyes",
+  "component": "eyes",
+  "settings": {
+    "centerX": 0.0448,
+    "centerZ": 1.65187,
+    "surfaceY": -0.0748,
+    "halfWidth": 0.029,
+    "upperHeight": 0.009,
+    "lowerHeight": 0.0045,
+    "canthusRise": 0.0022,
+    "oldHalfWidth": 0.02924,
+    "oldHeight": 0.01042,
+    "irisRadius": 0.0128
+  }
+}

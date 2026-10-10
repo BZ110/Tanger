@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "character": "bebben",
+  "stage": "face",
+  "iteration": "face-profile-study",
+  "reviewer": "TANGER agent visual review",
+  "sourceSha256": "1306b07f2c672e2defc263f649affc25264bdc9c6e2976886f17de0cff3d89f4",
+  "evidence": [
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/full-front.png",
+      "sha256": "bb9b2f17721bb87e02935cda444815188ce2c1781ac8e81d2d335b2bc8337b9d",
+      "view": "full-front"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/full-quarter-left.png",
+      "sha256": "9d0fcdf9f4f7d742d5c221e452fded023f7c105e044b120fadcd666af073d260",
+      "view": "full-quarter-left"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/full-quarter-right.png",
+      "sha256": "e1af87a7a263cef98e4ec1f7675bfb988ecd521ef0701978c96f9762bd88fc6c",
+      "view": "full-quarter-right"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/full-side.png",
+      "sha256": "4610b4188ddc50728915d735c0ade71a9b6d912afe954a9344956ede6b554f36",
+      "view": "full-side"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/full-back.png",
+      "sha256": "88a31d21dfcaef7241237ea8a6d2e2edacf23bcfab66db6e79ed01425f37c696",
+      "view": "full-back"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-front.png",
+      "sha256": "96061295bb3215e4b3c8f1c8959beb3476eb97a569d850ccdc2e78701069da30",
+      "view": "portrait-front"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-quarter-left.png",
+      "sha256": "f8c96868a325bb3a51c4ae9d77dfb67dc781295e85a46557c6c17c01e73538d9",
+      "view": "portrait-quarter-left"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-quarter-right.png",
+      "sha256": "c372fdfdefb7d6e40569d11f56997da0796e419bc546fd0e66e863637f9e1cb7",
+      "view": "portrait-quarter-right"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-side.png",
+      "sha256": "664853ea88e8e932de641ab4668c23df4e1aa54e8503d7fa09232cb82645aa26",
+      "view": "portrait-side"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-above.png",
+      "sha256": "6f52579658fd3cbae3a6efd8de6c58a576de8d8c11ae9694930d55e9dc4b702a",
+      "view": "portrait-above"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-below.png",
+      "sha256": "70feaf3e67375298ba4b4c0bbe0c6d7d1af858e401a8837494315b8cba5c9872",
+      "view": "portrait-below"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/detail-eyes.png",
+      "sha256": "be46507dc120e57134051a12b70ef28a3c42d7413fd4c97b78d3034456b45ada",
+      "view": "detail-eyes"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/detail-hair.png",
+      "sha256": "98893e9c99f9bbfe64e5bc701c9b403d76e09597a1e91f9605878ea25f633c4a",
+      "view": "detail-hair"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/detail-hands.png",
+      "sha256": "cf1f9512370f01b8e6b36ad3105aa4d9b3a4a9a041ef6110fc167a52da2bf61e",
+      "view": "detail-hands"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/detail-footwear.png",
+      "sha256": "e4c2b79ec944ba2d89fc4f2d987a1eb31f282f4d624aba7e69e394d9ac2fb60f",
+      "view": "detail-footwear"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/detail-clothing.png",
+      "sha256": "022d8cfe327bfabb01af2a799646c789eecdc110c857618fee99966b7c3dfe34",
+      "view": "detail-clothing"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-front.png",
+      "sha256": "201f7e0d09c9c7082b4c8997ba7e1dfeabdd791f599cfc3ad433ee92609a0dc1",
+      "view": "light-front"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-quarter.png",
+      "sha256": "c43c661adec049e62cf4ad416f8bfe9ce90b18058f2bc9b2271f762cd5f14a60",
+      "view": "light-quarter"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-side.png",
+      "sha256": "e5ce474535aa1ddb990804857e33d9e0024431576a46cf0e213d510cfd9d3936",
+      "view": "light-side"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-opposite.png",
+      "sha256": "05b95bb6f5bc6f0aedab56e964edc21b13dd00ffeebfcfd686e079cb9a313e45",
+      "view": "light-opposite"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-neutral.png",
+      "sha256": "b8386f44187116d5646e73a90b197ac45e04401db1cb4b0eec0b865758ef423a",
+      "view": "light-neutral"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-dramatic.png",
+      "sha256": "f86352d9090c766bd59a46754202363e4d333604c42d238274e01e2fc54e0579",
+      "view": "light-dramatic"
+    }
+  ],
+  "categories": {
+    "overall": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "contact-sheet.png",
+      "observedProblem": "Source is below premium quality.",
+      "visualConsequence": "Downstream completion would hide unresolved primary forms.",
+      "recommendedAction": "Prioritize proportions, face and eyes; keep delivery blocked.",
+      "blocksNextStage": true
+    },
+    "silhouette": {
+      "score": 4,
+      "severity": "PASS",
+      "location": "full-front, full-quarter-right, full-side, full-back",
+      "observedProblem": "The primary proportion pass reads as a young-adult silhouette; shoulder seam/outline artifacts remain for construction and lookdev review.",
+      "visualConsequence": "Head-to-body scale now supports the intended adult design instead of dominating it.",
+      "recommendedAction": "Keep silhouette proportions and repair face/eyes next; defer garment details.",
+      "blocksNextStage": false
+    },
+    "face": {
+      "score": 3,
+      "severity": "BLOCKING",
+      "location": "portrait-quarter-right",
+      "observedProblem": "Continuous facial vertex strokes reduced the nasal bulb, but the profile still needs a calmer eye seat and mouth/chin relationship.",
+      "visualConsequence": "Portrait lacks deliberate anime facial planes.",
+      "recommendedAction": "Reshape the continuous facial mesh, restrain nose projection and define jaw/chin planes.",
+      "blocksNextStage": true
+    },
+    "eyes": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "portrait-front",
+      "observedProblem": "The irises are almost fully exposed and sclera protrudes in profile; the neutral look remains startled.",
+      "visualConsequence": "The neutral expression looks startled and eyes sit on top of the face.",
+      "recommendedAction": "Flatten lower lid, shape upper arch and tapered canthus, occlude iris and reduce eye depth.",
+      "blocksNextStage": true
+    },
+    "profile": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "portrait-side",
+      "observedProblem": "Nose projection and mouth/chin transitions need deliberate shaping.",
+      "visualConsequence": "Side view resembles a generic generated avatar.",
+      "recommendedAction": "Edit profile curvature and inspect a matched side render.",
+      "blocksNextStage": true
+    },
+    "hair": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "portrait-side",
+      "observedProblem": "Uniform swept locks and cap read as smooth extruded chunks.",
+      "visualConsequence": "Hair lacks directional hierarchy and highlight design.",
+      "recommendedAction": "Reshape large masses first; replace repeated crown locks with intentionally varied clumps.",
+      "blocksNextStage": true
+    },
+    "anatomy": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "full-quarter-right",
+      "observedProblem": "Tube-like shoulders and limbs lack deliberate landmarks.",
+      "visualConsequence": "Body proportions and gesture do not match the intended adult anime quality.",
+      "recommendedAction": "Adjust body landmarks and shape shoulders, ribcage, wrists and knees.",
+      "blocksNextStage": true
+    },
+    "clothing": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "full-front",
+      "observedProblem": "Jacket is narrow and smooth despite small seam details.",
+      "visualConsequence": "Tertiary details distract from weak garment silhouette.",
+      "recommendedAction": "Shape shoulder/yoke, hem and sleeve tension; defer added stitching.",
+      "blocksNextStage": true
+    },
+    "hands": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "detail-hands",
+      "observedProblem": "Separate digit bases and palm transition remain construction topology.",
+      "visualConsequence": "Hand lacks a convincing thenar region and knuckle grouping.",
+      "recommendedAction": "Unify palm/thumb/finger roots and sculpt the hand before rigging.",
+      "blocksNextStage": true
+    },
+    "materials": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "portrait-front",
+      "observedProblem": "New source palette and hair bands need visual tuning.",
+      "visualConsequence": "Shading sophistication remains unproven.",
+      "recommendedAction": "Fix forms first, then evaluate controlled material responses.",
+      "blocksNextStage": true
+    },
+    "shader": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "light-side",
+      "observedProblem": "Directional anime source shader is newly installed and needs face-side evaluation.",
+      "visualConsequence": "Node execution alone does not establish attractive shadows.",
+      "recommendedAction": "Inspect all key directions, tune SDF contour and material separation.",
+      "blocksNextStage": true
+    },
+    "deformation": {
+      "score": 0,
+      "severity": "NOT_REVIEWED",
+      "location": "not-applicable-yet",
+      "observedProblem": "Legacy rig is archived and unapproved.",
+      "visualConsequence": "Static source cannot establish deformation quality.",
+      "recommendedAction": "Do not rig until source visual gates pass.",
+      "blocksNextStage": true
+    }
+  },
+  "topThree": [
+    {
+      "rank": 1,
+      "category": "eyes",
+      "location": "portrait-front",
+      "problem": "The irises are almost fully exposed and sclera protrudes in profile; the neutral look remains startled.",
+      "consequence": "The neutral expression looks startled and eyes sit on top of the face.",
+      "correction": "Flatten lower lid, shape upper arch and tapered canthus, occlude iris and reduce eye depth."
+    },
+    {
+      "rank": 2,
+      "category": "face",
+      "location": "portrait-quarter-right",
+      "problem": "Continuous facial vertex strokes reduced the nasal bulb, but the profile still needs a calmer eye seat and mouth/chin relationship.",
+      "consequence": "Portrait lacks deliberate anime facial planes.",
+      "correction": "Reshape the continuous facial mesh, restrain nose projection and define jaw/chin planes."
+    },
+    {
+      "rank": 3,
+      "category": "hair",
+      "location": "portrait-side",
+      "problem": "Uniform swept locks and cap read as smooth extruded chunks.",
+      "consequence": "Hair lacks directional hierarchy and highlight design.",
+      "correction": "Reshape large masses first; replace repeated crown locks with intentionally varied clumps."
+    }
+  ],
+  "comparison": {
+    "previousIteration": "proportion-study",
+    "improved": "mixed",
+    "observations": "The edited nose is less bulbous and fine facial contours are easier to read after the outline helper repair. Eyes still dominate the face. Camera calibration was corrected to vertical 36mm; matched-camera comparisons start from this batch."
+  }
+}

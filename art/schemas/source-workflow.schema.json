@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "character": {
+      "type": "string",
+      "minLength": 1
+    },
+    "representation": {
+      "type": "string",
+      "const": "artistic-source"
+    },
+    "source": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "collection": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shaderProfile": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "deliverySource": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "deliveryCollection": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewRoot": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "checkpointRoot": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "accepted": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stage": {
+            "type": "string",
+            "enum": [
+              "silhouette",
+              "face",
+              "hair",
+              "body",
+              "clothing",
+              "hands-footwear",
+              "lookdev",
+              "topology-textures",
+              "deformation",
+              "expressions",
+              "animation",
+              "delivery"
+            ]
+          },
+          "assessment": {
+            "$ref": "#/$defs/__schema0"
+          },
+          "assessmentSha256": {
+            "$ref": "#/$defs/__schema1"
+          },
+          "checkpoint": {
+            "$ref": "#/$defs/__schema0"
+          },
+          "sourceSha256": {
+            "$ref": "#/$defs/__schema1"
+          }
+        },
+        "required": [
+          "stage",
+          "assessment",
+          "assessmentSha256",
+          "checkpoint",
+          "sourceSha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "latestAssessment": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/__schema0"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "face",
+              "hair",
+              "outfit",
+              "color",
+              "concept",
+              "turnaround"
+            ]
+          },
+          "path": {
+            "$ref": "#/$defs/__schema0"
+          },
+          "provenance": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "role",
+          "path",
+          "provenance"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "framing": {
+      "type": "object",
+      "properties": {
+        "height": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "headCenter": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "items": false,
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "headSpan": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "details": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "enum": [
+              "eyes",
+              "hair",
+              "hands",
+              "footwear",
+              "clothing"
+            ]
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "center": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ],
+                "items": false,
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "span": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": [
+              "center",
+              "span"
+            ],
+            "additionalProperties": false
+          },
+          "required": [
+            "eyes",
+            "hair",
+            "hands",
+            "footwear",
+            "clothing"
+          ]
+        }
+      },
+      "required": [
+        "height",
+        "headCenter",
+        "headSpan",
+        "details"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "character",
+    "representation",
+    "source",
+    "collection",
+    "shaderProfile",
+    "deliverySource",
+    "deliveryCollection",
+    "reviewRoot",
+    "checkpointRoot",
+    "accepted",
+    "latestAssessment",
+    "references",
+    "framing"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "type": "string",
+      "minLength": 1
+    },
+    "__schema1": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "title": "TANGER source-workflow v1"
+}

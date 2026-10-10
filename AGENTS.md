@@ -36,6 +36,9 @@
   production/review skills in .agents/skills/ for their respective tasks.
 - The workstation has ample resources. Do not lower authoring quality based on
   assumed compute/RAM limits. Browser delivery budgets remain separately editable.
+- Refine existing characters through art/ARTIST_MODE.md: persistent Blender,
+  semantic local edits, 1–3 operations, visual comparison and role-separated review.
+  Restore worse work. Logical critic/artist/reviewer roles do not authorize agents.
 - Keep Blender source, textures, rig, manifest, provenance, and visible review
   evidence. Technical validation is not an artistic approval.
 - The current procedural operator is a legacy placeholder. Work in the separate

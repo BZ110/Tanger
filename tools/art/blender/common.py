@@ -18,17 +18,21 @@ def project_path(value):
     return path
 
 
-def load_character():
+def load_character(representation="source"):
     args = arguments()
     if not args:
         raise ValueError("Provide a character.json manifest")
     manifest = json.loads(project_path(args[0]).read_text())
-    bpy.ops.wm.open_mainfile(filepath=str(project_path(manifest["source"])))
+    source = manifest.get("deliverySource", manifest["source"]) if representation == "delivery" else manifest["source"]
+    bpy.ops.wm.open_mainfile(filepath=str(project_path(source)))
     return manifest
 
 
-def export_objects(manifest):
-    collection = bpy.data.collections.get(manifest["exportCollection"])
+def export_objects(manifest, representation="delivery"):
+    name = manifest["exportCollection"]
+    if representation == "source" and manifest.get("sourceWorkflow"):
+        name = json.loads(project_path(manifest["sourceWorkflow"]).read_text())["collection"]
+    collection = bpy.data.collections.get(name)
     if not collection:
         raise ValueError(f'Missing collection: {manifest["exportCollection"]}')
     objects = [obj for obj in collection.all_objects if obj.type in {"MESH", "ARMATURE", "EMPTY"}]

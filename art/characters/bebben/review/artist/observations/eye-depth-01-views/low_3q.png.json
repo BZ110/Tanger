@@ -1,0 +1,24 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/eye-depth-01-views/low_3q.png",
+  "sha256": "6cda4e5e208b2f1b739fed2263feb695749359ae407b1d0312b3b45a5a05fa28",
+  "cameraVersion": "tanger-artist-v1-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "low_3q",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 0.7853981633974483,
+    "pitch": -0.2,
+    "mode": "FACE_FINAL",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "beauty"
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "character": "bebben",
+  "representation": "artistic-source",
+  "source": "art/characters/bebben/source/bebben.blend",
+  "collection": "SOURCE",
+  "shaderProfile": "art/characters/bebben/source/anime-shader-profile.json",
+  "deliverySource": "art/characters/bebben/delivery/bebben-runtime.blend",
+  "deliveryCollection": "RUNTIME",
+  "reviewRoot": "art/characters/bebben/review/iterations",
+  "checkpointRoot": "art/characters/bebben/source/checkpoints",
+  "accepted": [
+    {
+      "stage": "silhouette",
+      "assessment": "art/characters/bebben/review/iterations/proportion-study/assessment.json",
+      "assessmentSha256": "df623761a0680bd9c170228aae06e8a820848f86105d157f9f3b4b0d008894ab",
+      "checkpoint": "art/characters/bebben/source/checkpoints/01-silhouette.blend",
+      "sourceSha256": "d44dd36c8d33dfea160893ee1a6393be43ea80e71f75b29f4be83d0e48f5609b"
+    }
+  ],
+  "latestAssessment": "art/characters/bebben/review/iterations/artist-milestone-review/assessment.json",
+  "references": [],
+  "framing": {
+    "height": 1.82,
+    "headCenter": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "headSpan": 0.49140000000000006,
+    "details": {
+      "eyes": {
+        "center": [
+          0,
+          -0.075,
+          1.652
+        ],
+        "span": 0.15
+      },
+      "hair": {
+        "center": [
+          0,
+          0,
+          1.7289999999999999
+        ],
+        "span": 0.36
+      },
+      "hands": {
+        "center": [
+          0.41,
+          -0.01,
+          0.88
+        ],
+        "span": 0.22
+      },
+      "footwear": {
+        "center": [
+          0,
+          -0.04,
+          0.12
+        ],
+        "span": 0.4
+      },
+      "clothing": {
+        "center": [
+          0,
+          -0.04,
+          1.17
+        ],
+        "span": 0.65
+      }
+    }
+  }
+}

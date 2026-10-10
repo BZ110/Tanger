@@ -1,0 +1,116 @@
+{
+  "before": "audit-source",
+  "after": "proportion-study",
+  "pairs": [
+    {
+      "view": "full-front",
+      "before": "art/characters/bebben/review/iterations/audit-source/full-front.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/full-front.png"
+    },
+    {
+      "view": "full-quarter-left",
+      "before": "art/characters/bebben/review/iterations/audit-source/full-quarter-left.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/full-quarter-left.png"
+    },
+    {
+      "view": "full-quarter-right",
+      "before": "art/characters/bebben/review/iterations/audit-source/full-quarter-right.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/full-quarter-right.png"
+    },
+    {
+      "view": "full-side",
+      "before": "art/characters/bebben/review/iterations/audit-source/full-side.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/full-side.png"
+    },
+    {
+      "view": "full-back",
+      "before": "art/characters/bebben/review/iterations/audit-source/full-back.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/full-back.png"
+    },
+    {
+      "view": "portrait-front",
+      "before": "art/characters/bebben/review/iterations/audit-source/portrait-front.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/portrait-front.png"
+    },
+    {
+      "view": "portrait-quarter-left",
+      "before": "art/characters/bebben/review/iterations/audit-source/portrait-quarter-left.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/portrait-quarter-left.png"
+    },
+    {
+      "view": "portrait-quarter-right",
+      "before": "art/characters/bebben/review/iterations/audit-source/portrait-quarter-right.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/portrait-quarter-right.png"
+    },
+    {
+      "view": "portrait-side",
+      "before": "art/characters/bebben/review/iterations/audit-source/portrait-side.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/portrait-side.png"
+    },
+    {
+      "view": "portrait-above",
+      "before": "art/characters/bebben/review/iterations/audit-source/portrait-above.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/portrait-above.png"
+    },
+    {
+      "view": "portrait-below",
+      "before": "art/characters/bebben/review/iterations/audit-source/portrait-below.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/portrait-below.png"
+    },
+    {
+      "view": "detail-eyes",
+      "before": "art/characters/bebben/review/iterations/audit-source/detail-eyes.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/detail-eyes.png"
+    },
+    {
+      "view": "detail-hair",
+      "before": "art/characters/bebben/review/iterations/audit-source/detail-hair.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/detail-hair.png"
+    },
+    {
+      "view": "detail-hands",
+      "before": "art/characters/bebben/review/iterations/audit-source/detail-hands.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/detail-hands.png"
+    },
+    {
+      "view": "detail-footwear",
+      "before": "art/characters/bebben/review/iterations/audit-source/detail-footwear.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/detail-footwear.png"
+    },
+    {
+      "view": "detail-clothing",
+      "before": "art/characters/bebben/review/iterations/audit-source/detail-clothing.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/detail-clothing.png"
+    },
+    {
+      "view": "light-front",
+      "before": "art/characters/bebben/review/iterations/audit-source/light-front.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/light-front.png"
+    },
+    {
+      "view": "light-quarter",
+      "before": "art/characters/bebben/review/iterations/audit-source/light-quarter.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/light-quarter.png"
+    },
+    {
+      "view": "light-side",
+      "before": "art/characters/bebben/review/iterations/audit-source/light-side.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/light-side.png"
+    },
+    {
+      "view": "light-opposite",
+      "before": "art/characters/bebben/review/iterations/audit-source/light-opposite.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/light-opposite.png"
+    },
+    {
+      "view": "light-neutral",
+      "before": "art/characters/bebben/review/iterations/audit-source/light-neutral.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/light-neutral.png"
+    },
+    {
+      "view": "light-dramatic",
+      "before": "art/characters/bebben/review/iterations/audit-source/light-dramatic.png",
+      "after": "art/characters/bebben/review/iterations/proportion-study/light-dramatic.png"
+    }
+  ]
+}

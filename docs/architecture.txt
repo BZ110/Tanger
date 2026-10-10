@@ -103,10 +103,23 @@ The existing operator is a legacy procedural placeholder, not the quality target
   npm run art:lab
 
 Setup verifies an official pinned Blender 4.5.14 LTS archive in ignored .tools/.
-The pipeline handles an EXPORT collection, weighted skins, NLA clips, morphs,
-GLB validation, source inspection, and source/browser evidence captures. Its
-versioned character manifest has a generated JSON Schema, provenance, material
-roles, rig bindings, editable delivery budgets, stages, and review evidence.
+The Blender Artist Tool Layer runs in a persistent background process or native
+GUI main-thread timer. Typed JSON requests expose semantic selections, localized
+mesh/brush/screen edits, eye/hair/curve tools, UV painting and shader controls.
+Critic observations bind source and appearance digests; artist batches contain
+1–3 edits with automatic previews/checkpoints/comparisons; reviewer decisions
+accept, retain mixed working source or restore rejected work. Undo/redo includes
+external textures and shader settings. Native unsaved geometry changes are
+detected. Rendering owns and releases its temporary diagnostic/outline resources.
+
+SOURCE contains high-quality authoring work without runtime budgets. A separate
+ordered source workflow records 12 visual stages, immutable image evidence and
+checkpoint receipts. Current Bebben remains globally blocked at the face stage;
+local accepted repairs do not certify premium quality. Runtime derivation and
+Bebben export are deferred. The legacy fixture path still verifies skins, named
+NLA clips, morphs, portable GLB and browser import. All authoring code stays outside
+src/. Source workflows/profiles/assessments have generated editor JSON Schemas.
+See art/ARTIST_MODE.md, art/QUALITY.md and Bebben's handoff for exact commands.
 
 The browser lab is served separately on port 5180 at /tools/art/lab/. It loads
 self-contained GLBs with animation/expression controls, camera presets, lighting,

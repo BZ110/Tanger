@@ -10,6 +10,21 @@
         "tests/fixtures/art-character.json"
       ],
       "url": "./art/schemas/character.schema.json"
+    },
+    {
+      "fileMatch": ["art/characters/**/source-workflow.json"],
+      "url": "./art/schemas/source-workflow.schema.json"
+    },
+    {
+      "fileMatch": ["art/characters/**/assessment.json"],
+      "url": "./art/schemas/visual-assessment.schema.json"
+    },
+    {
+      "fileMatch": [
+        "art/profiles/*.json",
+        "art/characters/**/anime-shader-profile.json"
+      ],
+      "url": "./art/schemas/anime-shader-profile.schema.json"
     }
   ]
 }

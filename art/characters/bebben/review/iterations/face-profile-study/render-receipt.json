@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "1306b07f2c672e2defc263f649affc25264bdc9c6e2976886f17de0cff3d89f4",
+  "evidence": [
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/full-front.png",
+      "view": "full-front",
+      "sha256": "bb9b2f17721bb87e02935cda444815188ce2c1781ac8e81d2d335b2bc8337b9d"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/full-quarter-left.png",
+      "view": "full-quarter-left",
+      "sha256": "9d0fcdf9f4f7d742d5c221e452fded023f7c105e044b120fadcd666af073d260"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/full-quarter-right.png",
+      "view": "full-quarter-right",
+      "sha256": "e1af87a7a263cef98e4ec1f7675bfb988ecd521ef0701978c96f9762bd88fc6c"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/full-side.png",
+      "view": "full-side",
+      "sha256": "4610b4188ddc50728915d735c0ade71a9b6d912afe954a9344956ede6b554f36"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/full-back.png",
+      "view": "full-back",
+      "sha256": "88a31d21dfcaef7241237ea8a6d2e2edacf23bcfab66db6e79ed01425f37c696"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-front.png",
+      "view": "portrait-front",
+      "sha256": "96061295bb3215e4b3c8f1c8959beb3476eb97a569d850ccdc2e78701069da30"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-quarter-left.png",
+      "view": "portrait-quarter-left",
+      "sha256": "f8c96868a325bb3a51c4ae9d77dfb67dc781295e85a46557c6c17c01e73538d9"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-quarter-right.png",
+      "view": "portrait-quarter-right",
+      "sha256": "c372fdfdefb7d6e40569d11f56997da0796e419bc546fd0e66e863637f9e1cb7"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-side.png",
+      "view": "portrait-side",
+      "sha256": "664853ea88e8e932de641ab4668c23df4e1aa54e8503d7fa09232cb82645aa26"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-above.png",
+      "view": "portrait-above",
+      "sha256": "6f52579658fd3cbae3a6efd8de6c58a576de8d8c11ae9694930d55e9dc4b702a"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/portrait-below.png",
+      "view": "portrait-below",
+      "sha256": "70feaf3e67375298ba4b4c0bbe0c6d7d1af858e401a8837494315b8cba5c9872"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/detail-eyes.png",
+      "view": "detail-eyes",
+      "sha256": "be46507dc120e57134051a12b70ef28a3c42d7413fd4c97b78d3034456b45ada"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/detail-hair.png",
+      "view": "detail-hair",
+      "sha256": "98893e9c99f9bbfe64e5bc701c9b403d76e09597a1e91f9605878ea25f633c4a"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/detail-hands.png",
+      "view": "detail-hands",
+      "sha256": "cf1f9512370f01b8e6b36ad3105aa4d9b3a4a9a041ef6110fc167a52da2bf61e"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/detail-footwear.png",
+      "view": "detail-footwear",
+      "sha256": "e4c2b79ec944ba2d89fc4f2d987a1eb31f282f4d624aba7e69e394d9ac2fb60f"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/detail-clothing.png",
+      "view": "detail-clothing",
+      "sha256": "022d8cfe327bfabb01af2a799646c789eecdc110c857618fee99966b7c3dfe34"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-front.png",
+      "view": "light-front",
+      "sha256": "201f7e0d09c9c7082b4c8997ba7e1dfeabdd791f599cfc3ad433ee92609a0dc1"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-quarter.png",
+      "view": "light-quarter",
+      "sha256": "c43c661adec049e62cf4ad416f8bfe9ce90b18058f2bc9b2271f762cd5f14a60"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-side.png",
+      "view": "light-side",
+      "sha256": "e5ce474535aa1ddb990804857e33d9e0024431576a46cf0e213d510cfd9d3936"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-opposite.png",
+      "view": "light-opposite",
+      "sha256": "05b95bb6f5bc6f0aedab56e964edc21b13dd00ffeebfcfd686e079cb9a313e45"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-neutral.png",
+      "view": "light-neutral",
+      "sha256": "b8386f44187116d5646e73a90b197ac45e04401db1cb4b0eec0b865758ef423a"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/face-profile-study/light-dramatic.png",
+      "view": "light-dramatic",
+      "sha256": "f86352d9090c766bd59a46754202363e4d333604c42d238274e01e2fc54e0579"
+    }
+  ],
+  "stage": "face"
+}

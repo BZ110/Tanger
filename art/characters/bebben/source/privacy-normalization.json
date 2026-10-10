@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "reason": "Normalize only known Blender file-browser, packed-image and render pathname fields before publication. Block sizes and mesh bytes are preserved. Historical source digests were updated for these metadata-only changes; no visual approval was added.",
+  "files": [
+    {
+      "path": "art/characters/bebben/source/bebben.blend",
+      "beforeSha256": "52d395a5781ca84b2667cddf2d0719ff5a8903694ddf35c2845e57963d66a917",
+      "afterSha256": "d4984f487f4471acafd527b36b1e044ae249b22e1f2445bb92a738ffdf257bde",
+      "pathnameFieldsNormalized": 4
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/03-eyes-before.blend",
+      "beforeSha256": "bd040679fa96c0ece7accce7cf97eb450fc968b147662b63a84080a123de0d4f",
+      "afterSha256": "1306b07f2c672e2defc263f649affc25264bdc9c6e2976886f17de0cff3d89f4",
+      "pathnameFieldsNormalized": 3
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/bebben_00_audit.blend",
+      "beforeSha256": "5cd711a5d344a63abad547c2c0542f608f4382d7749b981c279497bf64932d67",
+      "afterSha256": "b725b3f5e3d5995aab6af1677a3d13eca2b6fa5af9e61a5791e98b41cceb1d4e",
+      "pathnameFieldsNormalized": 6
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/01-silhouette.blend",
+      "beforeSha256": "6b04ef86a843aca86e10c8c087011c9cb43840732d37f266f35680696cda2e54",
+      "afterSha256": "d44dd36c8d33dfea160893ee1a6393be43ea80e71f75b29f4be83d0e48f5609b",
+      "pathnameFieldsNormalized": 3
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/02-face-before.blend",
+      "beforeSha256": "6b04ef86a843aca86e10c8c087011c9cb43840732d37f266f35680696cda2e54",
+      "afterSha256": "d44dd36c8d33dfea160893ee1a6393be43ea80e71f75b29f4be83d0e48f5609b",
+      "pathnameFieldsNormalized": 3
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/bebben-pre-migration.blend",
+      "beforeSha256": "5cd711a5d344a63abad547c2c0542f608f4382d7749b981c279497bf64932d67",
+      "afterSha256": "b725b3f5e3d5995aab6af1677a3d13eca2b6fa5af9e61a5791e98b41cceb1d4e",
+      "pathnameFieldsNormalized": 6
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/01-proportions-before.blend",
+      "beforeSha256": "909d9a5af5d66722ae1e8a01a8d5edf105a6e4918b8e4dacc93295692bfecab9",
+      "afterSha256": "b0a71c8b63494e3bb92b94f56a901dfba63757b13a7cafe54af8edc5f0e5093d",
+      "pathnameFieldsNormalized": 3
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/chin-profile-02-before/000-bebben.blend",
+      "beforeSha256": "e12bd2ac5e0028bccaac0a77c2875d07785ebd0fba2c8ab5be926c6e2c75e87e",
+      "afterSha256": "1934c5dfe05b14c6d01056551b831e6eed7c0601773ef0a4ae687e70dca1c773",
+      "pathnameFieldsNormalized": 3
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/cheek-volume-01-after/000-bebben.blend",
+      "beforeSha256": "9a3eb763da868ce4cb446aabbff5b04f8305aa1de73a1f945da774b390c8d47b",
+      "afterSha256": "e235ffae3b9aed8600cb72859781cbdc9dd9567dc7444b1fde1bd0bba71a43b6",
+      "pathnameFieldsNormalized": 4
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/source-lookdev-01-before/000-bebben.blend",
+      "beforeSha256": "9a3eb763da868ce4cb446aabbff5b04f8305aa1de73a1f945da774b390c8d47b",
+      "afterSha256": "e235ffae3b9aed8600cb72859781cbdc9dd9567dc7444b1fde1bd0bba71a43b6",
+      "pathnameFieldsNormalized": 4
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/cheek-volume-01-before/000-bebben.blend",
+      "beforeSha256": "5591bd51384533867806f3f7db09b205d5dd708aaeadefd524994b04da48155d",
+      "afterSha256": "5e4a517731d4cb5c522e43642d65865379dd133aaaa7fd8f205a7d8c48ef0b87",
+      "pathnameFieldsNormalized": 4
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-after/000-bebben.blend",
+      "beforeSha256": "db8f6bd85fab7acf33c69a77045c0682a31718ad2c4901250fc0aab2978916a3",
+      "afterSha256": "858f9c854eda89b34c3f54d546bc2918f48ae467156f48890a53f2367d95d688",
+      "pathnameFieldsNormalized": 4
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/lash-seating-01-before/000-bebben.blend",
+      "beforeSha256": "5dc5a6f639849a2dcd28e55ac44f4775dd8a40bcfe09555278a1c3ec34d7bce8",
+      "afterSha256": "5e221ca19fa5dbcd3de576e2b65ab3c61b053909a916ccc8e643442a9f131846",
+      "pathnameFieldsNormalized": 4
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/chin-profile-02-after/000-bebben.blend",
+      "beforeSha256": "c36d0a511e0bb51b96a91c6def0d4b68c577e14fe7c2a70ef6913988b1c747c2",
+      "afterSha256": "df9048caabbf821ea8aa092d66679ba7a90d33a48ac170285ac5b532ee83ebca",
+      "pathnameFieldsNormalized": 4
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/eye-corner-depth-01-after/000-bebben.blend",
+      "beforeSha256": "5dc5a6f639849a2dcd28e55ac44f4775dd8a40bcfe09555278a1c3ec34d7bce8",
+      "afterSha256": "5e221ca19fa5dbcd3de576e2b65ab3c61b053909a916ccc8e643442a9f131846",
+      "pathnameFieldsNormalized": 4
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-before/000-bebben.blend",
+      "beforeSha256": "e12bd2ac5e0028bccaac0a77c2875d07785ebd0fba2c8ab5be926c6e2c75e87e",
+      "afterSha256": "1934c5dfe05b14c6d01056551b831e6eed7c0601773ef0a4ae687e70dca1c773",
+      "pathnameFieldsNormalized": 3
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/eye-corner-depth-01-before/000-bebben.blend",
+      "beforeSha256": "c36d0a511e0bb51b96a91c6def0d4b68c577e14fe7c2a70ef6913988b1c747c2",
+      "afterSha256": "df9048caabbf821ea8aa092d66679ba7a90d33a48ac170285ac5b532ee83ebca",
+      "pathnameFieldsNormalized": 4
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/source-lookdev-01-after/000-bebben.blend",
+      "beforeSha256": "52d395a5781ca84b2667cddf2d0719ff5a8903694ddf35c2845e57963d66a917",
+      "afterSha256": "d4984f487f4471acafd527b36b1e044ae249b22e1f2445bb92a738ffdf257bde",
+      "pathnameFieldsNormalized": 4
+    },
+    {
+      "path": "art/characters/bebben/source/checkpoints/artist/lash-seating-01-after/000-bebben.blend",
+      "beforeSha256": "5591bd51384533867806f3f7db09b205d5dd708aaeadefd524994b04da48155d",
+      "afterSha256": "5e4a517731d4cb5c522e43642d65865379dd133aaaa7fd8f205a7d8c48ef0b87",
+      "pathnameFieldsNormalized": 4
+    }
+  ]
+}

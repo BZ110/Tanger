@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "character": "bebben",
+  "stage": "face",
+  "iteration": "artist-milestone-review",
+  "reviewer": "Codex agent visual review; owner design approval pending",
+  "sourceSha256": "d4984f487f4471acafd527b36b1e044ae249b22e1f2445bb92a738ffdf257bde",
+  "appearanceSha256": "e9321a18a07cfdaf8144a707a95ee16e0a55c26640697134ade0f4d6aaa2f37f",
+  "faceChecks": {
+    "profileVolume": "BLOCKING",
+    "eyeShape": "PASS",
+    "eyelidThickness": "BLOCKING",
+    "earStructure": "BLOCKING",
+    "cheekPlanes": "BLOCKING",
+    "jawTransition": "BLOCKING",
+    "chinBalance": "BLOCKING",
+    "mouthIntegration": "BLOCKING",
+    "noseStyle": "BLOCKING"
+  },
+  "evidence": [
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/full-front.png",
+      "sha256": "7ae7e6d012ff52766fe79806e405e00bed1e927a467d5bd604de829cf3125d23",
+      "view": "full-front"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/full-quarter-left.png",
+      "sha256": "579de1413b81b8fe2c3522dded7894912d8870a5899a364ab599eb124a07c026",
+      "view": "full-quarter-left"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/full-quarter-right.png",
+      "sha256": "eb8521dec8bd85360044b608db063f3a508bb67b23191486210e36778605edfe",
+      "view": "full-quarter-right"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/full-side.png",
+      "sha256": "54646c0bbcf93ddaeb8d36116d274367ff403e43518afae7a9dcb877efadf0da",
+      "view": "full-side"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/full-back.png",
+      "sha256": "84448d34d1c9ecb453babdf434b14fab2acbd7720065c1e58b5d2ad691972b50",
+      "view": "full-back"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/portrait-front.png",
+      "sha256": "4a97e384cc79281d30ec03b6f202d4e993a005fbd6a342c2c7aa97806b083601",
+      "view": "portrait-front"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/portrait-quarter-left.png",
+      "sha256": "629fe50aeeef08cc2427aaaf21738edf5891a44cb947214d1607d22baa9d7b45",
+      "view": "portrait-quarter-left"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/portrait-quarter-right.png",
+      "sha256": "415df383538c0ad991cd81f1230adf773a4e12def170b35a9bc8b3dc4f87ff67",
+      "view": "portrait-quarter-right"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/portrait-side.png",
+      "sha256": "a26e78079efa3129e2ca7a6188226b09a2765ec16af0e9783ff3d180367e2694",
+      "view": "portrait-side"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/portrait-above.png",
+      "sha256": "fdf0b5b6b891388cf6f90f26e99ab9204c0b80721ed60e6f7b254d8d9354a318",
+      "view": "portrait-above"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/portrait-below.png",
+      "sha256": "81b3dfad211027523c96b8bd864d201a78f2c3b7c6fc500f9c0a4cf751df1c6d",
+      "view": "portrait-below"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/detail-eyes.png",
+      "sha256": "8ba5c6a84d02154cdd50c3576d09b870415f0d79a26cf5d2ba4937dbaddc91bc",
+      "view": "detail-eyes"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/detail-hair.png",
+      "sha256": "d06eaf2c5b89d5459b3123f90c27967fd997af330e6a849a19a76b7d3e6005fb",
+      "view": "detail-hair"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/detail-hands.png",
+      "sha256": "06fd295f59f23ec9c46ff5e4c605df8327799d8cfdbd0c0d21a7f9b19b8714bc",
+      "view": "detail-hands"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/detail-footwear.png",
+      "sha256": "fdd3e93b15f9cc6937c4dc1e22ba5efb94136ca43d82be36ec84dc675fc0294f",
+      "view": "detail-footwear"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/detail-clothing.png",
+      "sha256": "a4cbe3308301ebc17797a2b5e86500bee8af33aa7a32d97671276fc7e1721ad9",
+      "view": "detail-clothing"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/light-front.png",
+      "sha256": "08bf0160be5a607bed24c282d19b40746b1bac3d567dbb65aa85988950809b21",
+      "view": "light-front"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/light-quarter.png",
+      "sha256": "7c8681864c1cfc4b98f31821f6f36449223909de7e2dca63ce24517790116c6e",
+      "view": "light-quarter"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/light-side.png",
+      "sha256": "28ace9b5ed8458d0d9503c061eedd6c3c9ad8c2bee0d80297f90dd2bab35489e",
+      "view": "light-side"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/light-opposite.png",
+      "sha256": "ff39cdb8539a2ca08b5b1a4679a31b00df96814da3e18adb615f0f69cc3fb8ca",
+      "view": "light-opposite"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/light-neutral.png",
+      "sha256": "0b8b4cfd9d0cbff2ee59e182f8918bfa166b6cbde665d882c639a208fa80684a",
+      "view": "light-neutral"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/artist-milestone-review/light-dramatic.png",
+      "sha256": "bcde5976fdca9c834550e31a008152176172b4951b3df420095f129dd53b4e01",
+      "view": "light-dramatic"
+    }
+  ],
+  "categories": {
+    "overall": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "Full and portrait sheet",
+      "observedProblem": "The character remains a working stylized avatar with simple secondary forms.",
+      "visualConsequence": "It is visibly below the intended premium anime target.",
+      "recommendedAction": "Continue localized source refinement; do not export or animate.",
+      "blocksNextStage": true
+    },
+    "silhouette": {
+      "score": 4,
+      "severity": "PASS",
+      "location": "Full front/profile/back",
+      "observedProblem": "Adult proportions and the simple utility-outfit silhouette remain readable.",
+      "visualConsequence": "The earlier proportion correction survives the local face edits.",
+      "recommendedAction": "Preserve proportions while refining component forms.",
+      "blocksNextStage": false
+    },
+    "face": {
+      "score": 3,
+      "severity": "BLOCKING",
+      "location": "Portrait three-quarter, high/low and matcap evidence",
+      "observedProblem": "Cheek volume is restrained but insufficiently structured; skin lid rims and ears remain primitive.",
+      "visualConsequence": "The face lacks nuanced plane transitions and anatomy.",
+      "recommendedAction": "Refine upper/lower skin rims, cheek-to-jaw transitions and ear structure locally.",
+      "blocksNextStage": true
+    },
+    "eyes": {
+      "score": 3,
+      "severity": "BLOCKING",
+      "location": "Eye close-up and both portrait three-quarters",
+      "observedProblem": "Outer sclera seating and upper lash continuity improved, but lids are still graphic ribbons and cornea is absent.",
+      "visualConsequence": "The eye opening reads cleaner but lacks modeled depth and skin thickness.",
+      "recommendedAction": "Build/refine skin lid rims and socket transitions without regenerating the character.",
+      "blocksNextStage": true
+    },
+    "profile": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "Portrait side",
+      "observedProblem": "Nose, lips and chin remain a simplified sequence of bumps; the mouth line is an attached patch.",
+      "visualConsequence": "The profile reads less deliberately authored than the front.",
+      "recommendedAction": "Restrain the mouth shelf, shape the nasal underside and reconcile chin/jaw projection.",
+      "blocksNextStage": true
+    },
+    "hair": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "Hair close-up and portrait side",
+      "observedProblem": "Locks remain broad repeated strip-like masses with limited designed overlap.",
+      "visualConsequence": "The silhouette and highlights still reveal procedural construction.",
+      "recommendedAction": "Art-direct important fringe/temple clumps individually after face forms improve.",
+      "blocksNextStage": true
+    },
+    "anatomy": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "Full front/side and upper torso",
+      "observedProblem": "Covered anatomy is not yet a reviewed body source; sleeve shoulder transitions are broad and angular.",
+      "visualConsequence": "Clothing hides unresolved anatomical and silhouette relationships.",
+      "recommendedAction": "Develop shoulder and garment masses before rigging or tiny detail.",
+      "blocksNextStage": true
+    },
+    "clothing": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "Clothing close-up",
+      "observedProblem": "Collar and pockets are present but jacket/sleeve forms are broad with limited fold hierarchy.",
+      "visualConsequence": "Outfit construction lacks premium secondary shape design.",
+      "recommendedAction": "Refine collar and upper-body fold groups once facial blockers are resolved.",
+      "blocksNextStage": true
+    },
+    "hands": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "Hand close-up",
+      "observedProblem": "Palm and digits remain simple separate components without reviewed webbing/deformation.",
+      "visualConsequence": "The visible hand lacks intentional anatomical plane structure.",
+      "recommendedAction": "Use isolated component replacement/sculpting before later topology and rig review.",
+      "blocksNextStage": true
+    },
+    "materials": {
+      "score": 2,
+      "severity": "BLOCKING",
+      "location": "Neutral portraits and detail sheet",
+      "observedProblem": "Dedicated face material fixes the shared-mask error, but skin and cloth remain extremely flat.",
+      "visualConsequence": "Modeled forms are poorly supported by material separation and painted design.",
+      "recommendedAction": "Paint intentional localized masks and color decisions with visual feedback.",
+      "blocksNextStage": true
+    },
+    "shader": {
+      "score": 3,
+      "severity": "BLOCKING",
+      "location": "Source-lookdev 13-angle sweep and current light views",
+      "observedProblem": "The head-relative SDF transition is stable but generic; hair bands are too uniform and neutral face shading is flat.",
+      "visualConsequence": "The look-development foundation works but is not a finished anime shader look.",
+      "recommendedAction": "Tune facial masks and hair highlights under the full sweep after form correction.",
+      "blocksNextStage": true
+    },
+    "deformation": {
+      "score": 0,
+      "severity": "NOT_REVIEWED",
+      "location": "Static source",
+      "observedProblem": "No approved source deformation rig is active.",
+      "visualConsequence": "No deformation or animation quality can be claimed.",
+      "recommendedAction": "Defer rigging and animation until static source quality passes.",
+      "blocksNextStage": true
+    }
+  },
+  "topThree": [
+    {
+      "rank": 1,
+      "category": "eyes",
+      "location": "Upper/lower skin rims and outer corners",
+      "problem": "Eyelids remain graphic ribbons despite improved seating.",
+      "consequence": "Eyes lack modeled skin thickness and socket integration.",
+      "correction": "Select lids, add/refine continuous skin rims locally and inspect all portrait angles."
+    },
+    {
+      "rank": 2,
+      "category": "profile",
+      "location": "Mouth/nose/chin relationship",
+      "problem": "The profile has a simplified mouth shelf and weakly reconciled chin/jaw shape.",
+      "consequence": "Secondary profile structure remains below target.",
+      "correction": "Use broad, small profile strokes and reject isolated bumps; compare front and low three-quarter."
+    },
+    {
+      "rank": 3,
+      "category": "face",
+      "location": "Cheek-to-jaw planes and ear",
+      "problem": "Cheek transitions are generic and the ear is a traced loop.",
+      "consequence": "Large facial areas lack designed secondary forms.",
+      "correction": "Refine cheek planes, then rebuild the ear component alone using original authored topology."
+    }
+  ],
+  "comparison": {
+    "previousIteration": "eyelid-study",
+    "improved": "mixed",
+    "observations": "Artist cycles rejected a pointed screen-space chin stroke, accepted a smaller bilateral correction, partially retained eye depth seating and repaired upper lash continuity. Cheek and shader revisions remain working partial changes. Comparisons are in review/artist/history.json; the current full pack has corrected eye framing. Local improvements do not pass the global face stage."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "name": "chin-profile-01-after",
+  "files": [
+    {
+      "original": "art/characters/bebben/source/bebben.blend",
+      "snapshot": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-after/000-bebben.blend",
+      "sha256": "858f9c854eda89b34c3f54d546bc2918f48ae467156f48890a53f2367d95d688"
+    },
+    {
+      "original": "art/characters/bebben/source/anime-shader-profile.json",
+      "snapshot": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-after/001-anime-shader-profile.json",
+      "sha256": "680166493ab35a0891801b94d2ca401b60d0acf153d86fbff402f5341b86d8fc"
+    },
+    {
+      "original": "art/characters/bebben/source/textures/cargo-weave.png",
+      "snapshot": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-after/002-cargo-weave.png",
+      "sha256": "704c565729f084f812f23307444188e7f56c56ee7991970472a1fcf78051cd3c"
+    },
+    {
+      "original": "art/characters/bebben/source/textures/face-shadow.png",
+      "snapshot": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-after/003-face-shadow.png",
+      "sha256": "a2b8cdbef4dc7f60c4d27cab291d1e1aa70742e6aaf585b850636d4e36c24890"
+    },
+    {
+      "original": "art/characters/bebben/source/textures/hair-flow.png",
+      "snapshot": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-after/004-hair-flow.png",
+      "sha256": "e67c87ad8ac802503307df3ebd30d26c4d076c50c64940613d29e575687d1f4d"
+    },
+    {
+      "original": "art/characters/bebben/source/textures/iris-brown.png",
+      "snapshot": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-after/005-iris-brown.png",
+      "sha256": "5a4a2e8b56c8c6c5328f03e9292789ef7f1643054f56f21597f44a9d5c2d876e"
+    },
+    {
+      "original": "art/characters/bebben/source/textures/jacket-weave.png",
+      "snapshot": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-after/006-jacket-weave.png",
+      "sha256": "0a149ceed14d84b9fd9a4571cecf15a34f0da9faa4ca1266705e622b5d59b5a0"
+    },
+    {
+      "original": "art/characters/bebben/source/textures/skin-painted.png",
+      "snapshot": "art/characters/bebben/source/checkpoints/artist/chin-profile-01-after/007-skin-painted.png",
+      "sha256": "bff669fc49a3220574b25250c1b1f753cae7df072cc5bd11ea13308dd11ac5f2"
+    }
+  ],
+  "view": {
+    "name": "profile",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 1.5707963267948966,
+    "pitch": 0,
+    "mode": "FACE_SCULPT",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  }
+}

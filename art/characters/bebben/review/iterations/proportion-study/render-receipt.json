@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "d44dd36c8d33dfea160893ee1a6393be43ea80e71f75b29f4be83d0e48f5609b",
+  "evidence": [
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/full-front.png",
+      "view": "full-front",
+      "sha256": "9164f06d44958cd1b550e99cd6bd33ae6e4fd9ac4b5b1d139e23330d554c7714"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/full-quarter-left.png",
+      "view": "full-quarter-left",
+      "sha256": "212a1813fa6e4b04fac3ec0dbcbab34854ed8e3566272dc9884372ef915274fa"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/full-quarter-right.png",
+      "view": "full-quarter-right",
+      "sha256": "aef7fbd4779c75c728f0c4d069b2e8e178d01b9f8757fefe22842204ee147e35"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/full-side.png",
+      "view": "full-side",
+      "sha256": "c28c657ef3c7d1d079de1b7e95ffe68fefcd1ea178bd213d0d43340220ce7808"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/full-back.png",
+      "view": "full-back",
+      "sha256": "565f7922a00b038e58c5a5517ded46970f3f7812dcd93c64f835f225f84f7582"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/portrait-front.png",
+      "view": "portrait-front",
+      "sha256": "89f946a901afb93ba5e830769580b5777a87f17b46a5a6fddf814dbd7de26173"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/portrait-quarter-left.png",
+      "view": "portrait-quarter-left",
+      "sha256": "eb3fc173b7b0b7382ebb715add3aa120698be444a2f0a1e8a522d6b7eda26885"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/portrait-quarter-right.png",
+      "view": "portrait-quarter-right",
+      "sha256": "b058e377c0154e22e455128c4fb068d33013b5340f112ca77886cf2251671ee4"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/portrait-side.png",
+      "view": "portrait-side",
+      "sha256": "0cb9deb5ba51e28107f33e35e55ccb17e794501d7ccc0fa6e4b0e1bbe4a78aaa"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/portrait-above.png",
+      "view": "portrait-above",
+      "sha256": "97bb133eca87e4176c41d0e465eb5bcd77d33d10445398105fa453dc0654f526"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/portrait-below.png",
+      "view": "portrait-below",
+      "sha256": "442e7b3cc97a9b141b5b1e008008bdae85893cc49e357677439fe8c9740c2cfc"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/detail-eyes.png",
+      "view": "detail-eyes",
+      "sha256": "ed556476111f9c417bdc99669aa73e08e0751b099c8f5c5d5e678edd59eeddc9"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/detail-hair.png",
+      "view": "detail-hair",
+      "sha256": "00451f3ad508d6ea3713ebdae36ade484f732be2598cb596419e0d23ded0cd4e"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/detail-hands.png",
+      "view": "detail-hands",
+      "sha256": "0521fb39d430c1bb9fedfe43703539227af9c7a29112b2bee35768700b60b7d6"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/detail-footwear.png",
+      "view": "detail-footwear",
+      "sha256": "e5fa3fd69ffe1bf8edbb8cc0350160c577eb1c3aab3e7ce1790e9af9949ceb01"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/detail-clothing.png",
+      "view": "detail-clothing",
+      "sha256": "fe25fbdd478ceb3b95b184ca66b2c8055cc40d07085ae0b4199ad3bebb53d9ef"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/light-front.png",
+      "view": "light-front",
+      "sha256": "85856d28b6dd70b98b29247d7f51f664f69879a3e7dbef72057f3a91a9b40b3c"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/light-quarter.png",
+      "view": "light-quarter",
+      "sha256": "979952089b635c66280033e2b4f7d02cbbbffe9671fc5ef1d76d23d053e15594"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/light-side.png",
+      "view": "light-side",
+      "sha256": "0d7d3c5a1f8eec8c5625494db2170f0daa6ffa99a6d5f5a3ea0c7de3c2565655"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/light-opposite.png",
+      "view": "light-opposite",
+      "sha256": "8748baf2a342e96144c92dca4cd6523ba958ae3b6f6328aebc656c47ed457f5b"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/light-neutral.png",
+      "view": "light-neutral",
+      "sha256": "764719be43ddb9bcca19853208237bcc532a227b3b4828192a88c72d2597eecd"
+    },
+    {
+      "path": "art/characters/bebben/review/iterations/proportion-study/light-dramatic.png",
+      "view": "light-dramatic",
+      "sha256": "29d041ee650a5991a97fdb2f461c993ef218c89c64707410305a142bbc8cefe1"
+    }
+  ],
+  "stage": "silhouette"
+}

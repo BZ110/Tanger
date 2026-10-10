@@ -54,3 +54,35 @@ Separate design decisions awaiting the owner from technical defects the agent ca
 fix autonomously. Do not use invented scores or statements such as “AAA achieved.”
 An accepted agent review is still subject to the owner's taste. Report unfinished
 face shading, secondary motion, or runtime integration candidly.
+
+## Static source gates and local artistic review
+
+Artist Mode accepts/rejects individual corrections, not entire characters. Current
+Bebben has both accepted local repairs and blocked global face quality. The source
+workflow requires ordered stages, immutable render evidence, checkpoint receipts,
+current geometry and appearance signatures, and the required views. Scores 0–5
+are explicitly authored ordinal review judgments, not metrics computed from
+polygon counts. A PASS needs score ≥4 and no blocker; unreviewed work blocks.
+
+Face-stage advance additionally requires explicit checks for profile volume,
+eye shape, eyelid thickness, ear structure, cheek planes, jaw transition, chin
+balance, mouth integration and nose style. Missing checks remain NOT_REVIEWED;
+a high aggregate score cannot bypass a primitive ear or pasted-on mouth. Inspect
+front, both three-quarters, profile, high/low and the eyelid close-up. Any flat
+profile, circular surprised eyes, weak skin rims, primitive ears, featureless
+cheeks, straight jaw, wrong chin balance, pasted mouth or incompatible nose blocks
+that stage. These are image-backed human/agent judgments, not an automatic geometry
+classifier. Do not fabricate them to satisfy a gate.
+
+Use primary/secondary/tertiary reasoning. Tertiary tools are blocked until relevant
+form categories pass a current review. Highest visual attention goes to face,
+eyes, face-framing hair, upper-body focal details and exposed hands. Medium:
+major garments, boots and back hair. Hidden construction receives lower attention.
+Subdivision or many fine lines cannot replace deliberate form hierarchy.
+
+Compare under matching lens/framing, lighting, diagnostic mode and exposure.
+Record BETTER/WORSE/MIXED with specific visible reasons. Restore worse batches;
+retain partial changes only with explicit follow-up defects. Do not mistake a
+paintover difference image for an objective quality score. Check masks/materials
+under a full light sweep before accepting lookdev. See ARTIST_MODE.md for direct
+tools, coordinate conventions and their practical limits.

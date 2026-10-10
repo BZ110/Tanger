@@ -43,6 +43,8 @@ export const characterSchema = z.strictObject({
     (value) => value.endsWith('.blend'),
     'Source must be .blend',
   ),
+  sourceWorkflow: localPath.optional(),
+  deliverySource: localPath.optional(),
   export: localPath.refine(
     (value) => value.endsWith('.glb'),
     'Export must be .glb',

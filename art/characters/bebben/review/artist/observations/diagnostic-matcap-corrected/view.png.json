@@ -1,0 +1,25 @@
+{
+  "path": "art/characters/bebben/review/artist/observations/diagnostic-matcap-corrected/view.png",
+  "sha256": "5ce1e1a76adb2f238f56613556dd32f52abc3f3e4a92bcc237848d05cff705a7",
+  "cameraVersion": "tanger-artist-v2-85mm-vertical36",
+  "size": 768,
+  "view": {
+    "name": "portrait_3q",
+    "center": [
+      0,
+      0,
+      1.6198000000000001
+    ],
+    "span": 0.49140000000000006,
+    "yaw": 0.7853981633974483,
+    "pitch": 0,
+    "mode": "FACE_SCULPT",
+    "lighting": "neutral",
+    "keyYaw": null,
+    "keyElevation": 35,
+    "fill": null,
+    "rim": null
+  },
+  "pass": "matcap",
+  "exposure": 0
+}
