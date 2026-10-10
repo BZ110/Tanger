@@ -18,12 +18,16 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run typecheck && npm run lint && npm test && npm run format:check"
+    "area:validate": "tsx scripts/area-tool.ts validate",
+    "area:schema": "tsx scripts/area-tool.ts schema",
+    "area:schema:check": "tsx scripts/area-tool.ts check-schema",
+    "check": "npm run typecheck && npm run lint && npm test && npm run area:schema:check && npm run format:check"
   },
   "keywords": [],
   "author": "",
   "dependencies": {
-    "three": "^0.186.1"
+    "three": "^0.186.1",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -32,6 +36,7 @@
     "@types/three": "^0.186.0",
     "eslint": "^10.12.0",
     "prettier": "^3.9.9",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.71.1",
     "vite": "^8.3.4",

@@ -9,7 +9,7 @@ const allowed: Record<string, readonly string[]> = {
   content: ['content'],
   world: ['world', 'core', 'content'],
   game: ['game', 'world', 'core', 'content'],
-  application: ['application', 'game', 'core', 'content'],
+  application: ['application', 'game', 'world', 'core', 'content'],
   adapters: ['adapters', 'application', 'game', 'world', 'core', 'content'],
 };
 const browserGlobals = new Set([
@@ -46,11 +46,11 @@ test('module dependencies point inward and pure code stays platform-independent'
       ) {
         const specifier = node.moduleSpecifier.text;
         if (!specifier.startsWith('.')) {
-          if (
-            layer !== 'adapters' ||
-            !file.startsWith('adapters/three/') ||
-            specifier !== 'three'
-          )
+          const isRenderLibrary =
+            file.startsWith('adapters/three/') && specifier === 'three';
+          const isSchemaLibrary =
+            file === 'world/area-schema.ts' && specifier === 'zod';
+          if (!isRenderLibrary && !isSchemaLibrary)
             errors.push(`${file}: external dependency ${specifier}`);
         } else {
           const target = relative(

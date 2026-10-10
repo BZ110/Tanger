@@ -1,0 +1,76 @@
+TANGER AREA MANIFEST — VERSION 1
+
+This is an interchange format, not a map or a game design. No playable area,
+model, terrain generator, or gameplay content is shipped. Parser fixtures are
+synthetic data that run only in tests.
+
+AUTHORING AND VALIDATION
+
+Create a separate *.area.json file. Define content in that document, not in
+TypeScript scene constructors. No engine code changes are needed to validate
+another document with the same format. No document is loaded on startup.
+
+  npm run area:validate -- path/to/document.area.json
+
+The validator returns nonzero for invalid or missing files and prints the exact
+field path for structural and semantic errors. Multiple file paths are supported.
+It checks manifest data, not whether GLB files exist or their binary contents.
+
+VS Code associates *.area.json with public/schemas/area.schema.json. This generated
+JSON Schema covers structure, types, and numeric limits. Reference consistency,
+bounds relationships, and unit quaternions require area:validate. Regenerate the
+editor schema with npm run area:schema after changing src/world/area-schema.ts.
+npm run check rejects an out-of-date generated schema.
+
+DOCUMENT FIELDS
+
+format:       Exactly "tanger.area".
+version:      Exactly 1. Unsupported versions are rejected, not guessed.
+id:           Stable lowercase ID, starting with a letter; hyphens are allowed.
+coordinates:  units "meters", up "Y", handedness "right".
+assets:       Reusable model/collision asset declarations with ID, relative .glb
+              path, and provenance. No remote model URLs or path traversal.
+sectors:      Spatial units with an ID, 3D bounds, instances, colliders, and anchors.
+connections:  Directed links between existing sectors. Use two links for two-way
+              adjacency. Sector layout can be irregular, vertical, or overlapping;
+              it is not restricted to square chunks or a procedural height map.
+$schema:      Optional editor hint. The parser never fetches this string.
+
+All collections are explicitly supplied and can be empty. No defaults add content.
+Unknown fields are rejected to catch misspellings. IDs are unique within asset,
+sector, and connection collections. Entity IDs are unique across instances,
+colliders, and anchors within each sector, so an entity address is sector ID + ID.
+
+SPATIAL DATA
+
+Positions and sector bounds use area-space [x, y, z] vectors. Bounds min must be
+less than max on every axis. Entity origins must be inside their sector bounds;
+these bounds describe ownership/residency, not a geometry clipping volume. Mesh
+extents can cross a boundary. Mesh vertices are asset-local; instances provide
+position, quaternion rotation [x, y, z, w], and positive [x, y, z] scale. Quaternion
+length must be 1 within 0.0001. Model origins/orientations are authored in assets.
+
+Visual instances reference asset IDs. Colliders are independently authored: box
+half-extents, sphere radius, capsule radius/half-height (along local Y), or a mesh
+asset reference. Collider position/rotation are in area space; mesh collider scale
+is baked into its asset. Collision data is parsed but no physics bodies are created.
+Anchors are named points; no spawn, quest, combat, or traversal rules are assigned.
+
+ASSET PROVENANCE
+
+Original asset: kind "original" and creator.
+Licensed asset: kind "licensed", creator, HTTPS source, and license description.
+These fields record provenance for review; metadata alone does not establish rights.
+No third-party models, animations, textures, or game assets were imported.
+
+LIMITS AND EXTENSION
+
+The text parser caps input at 5,242,880 JavaScript characters; the CLI additionally
+caps files at 5 MiB before reading. Coordinates are finite within +/- 1,000,000.
+Per-document limits: 4096 assets, 256 sectors, 4096 connections. Per-sector limits:
+10000 instances, 10000 colliders, 1024 anchors. These are ingestion bounds, not
+performance budgets or proposed world dimensions.
+
+Add migrations deliberately when evolving the format. Loading, GLB decoding,
+resource caching, spatial residency, and scene activation belong to separate
+modules. A valid manifest does not yet render a map. The browser remains empty.

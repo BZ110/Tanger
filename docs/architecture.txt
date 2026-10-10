@@ -1,81 +1,63 @@
-TANGER — CODEBASE GUIDE
+TANGER — INFRASTRUCTURE GUIDE
 
 Run with Node 22.12+:
   npm ci
   npm run dev
 
-Before committing:
+The application opens an empty viewport with "No area loaded." There is no default
+map, floor, player, movement, gameplay HUD, persistence, or animation loop. It draws
+once and redraws on resize/context restoration. No game content is being designed.
+
+MODULE OWNERSHIP
+
+core/         Reusable platform-independent timing. Not active in the empty app.
+world/        Area interchange schema, inferred types, and pure parsing/validation.
+application/  Ports and a loading operation: source text -> validation result.
+adapters/     Concrete platform implementation. Currently the empty Three viewport.
+main.ts       Browser composition root; does not hardcode or load an area.
+scripts/      Local file validation and generated editor-schema tooling.
+
+Future content/ and game/ modules can hold authored definitions and gameplay rules
+when those features are requested. The old prototype implementations were removed.
+
+Dependencies point from adapters/application to world/core. Only the schema module
+imports Zod; only the Three adapter imports Three.js. Architectural tests reject
+browser globals in pure modules and cross-adapter imports. Loading is separate
+from activation: a validated area does not implicitly create GPU/physics resources.
+
+AREA DATA
+
+src/world/area-schema.ts is the canonical versioned format. TypeScript types and
+public/schemas/area.schema.json derive from it. parse-area.ts checks structure,
+IDs, references, bounds, and rotations. Errors include field paths. There are no
+engine objects or embedded hardcoded meshes in an area document.
+
+  npm run area:validate -- path/to/document.area.json
+  npm run area:schema
+
+The format accepts model instances, independently authored collision shapes,
+sector bounds, anchor points, and graph connections. Sector geometry is not tied
+to a square terrain grid. See docs/area-format.txt for exact authoring conventions.
+No real area files or model assets are supplied. Tests use synthetic parser input.
+
+loadArea accepts an injected AreaSourcePort and optional cancellation signal. It
+returns a validated document or issues; the browser does not call it yet. Future
+filesystem/network/editor sources can implement the port independently of parsing.
+GLB decoding, actual asset existence checks, streaming, and activation remain to
+be implemented once real content is supplied. Neither a physics engine nor combat
+has been installed. See docs/research.txt for sourced technical research.
+
+CHECKS
+
   npm run check
   npm run build
-  npm run test:e2e   (first install Chromium: npx playwright install chromium)
+  npx playwright install chromium   (first browser test setup)
+  npm run test:e2e
 
-DEPENDENCY DIRECTION
+Checks cover rejected documents, valid references, parser diagnostics, source
+failures/cancellation, CLI exit behavior, schema drift, timing, and dependency
+boundaries. Browser checks verify zero scene objects and no storage access.
 
-  main (composition root)
-    -> adapters -> application -> game -> world -> core
-                   |               |
-                   +---- content --+
-
-core/         Pure math and timing. No browser or library dependencies.
-content/      Typed configuration. Future item/enemy/quest definitions live here.
-world/        Deterministic terrain data and bounded chunk residency. No meshes.
-game/         Authoritative gameplay state and rules. No DOM or Three.js objects.
-application/  Orchestrates simulation via input, renderer, save, and HUD ports.
-adapters/     Browser, Three.js, and local-storage implementations of those ports.
-main.ts       Chooses concrete adapters; owns browser lifecycle and hot reload.
-
-tests/unit/architecture.test.ts enforces allowed cross-module imports, third-party
-isolation, and absence of browser globals in pure modules. Cross-adapter imports
-are forbidden. New adapters implement existing ports and are wired in main.ts.
-
-The simulation updates at 60 Hz. Rendering interpolates previous/current player
-positions. Long frames have bounded catch-up; hidden tabs save and pause rather
-than simulating minutes of elapsed time. A frame receives one command, independent
-of DOM events. This is a useful seam for replay and testing; multiplayer would
-still require an authority model, transport, reconciliation, and security work.
-
-World chunks use stable coordinate IDs and coordinate-based randomness. Unloading
-and reloading a chunk reproduces its contents. Terrain height is a single shared
-function for gameplay and visuals. Renderer residency follows simulation data;
-unloaded chunks release GPU allocations. Shared tree meshes are instanced.
-
-Local saves contain a versioned envelope and minimal authoritative state. Invalid
-data, incompatible versions/seeds, unavailable storage, and quota errors are handled.
-When changing the format, add a deliberate decode/migration step and fixtures.
-Never serialize render objects or assume a parsed save is safe. Saves are local
-to this browser/device; there is no backend or account system yet.
-
-ADDING FEATURES
-
-Combat: put damage/cooldowns in game/combat; enemy definitions in content; render
-effects in adapters/three. Give systems narrow state/command inputs.
-
-Inventory: put item definitions in content and inventory rules in game/inventory.
-Extend SavedGame, bump its version, migrate previous saves, and test invariants.
-
-Quests: put quest definitions in content and progression rules in game/quests.
-Keep UI in adapters/browser. Add typed events only when multiple consumers need
-them; there is no global event bus or service locator to hide dependencies.
-
-Art: replace player-view.ts or landmark.ts without changing gameplay state.
-Imported assets belong in public/assets or beside the renderer that owns them.
-
-Physics: current movement follows terrain height only; trees and the gate are
-visual props without solid collision. Add collision queries to world and movement
-rules to game before integrating a physics engine through an adapter.
-
-This foundation deliberately has no ECS, generic plugin framework, monorepo,
-backend, combat, inventory, quests, or asset pipeline. Introduce those when a
-concrete feature needs them. Modularity is enforced ownership and dependencies,
-not a promise that no future design decision will ever require a refactor.
-
-CONTROLS
-
-WASD/arrows: move relative to the camera. Shift: run. Drag: orbit. Escape: pause.
-Touch devices expose directional buttons and drag-to-orbit. Save journey writes
-local storage; autosave runs every 30 seconds of simulation and when leaving.
-Return to start immediately clears the save and returns to spawn.
-
-The only external runtime request is optional Google Fonts; system-font fallbacks
-allow the game to run without it. All geometry is generated locally. No API keys.
-Markdown files are intentionally ignored and no README is included.
+There are no font/CDN/runtime content requests, storage reads/writes, or API keys.
+Markdown files are ignored and no README is included. Local Git author/committer
+identity is configured as BZ110 using the supplied GitHub noreply address.

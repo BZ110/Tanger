@@ -1,0 +1,93 @@
+TANGER — EXPLORATION, ACTION, PHYSICS, AND MODELS
+Research date: October 10, 2026
+
+Scope: technical research for the user's stated references. No world layout,
+character concept, combat rules, balance values, or game content is designed here.
+The references describe public behavior and documented tools; they do not expose
+HoYoverse's proprietary physics, animation, or gameplay implementation.
+
+EXPLORATION REFERENCE
+
+Genshin's publisher description emphasizes a large explorable world with climbing,
+swimming, and gliding. That makes vertical access and varied traversal relevant
+reference points, beyond walking across a terrain height function. [1]
+
+Engineering inference for later evaluation: represent authored 3D environments
+and collision independently of traversal rules. Sector bounds and adjacency can
+describe outdoor regions, interiors, and vertically stacked spaces without
+requiring one giant hardcoded scene or exclusively procedural square terrain.
+No traversal controller is being implemented in this change.
+
+ACTION AND ENVIRONMENT REFERENCE
+
+ZZZ's producer describes city exploration plus fast-paced combat combining
+character switching, Perfect Assist, and Chain Attacks. This establishes the
+reference for readable, connected action without establishing internal algorithms
+or exact timing values. The cited description is a launch-era overview, not a
+claim about every mode or the game's present map topology. [2]
+
+Engineering inference: responsive action needs coordinated input, animation,
+collision queries, and camera feedback. Evaluate these as distinct modules so
+movement collision does not determine all combat behavior. Animation events,
+combat timing, and effects would need their own tests and authoring workflow.
+No attack, dodge, assist, combo, damage, or enemy system is implemented or specified.
+
+PHYSICS CANDIDATE
+
+Rapier's documented kinematic character controller resolves requested movement
+with obstacle queries. It supports slopes, stairs, ground snapping, and moving
+platforms. The application supplies gravity; the controller handles translation,
+not rotational movement. It remains a candidate rather than an installed engine. [3]
+
+Engineering inference: evaluate controlled character motion with collision-aware
+movement instead of assuming a freely simulated rigid body produces the desired
+action feel. Keep physical world queries separate from animation and combat state.
+Later evaluation must cover slopes, edges, stairs, airborne motion, camera
+obstruction, and transitions between unloaded/loaded sectors. No claim is made
+that either reference game uses Rapier or this particular approach.
+
+MODELS AND ASSET PIPELINE
+
+glTF 2.0 provides a runtime format for meshes, materials, scene hierarchy, skins,
+and animation. Its standard uses meters and a right-handed Y-up coordinate system.
+Use that baseline convention for area data and consider binary GLB as the asset
+delivery format. Three.js documents GLTFLoader and per-object AnimationMixer
+playback/time control, which provide a future adapter path for original rigged
+models. Model decoding and animation playback are not implemented yet. [4][5][6]
+
+The old faceted look came from placeholder procedural geometry and art choices.
+Model-based areas can use authored topology, smooth normals, textures, and custom
+materials; changing the area format does not by itself create a finished art style.
+
+Pipeline candidate: author original geometry, rigs, textures, and animation in a
+3D content tool; export GLB; round-trip through the runtime; then measure texture
+memory, draw calls, geometry, animation cost, and loading latency on target devices.
+Any later toon shading, outlines, or facial animation requires separate evaluation.
+No concepts or models are generated in this change. Do not extract assets from
+Genshin or ZZZ. Future external assets must have explicit permitted provenance.
+
+IMPLEMENTED INFRASTRUCTURE
+
+Removed the prototype map, character, movement, themed HUD, and persistence.
+Added a strict versioned manifest parser with reusable asset references, authored
+transforms/colliders, sector bounds, adjacency, and provenance fields. Schema types
+and editor JSON Schema derive from one Zod declaration; semantic cross-reference
+checks stay in the parser. Zod documents strict objects and JSON Schema export. [7]
+There is no active area, geometry, physics engine, model loader, or combat system.
+
+SOURCES (PRIMARY)
+
+[1] Publisher's Genshin Impact description, PlayStation Store:
+https://store.playstation.com/en-us/product/UP6262-PPSA02562_00-OSRELSIEAGENSHIN
+[2] Zhenyu Li, producer, HoYoverse, PlayStation Blog, June 28, 2024:
+https://blog.playstation.com/?p=393593
+[3] Rapier JavaScript character-controller documentation:
+https://rapier.rs/docs/user_guides/javascript/character_controller/
+[4] Khronos glTF 2.0 specification:
+https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html
+[5] Three.js GLTFLoader documentation:
+https://threejs.org/docs/pages/GLTFLoader.html
+[6] Three.js AnimationMixer documentation:
+https://threejs.org/docs/pages/AnimationMixer.html
+[7] Zod JSON Schema documentation:
+https://zod.dev/json-schema
